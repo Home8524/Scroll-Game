@@ -61,6 +61,7 @@
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\SpringCollider.cs" />
     <Compile Include="Assets\Step05(Singleton)\Singleton.cs" />
     <Compile Include="Assets\Step01(Bullet)\BulletController.cs" />
+    <Compile Include="Assets\Step08\InspectorEditer.cs" />
     <Compile Include="Assets\Step04(Rotate2)\SampleRotation.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\SpringManager.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\RandomWind.cs" />
@@ -87,7 +88,7 @@
     <Compile Include="Assets\Tests\BulletShooter.cs" />
     <Compile Include="Assets\Step06\SampleBulletController.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\SpringBone.cs" />
-    <Compile Include="Assets\Step08\InspectorEditer.cs" />
+    <Compile Include="Assets\Step09\RayPoint.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />

@@ -27,7 +27,7 @@ public class PlayerCtrl : MonoBehaviour
         SphereCollider BulletColider = BulletPrefab.GetComponent<SphereCollider>();
         BulletColider.isTrigger = false;
 
-        pSpeed = SampleObjectManager.GetInstance.Speed*-1;    
+        pSpeed = SampleObjectManager.GetInstance.Speed*-1.0f;    
     }
 
     private void Update()
