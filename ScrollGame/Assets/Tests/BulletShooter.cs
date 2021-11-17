@@ -10,7 +10,7 @@ public class BulletShooter : MonoBehaviour
     private void Awake()
     {
         BulletParent = new GameObject("BulletList");
-        BulletPrefab = Resources.Load("Prefabs/Bullet1") as GameObject;
+        BulletPrefab = Resources.Load("Prefabs/Bullet") as GameObject;
     }
     private int Count;
     void Start()

@@ -441,6 +441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainCamera: {fileID: 0}
+  CubePrefab: {fileID: 0}
 --- !u!1 &684688889
 GameObject:
   m_ObjectHideFlags: 0

@@ -61,14 +61,14 @@
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\SpringCollider.cs" />
     <Compile Include="Assets\Step05(Singleton)\Singleton.cs" />
     <Compile Include="Assets\Step01(Bullet)\BulletController.cs" />
-    <Compile Include="Assets\Step08\InspectorEditer.cs" />
+    <Compile Include="Assets\Step08(UI)\InspectorEditer.cs" />
     <Compile Include="Assets\Step04(Rotate2)\SampleRotation.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\SpringManager.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\RandomWind.cs" />
-    <Compile Include="Assets\Step06\SamplePlayerController.cs" />
+    <Compile Include="Assets\Step06(ObjectManager)\SamplePlayerController.cs" />
     <Compile Include="Assets\Step07(Singleton2)\SingletonParent.cs" />
     <Compile Include="Assets\Step02(Collision)\SampleCollision.cs" />
-    <Compile Include="Assets\Step06\ObjectManager.cs" />
+    <Compile Include="Assets\Step06(ObjectManager)\ObjectManager.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\IKCtrlRightHand.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\IdleChanger.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\ThirdPersonCamera.cs" />
@@ -76,6 +76,7 @@
     <Compile Include="Assets\Step03(Rotate)\MoonController.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\UnityChanControlScriptWithRgidBody.cs" />
     <Compile Include="Assets\Step05(Singleton)\SampleSingletonTest.cs" />
+    <Compile Include="Assets\Step09(RayCast)\RayPoint.cs" />
     <Compile Include="Assets\Step07(Singleton2)\PlayerCtrl.cs" />
     <Compile Include="Assets\Tests\SBC.cs" />
     <Compile Include="Assets\Tests\ShooterController.cs" />
@@ -86,9 +87,11 @@
     <Compile Include="Assets\Tests\TankController.cs" />
     <Compile Include="Assets\Step01(Bullet)\PlayerController.cs" />
     <Compile Include="Assets\Tests\BulletShooter.cs" />
-    <Compile Include="Assets\Step06\SampleBulletController.cs" />
+    <Compile Include="Assets\Step06(ObjectManager)\SampleBulletController.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\SpringBone.cs" />
-    <Compile Include="Assets\Step09\RayPoint.cs" />
+    <Compile Include="Assets\Step10\Test.cs" />
+    <Compile Include="Assets\Step10\TestEditer.cs" />
+    <Compile Include="Assets\Step10\MyGizmo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
