@@ -73,6 +73,7 @@
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\IdleChanger.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\ThirdPersonCamera.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\AutoBlink.cs" />
+    <Compile Include="Assets\Step10\MyGizmo.cs" />
     <Compile Include="Assets\Step03(Rotate)\MoonController.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\UnityChanControlScriptWithRgidBody.cs" />
     <Compile Include="Assets\Step05(Singleton)\SampleSingletonTest.cs" />
@@ -89,9 +90,9 @@
     <Compile Include="Assets\Tests\BulletShooter.cs" />
     <Compile Include="Assets\Step06(ObjectManager)\SampleBulletController.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\SpringBone.cs" />
-    <Compile Include="Assets\Step10\Test.cs" />
-    <Compile Include="Assets\Step10\TestEditer.cs" />
-    <Compile Include="Assets\Step10\MyGizmo.cs" />
+    <Compile Include="Assets\Step10\ViewAngle.cs" />
+    <Compile Include="Assets\Step10\ViewAngleEditer.cs" />
+    <Compile Include="Assets\Step10\PlayerViewController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
