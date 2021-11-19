@@ -9,8 +9,10 @@ public class ViewAngleEditer : Editor
     private void OnSceneGUI()
     {
         ViewAngle va = (ViewAngle)target;
-
+        
         Handles.DrawWireArc(va.transform.position, Vector3.up, Vector3.forward, 360.0f, va.Radius);
+
+        
 
         //좌측 시야각 최대치
         Vector3 LeftViewAngle = va.LocalViewAngle(-va.Angle / 2.0f);
@@ -18,9 +20,10 @@ public class ViewAngleEditer : Editor
         //우측 시야각 최대치
         Vector3 RightViewAngle = va.LocalViewAngle(va.Angle / 2.0f);
 
+        
         Handles.DrawLine(va.transform.position, va.transform.position + LeftViewAngle * va.Radius);
         Handles.DrawLine(va.transform.position, va.transform.position + RightViewAngle * va.Radius);
-        Debug.Log(va.transform.rotation);
+        
         Handles.color = Color.green;
         for (int i=0;i<va.TargetList.Count;++i)
         {

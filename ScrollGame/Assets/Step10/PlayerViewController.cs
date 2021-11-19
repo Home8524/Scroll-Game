@@ -16,7 +16,7 @@ public class PlayerViewController : MonoBehaviour
         //** Min -1   Max 1À» ¹ÝÈ¯
         float Hor = Input.GetAxisRaw("Horizontal");
         float Ver = Input.GetAxisRaw("Vertical");
-
+       
         this.transform.Translate(
             Hor * 10.0f * Time.deltaTime,
             0.0f,
