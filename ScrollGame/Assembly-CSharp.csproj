@@ -81,18 +81,21 @@
     <Compile Include="Assets\Step07(Singleton2)\PlayerCtrl.cs" />
     <Compile Include="Assets\Tests\SBC.cs" />
     <Compile Include="Assets\Tests\ShooterController.cs" />
+    <Compile Include="Assets\Step10\ViewAngleEditer.cs" />
     <Compile Include="Assets\Step03(Rotate)\SunController.cs" />
     <Compile Include="Assets\Step07(Singleton2)\SampleObjectManager.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\FaceUpdate.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\SplashScreen\Scripts\SplashScreen.cs" />
+    <Compile Include="Assets\Step10\PlayerViewController.cs" />
     <Compile Include="Assets\Tests\TankController.cs" />
     <Compile Include="Assets\Step01(Bullet)\PlayerController.cs" />
+    <Compile Include="Assets\Step10\ViewAngle.cs" />
     <Compile Include="Assets\Tests\BulletShooter.cs" />
     <Compile Include="Assets\Step06(ObjectManager)\SampleBulletController.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\SpringBone.cs" />
-    <Compile Include="Assets\Step10\ViewAngle.cs" />
-    <Compile Include="Assets\Step10\ViewAngleEditer.cs" />
-    <Compile Include="Assets\Step10\PlayerViewController.cs" />
+    <Compile Include="Assets\Step11\WayPoint.cs" />
+    <Compile Include="Assets\Step11\WayPointEditor.cs" />
+    <Compile Include="Assets\Step11\Test.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
