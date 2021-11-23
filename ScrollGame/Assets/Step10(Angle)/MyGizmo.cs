@@ -6,7 +6,7 @@ public class MyGizmo : MonoBehaviour
 {
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.red;
+        Gizmos.color = Color.yellow;
 
         //DrawSphere(Vector3 center, float radius);
         Gizmos.DrawSphere(transform.position,0.2f);

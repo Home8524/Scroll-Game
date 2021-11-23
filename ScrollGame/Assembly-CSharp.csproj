@@ -60,12 +60,14 @@
     <Compile Include="Assets\Step05(Singleton)\Singleton.cs" />
     <Compile Include="Assets\Step11\WayPointEditor.cs" />
     <Compile Include="Assets\Step01(Bullet)\BulletController.cs" />
+    <Compile Include="Assets\Step11\GameManager.cs" />
     <Compile Include="Assets\Step08(UI)\InspectorEditer.cs" />
     <Compile Include="Assets\Step04(Rotate2)\SampleRotation.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\SpringManager.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\RandomWind.cs" />
     <Compile Include="Assets\Step11\WayPoint.cs" />
     <Compile Include="Assets\Step06(ObjectManager)\SamplePlayerController.cs" />
+    <Compile Include="Assets\Step11\EnemyController.cs" />
     <Compile Include="Assets\Step07(Singleton2)\SingletonParent.cs" />
     <Compile Include="Assets\Step02(Collision)\SampleCollision.cs" />
     <Compile Include="Assets\Step06(ObjectManager)\ObjectManager.cs" />
@@ -73,7 +75,7 @@
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\IdleChanger.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\ThirdPersonCamera.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\AutoBlink.cs" />
-    <Compile Include="Assets\Step10\MyGizmo.cs" />
+    <Compile Include="Assets\Step10(Angle)\MyGizmo.cs" />
     <Compile Include="Assets\Step03(Rotate)\MoonController.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\UnityChanControlScriptWithRgidBody.cs" />
     <Compile Include="Assets\Step05(Singleton)\SampleSingletonTest.cs" />
@@ -81,19 +83,19 @@
     <Compile Include="Assets\Step07(Singleton2)\PlayerCtrl.cs" />
     <Compile Include="Assets\Tests\SBC.cs" />
     <Compile Include="Assets\Tests\ShooterController.cs" />
-    <Compile Include="Assets\Step10\ViewAngleEditer.cs" />
+    <Compile Include="Assets\Step10(Angle)\ViewAngleEditer.cs" />
     <Compile Include="Assets\Step03(Rotate)\SunController.cs" />
     <Compile Include="Assets\Step07(Singleton2)\SampleObjectManager.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\FaceUpdate.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\SplashScreen\Scripts\SplashScreen.cs" />
-    <Compile Include="Assets\Step10\PlayerViewController.cs" />
+    <Compile Include="Assets\Step10(Angle)\PlayerViewController.cs" />
     <Compile Include="Assets\Tests\TankController.cs" />
     <Compile Include="Assets\Step01(Bullet)\PlayerController.cs" />
-    <Compile Include="Assets\Step10\ViewAngle.cs" />
+    <Compile Include="Assets\Step10(Angle)\ViewAngle.cs" />
+    <Compile Include="Assets\Step11\WayPointManager.cs" />
     <Compile Include="Assets\Tests\BulletShooter.cs" />
     <Compile Include="Assets\Step06(ObjectManager)\SampleBulletController.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\SpringBone.cs" />
-    <Compile Include="Assets\Step11\WayPointManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />

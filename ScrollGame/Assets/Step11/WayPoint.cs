@@ -11,18 +11,20 @@ public class WayPoint : MonoBehaviour
 
     [SerializeField] private int WayPointCount;
     [SerializeField] private GameObject WayPointPrefab;
-    
-    public List<GameObject> WayPointList = new List<GameObject>();
-    
+    [SerializeField] private GameObject EnemyPrefab;
+    [SerializeField] private int NodeNumber;
+    [HideInInspector] public List<GameObject> WayPointList = new List<GameObject>();
+
     private void Awake()
     {
         WayPointPrefab = Resources.Load("Prefabs/Step11/WayPointPrefab") as GameObject;
-
+        EnemyPrefab = Resources.Load("Prefabs/Step11/Enemy") as GameObject;
     }
 
 
     void Start()
     {
+        NodeNumber = 0;
         WayPointCount = 5;
         PointA = new Vector2(transform.position.x- Radius.x, transform.position.z + Radius.y);
         PointB = new Vector2(transform.position.x + Radius.x, transform.position.z - Radius.y);
@@ -47,12 +49,22 @@ public class WayPoint : MonoBehaviour
                     WayPointManager.GetInstance().PointA.y,
                     WayPointManager.GetInstance().PointB.y));
             Obj.transform.name = "WayPointPrefab" + i;
-          
+            Obj.transform.parent = transform;
+
             WayPointList.Add(Obj);
             
         }
     }
+    private void Update()
+    {
+        //WayPointList[NodeNumber];
 
+
+        if(NodeNumber > (WayPointList.Count -1))
+        {
+
+        }
+    }
 
 
 }
