@@ -27,6 +27,8 @@ public class WayPoint : MonoBehaviour
         PointA = new Vector2(transform.position.x- Radius.x, transform.position.z + Radius.y);
         PointB = new Vector2(transform.position.x + Radius.x, transform.position.z - Radius.y);
 
+        WayPointManager.GetInstance().PointA = PointA;
+        WayPointManager.GetInstance().PointB = PointB;
 
         for (int i=0;i<WayPointCount;++i)
         {
@@ -34,9 +36,16 @@ public class WayPoint : MonoBehaviour
 
             Obj.AddComponent<Rigidbody>();
 
-            Obj.AddComponent<SphereCollider>();
+            Obj.AddComponent<BoxCollider>();
             Obj.AddComponent<Test>();
-            Obj.transform.position = new Vector3(Random.Range(PointA.x,PointB.x),5.0f, Random.Range(PointA.y, PointB.y));
+            Obj.transform.position = new Vector3(
+                Random.Range(
+                    WayPointManager.GetInstance().PointA.x,
+                    WayPointManager.GetInstance().PointB.x),
+                    5.0f,
+                Random.Range(
+                    WayPointManager.GetInstance().PointA.y,
+                    WayPointManager.GetInstance().PointB.y));
             Obj.transform.name = "WayPointPrefab" + i;
           
             WayPointList.Add(Obj);
@@ -44,10 +53,6 @@ public class WayPoint : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        
-    }
 
 
 }
