@@ -22,10 +22,7 @@ public class Test : MonoBehaviour
                     WayPointManager.GetInstance().PointA.y,
                     WayPointManager.GetInstance().PointB.y));
         }
-        else
-        {
-            Destroy(Rigid);
-        }
+        
     }
 
 }

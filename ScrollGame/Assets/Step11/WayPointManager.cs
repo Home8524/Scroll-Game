@@ -20,13 +20,17 @@ public class WayPointManager : MonoBehaviour
         return Instance;
     }
 
+    [HideInInspector] public GameObject EnemyPrefab;
+
     [Tooltip("Node Prefab")]
     [HideInInspector] public GameObject WayPointList;
 
     [HideInInspector] public Vector2 PointA;
     [HideInInspector] public Vector2 PointB;
 
-    [HideInInspector] public Vector2 TargetPoint;
+    [HideInInspector] public int NodeNumber;
+
+    [HideInInspector] public Vector3 TargetPoint;
 
     [HideInInspector] public List<GameObject> NodeList = new List<GameObject>();
 
@@ -34,13 +38,17 @@ public class WayPointManager : MonoBehaviour
 
     private void Awake()
     {
+        EnemyPrefab = Resources.Load("Prefabs/Step11/Enemy") as GameObject;
         WayPointList = Resources.Load("Prefabs/Step11/WayPointList") as GameObject;
+        NodeList = new List<GameObject>();
     }
     private void Start()
     {
-        
+        NodeNumber = 0;
 
-        for(int i =0; i < 10; ++i)
+        TargetPoint = new Vector3(0.0f,0.0f, 0.0f);
+
+        for(int i =0; i < 1; ++i)
         {
             GameObject Obj = Instantiate(WayPointList);
             Obj.transform.position = new Vector3(
