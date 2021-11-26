@@ -2,98 +2,68 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public class EnemyController : MonoBehaviour
 {
     [SerializeField]private bool Moving = false;
-    private float Speed = 5.0f;
-    private float fTime = 0.0f;
-    [SerializeField] private Vector3 Direction;
+    [SerializeField] private GameObject ParentObj;
+    [SerializeField] private Node TargetNode = null;
+
+    private void Awake()
+    {
+        ParentObj = GameObject.Find("Parent");
+    }
+
 
     private void Start()
     {
-        fTime = 5.0f;
-        Direction = GetDirection();
-        Speed = 5.0f;
-        // WayPointManager.GetInstance().TargetPoint
+        Rigidbody Rigid = transform.GetComponent<Rigidbody>();
+
+        Rigid.useGravity = false;
+
+        CapsuleCollider Coll = transform.GetComponent<CapsuleCollider>();
+
+        Coll.center = new Vector3(0.0f, 0.0f, 0.0f);
+        Coll.height = 2.0f;
+
+        Coll.isTrigger = true;
+
+        StartCoroutine("NodeChecking");
     }
-
-
-    Vector3 GetDirection()
+    private void Update()
     {
-        Moving = true;
-        int WayNum = WayPointManager.Getinstance().NodeNumber;
-        GameObject NodeObj = GameObject.Find("Node " + WayNum);
-
-        Vector3 Result = (NodeObj.transform.position - transform.position).normalized;
-
-        Result.y = 0.0f;
-
-        return Result;
-    }
-   //private void OnTriggerEnter(Collider other)
-   //{
-   //
-   //    int NodeNumber = WayPointManager.Getinstance().NodeNumber;
-   //    Debug.Log(NodeNumber);
-   //    Debug.Log(other.transform.tag);
-   //    Debug.Log(other.transform.name);
-   //    if (other.transform.tag == "Node" && Moving&&other.transform.name=="Node "+ NodeNumber)
-   //    {
-   //        int Tmp = WayPointManager.Getinstance().MaxNumber;
-   //        ++NodeNumber;
-   //        Moving = false;
-   //        if (NodeNumber > Tmp)
-   //        {
-   //            NodeNumber = 0;
-   //        }
-   //        WayPointManager.Getinstance().NodeNumber = NodeNumber;
-   //
-   //    }
-   //}
-    
-      
-        private void OnCollisionEnter(Collision collision)
+        if(Moving)
         {
-             int NodeNumber = WayPointManager.Getinstance().NodeNumber;
-           
-             if (collision.transform.tag == "Node" && Moving
-                 && collision.transform.name == "Node " + NodeNumber)
-                 {
-                     Debug.Log("d");
+            Vector3 Direction = (TargetNode.transform.position
+                - transform.position).normalized;
 
-                     NodeNumber = WayPointManager.Getinstance().NodeNumber;
-                     int Tmp = WayPointManager.Getinstance().MaxNumber;
-                     ++NodeNumber;
-                     Moving = false;
-                     if (NodeNumber > Tmp)
-                     {
-                         NodeNumber = 0;
-                     }
-                     WayPointManager.Getinstance().NodeNumber= NodeNumber;
+            transform.position += Direction * 1.5f * Time.deltaTime;
 
-                }
+            transform.LookAt(TargetNode.transform);
 
+            Debug.DrawLine(this.transform.position, TargetNode.transform.position
+                , Color.red);
         }
-     
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (TargetNode && other.transform.name == ("Node " + TargetNode.Index))
+            TargetNode = TargetNode.NextNode;
+    }
+    IEnumerator NodeChecking()
+    {
+        while(true)
+        {
+            yield return new WaitForSeconds(0.5f);
 
-   void Update()
-   {
-       if (Moving)
-       {
-           transform.Translate(Direction * Speed * Time.deltaTime);
-  
-           //transform.LookAt(Direction);
-       }
-       else
-       {
-           fTime = 2.0f;
-           StartCoroutine("Behaviour");
-       }
-   }
+            if(ParentObj.transform.childCount>1)
+            {
+                TargetNode = ParentObj.transform.GetChild(0).GetComponent<Node>();
 
-   IEnumerator Behaviour()
-   {
-       yield return new WaitForSeconds(fTime);
-       Direction = GetDirection();
-   }
+                Moving = true;
+
+                break;
+            }
+        }
+    }
 }

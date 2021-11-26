@@ -54,10 +54,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Node.cs" />
-    <Compile Include="Assets\WayPointEditor.cs" />
-    <Compile Include="Assets\GetGizmo.cs" />
     <Compile Include="Assets\WayPointManager.cs" />
+    <Compile Include="Assets\GetGizmo.cs" />
+    <Compile Include="Assets\WayPointEditor.cs" />
     <Compile Include="Assets\EnemyController.cs" />
+    <Compile Include="Assets\CameraController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

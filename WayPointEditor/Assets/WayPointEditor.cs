@@ -51,32 +51,37 @@ public class WayPointEditor : EditorWindow
     {
         GameObject NodeObj = new GameObject("Node " + ParentNode.transform.childCount);
         NodeObj.transform.parent = ParentNode.transform;
-        NodeObj.transform.tag = "Node";
         NodeObj.AddComponent<GetGizmo>();
-        NodeObj.AddComponent<Node>();
-        if (ParentNode.transform.childCount == 1)
+       // NodeObj.AddComponent<Node>();
+        Node CurrentNode = NodeObj.AddComponent<Node>();
+        CurrentNode.Index = ParentNode.transform.childCount - 1;
+
+        while(true)
         {
-            NodeObj.AddComponent<BoxCollider>();
-            NodeObj.AddComponent<Rigidbody>();
-            Rigidbody Rigid = NodeObj.GetComponent<Rigidbody>();
-            Rigid.useGravity = false;
-        }
-        NodeObj.transform.position = new Vector3(
-            Random.Range(-5.0f, 5.0f), 0.0f, Random.Range(-5.0f, 5.0f));
+            NodeObj.transform.position = new Vector3(
+                Random.Range(-5.0f, 5.0f), 0.0f, Random.Range(-5.0f, 5.0f));
+            
+            float Distance = 1000.0f;
 
-        int Tmp = WayPointManager.Getinstance().MaxNumber;
-        ++Tmp;
-        WayPointManager.Getinstance().MaxNumber = Tmp;
-        Node node = NodeObj.GetComponent<Node>();
+            if(ParentNode.transform.childCount>1)
+            {
+                Node PrevioudsNode =
+                    ParentNode.transform.GetChild(ParentNode.transform.childCount - 2)
+                    .GetComponent<Node>();
 
-        if(ParentNode.transform.childCount>1)
-        {
-            node.NextNode = ParentNode.transform.GetChild(
-                ParentNode.transform.childCount-2).GetComponent<Node>();
+                PrevioudsNode.NextNode = ParentNode.transform.GetChild(
+                    ParentNode.transform.childCount-1).GetComponent<Node>();
 
-            GameObject FirstObj = GameObject.Find("Node " + 0);
-            Node FirstNode = FirstObj.GetComponent<Node>();
-            FirstNode.NextNode = node;
+                CurrentNode.NextNode =
+                    ParentNode.transform.GetChild(0).GetComponent<Node>();
+                Distance = Vector3.Distance(
+                    PrevioudsNode.transform.position, CurrentNode.transform.position);
+            }
+
+            if (Distance > 1.5f)
+                break;
+
+        
         }
     }
 
