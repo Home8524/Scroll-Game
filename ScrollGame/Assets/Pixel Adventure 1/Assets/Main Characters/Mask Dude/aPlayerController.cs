@@ -6,6 +6,7 @@ public class aPlayerController : MonoBehaviour
 {
 
     Animator Anim;
+    bool Jump = false;
 
     void Start()
     {
@@ -25,6 +26,11 @@ public class aPlayerController : MonoBehaviour
                 Direction.x = Hor*transform.localScale.x;
 
             transform.localScale = Direction;
+
+            Vector3 Tmp = new Vector3(0.0f,0.0f,0.0f);
+            Tmp.x = Hor;
+
+            transform.Translate(Tmp*3.0f*Time.deltaTime);
         }
 
         Anim.SetFloat("Hor", Hor);
@@ -38,5 +44,18 @@ public class aPlayerController : MonoBehaviour
         {
             Anim.SetBool("Hit", false);
         }
+        if(Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            Rigidbody2D Rigid = transform.GetComponent<Rigidbody2D>();
+            Rigid.AddForce(Vector3.up * 300.0f);
+            transform.Rotate(Vector3.zero);
+            Jump = true;
+        }
+
+
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("Ãæµ¹");
     }
 }
