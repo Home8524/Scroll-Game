@@ -8,16 +8,11 @@ public class AudioPlayer : MonoBehaviour
 {
     private AudioSource SoundPlayer;
 
-    private void Awake()
-    {
-       // SoundPlayer = SoundManager.GetInstance.GetAudioClip(0);
-    }
-
     private void Start()
     {
         SoundPlayer = GetComponent<AudioSource>();
         SoundPlayer.clip = SoundManager.GetInstance.GetAudioClip(0);
-        PlaySound();
+        //PlaySound();
     }
 
     public void PlaySound(bool _Loop = false)

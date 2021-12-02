@@ -66,10 +66,12 @@
     <Compile Include="Assets\Step11\WayPointEditor.cs" />
     <Compile Include="Assets\1~10\Step01(Bullet)\BulletController.cs" />
     <Compile Include="Assets\Step14(UI)\CanvasActive.cs" />
+    <Compile Include="Assets\Step14(UI)\SoundManager.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_AutoRotate.cs" />
-    <Compile Include="Assets\Step11\GameManager.cs" />
+    <Compile Include="Assets\Step11\GameManager1.cs" />
     <Compile Include="Assets\1~10\Step08(UI)\InspectorEditer.cs" />
     <Compile Include="Assets\1~10\Step04(Rotate2)\SampleRotation.cs" />
+    <Compile Include="Assets\Step14(UI)\AudioPlayer.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\SpringManager.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\RandomWind.cs" />
     <Compile Include="Assets\Step11\WayPoint.cs" />
@@ -94,6 +96,7 @@
     <Compile Include="Assets\1~10\Step09(RayCast)\RayPoint.cs" />
     <Compile Include="Assets\1~10\Step07(Singleton2)\PlayerCtrl.cs" />
     <Compile Include="Assets\Tests\SBC.cs" />
+    <Compile Include="Assets\Step14(UI)\PController.cs" />
     <Compile Include="Assets\Tests\ShooterController.cs" />
     <Compile Include="Assets\1~10\Step10(Angle)\ViewAngleEditer.cs" />
     <Compile Include="Assets\1~10\Step03(Rotate)\SunController.cs" />
@@ -112,9 +115,9 @@
     <Compile Include="Assets\Tests\BulletShooter.cs" />
     <Compile Include="Assets\1~10\Step06(ObjectManager)\SampleBulletController.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\SpringBone.cs" />
-    <Compile Include="Assets\Step14(UI)\SoundManager.cs" />
-    <Compile Include="Assets\Step14(UI)\PController.cs" />
-    <Compile Include="Assets\Step14(UI)\AudioPlayer.cs" />
+    <Compile Include="Assets\Bolt 2D DinoRun VE1\ReadMe\Scripts\ReadmeVE1.cs" />
+    <Compile Include="Assets\Bolt 2D DinoRun VE1\Sprites\GameManager.cs" />
+    <Compile Include="Assets\Bolt 2D DinoRun VE1\Sprites\BackController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
@@ -122,6 +125,7 @@
     <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
     <None Include="Assets\JMO Assets\Cartoon FX\CartoonFX Free.txt" />
     <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
+    <None Include="Assets\Fantasy Skybox FREE\Readme.txt" />
     <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
     <None Include="Assets\JMO Assets\Cartoon FX Easy Editor\CartoonFX Easy Editor Readme.txt" />
     <None Include="Assets\CasualGameBGM05\ReadMe.txt" />
@@ -130,6 +134,7 @@
     <None Include="Assets\unity-chan!\Unity-chan! Model\Audio\Voice\unity-chan_voice_list.txt" />
     <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
     <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
+    <None Include="Assets\Customizable Skybox\Stylized Sky\Shaders\Stylized Sky.shader" />
     <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFXM_MobileParticleAdd_Alpha8.shader" />
     <None Include="Assets\unity-chan!\Unity-chan! Model\Art\Stage\Shader\AlphaMask.shader" />
     <None Include="Assets\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_hair.shader" />
