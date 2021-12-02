@@ -6,30 +6,37 @@ public class BackController : MonoBehaviour
 {
     Vector3 mainCameraSpeed;
     Animator Anim;
-    bool Jump = false;
-
+   [SerializeField] private bool Hit;
     private void Start()
     {
+        Hit = false;
         Anim = transform.GetComponent<Animator>();
         mainCameraSpeed = Vector3.right * 10.0f;
     }
     void Update()
     {
-        transform.position += mainCameraSpeed*Time.deltaTime;
+        if(!Hit)
+            transform.position += mainCameraSpeed*Time.deltaTime;
         
         if(Input.GetKeyUp(KeyCode.Space))
             {
                 Rigidbody2D Rigid = transform.GetComponent<Rigidbody2D>();
-                Rigid.AddForce(Vector3.up* 300.0f);
+                Rigid.AddForce(Vector3.up* 400.0f);
                 transform.Rotate(Vector3.zero);
-                Jump = true;
                 Anim.SetBool("Jump", true);
             }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Anim.SetBool("Jump", false);
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.transform.tag == "Wall")
-            Debug.Log("Ãæµ¹");
+        {
+            Anim.SetBool("Hit", true);
+            Hit = true;
+        }
     }
 }

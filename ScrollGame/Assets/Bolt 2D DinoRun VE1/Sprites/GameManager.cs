@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public float CameraSpeed;
     public Camera mainCamera;
-
+    Animator Anim;
     private GameObject Container = null;
 
     private GameObject StonePrefab;
@@ -20,6 +20,10 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
+        GameObject Player = GameObject.Find("Player");
+
+        Anim = Player.transform.GetComponent<Animator>();
+
         Container = new GameObject("Tester");
         for (int i=1;i<16;++i)
         {
@@ -57,6 +61,10 @@ public class GameManager : MonoBehaviour
     }
     private void Update()
     {
-        mainCamera.transform.position += Vector3.right * CameraSpeed*Time.deltaTime;    
+        bool Die;
+        Die = Anim.GetBool("Hit");
+
+        if(!Die)
+            mainCamera.transform.position += Vector3.right * CameraSpeed*Time.deltaTime;    
     }
 }
