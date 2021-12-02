@@ -19,12 +19,17 @@ public class BackController : MonoBehaviour
         
         if(Input.GetKeyUp(KeyCode.Space))
             {
-              //  Rigidbody Rigid = transform.GetComponent<Rigidbody>();
-              //  Rigid.AddForce(Vector3.up* 300.0f);
+                Rigidbody2D Rigid = transform.GetComponent<Rigidbody2D>();
+                Rigid.AddForce(Vector3.up* 300.0f);
                 transform.Rotate(Vector3.zero);
                 Jump = true;
                 Anim.SetBool("Jump", true);
             }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.transform.tag == "Wall")
+            Debug.Log("Ãæµ¹");
+    }
 }
