@@ -12,11 +12,18 @@ public class GameManager : MonoBehaviour
     private GameObject StonePrefab;
     private GameObject CloudPrefabA;
     private GameObject CloudPrefabB;
+    private GameObject CactusPrefabs1;
+    private GameObject CactusPrefabs2;
+    private GameObject CactusPrefabs3;
+    private GameObject Obj4;
     private void Awake()
     {
         StonePrefab = Resources.Load("Prefabs/DinoRun/Back A") as GameObject;
         CloudPrefabA = Resources.Load("Prefabs/DinoRun/Cloud A") as GameObject;
         CloudPrefabB = Resources.Load("Prefabs/DinoRun/Cloud B") as GameObject;
+        CactusPrefabs1 = Resources.Load("Prefabs/DinoRun/Cactus A") as GameObject;
+        CactusPrefabs2 = Resources.Load("Prefabs/DinoRun/Cactus B") as GameObject;
+        CactusPrefabs3 = Resources.Load("Prefabs/DinoRun/Cactus C") as GameObject;
     }
     private void Start()
     {
@@ -28,14 +35,36 @@ public class GameManager : MonoBehaviour
         for (int i=1;i<16;++i)
         {
             float Tmp = (i + 1) * 20.0f;
-            GameObject Obj = Instantiate(StonePrefab);
-            Obj.transform.position = new Vector3(
-                Random.Range(Tmp-20.0f, Tmp),
+            
+            int Select = Random.Range(0, 4);
+           
+            switch (Select)
+            {
+                case 0:
+                    Obj4 = Instantiate(CactusPrefabs1);
+                    break;
+                case 1:
+                    Obj4 = Instantiate(CactusPrefabs2);
+                    break;
+                case 2:
+                    Obj4 = Instantiate(CactusPrefabs3);
+                    break;
+                default:
+                    Obj4 = Instantiate(StonePrefab);
+                    break;
+
+            }
+
+            Obj4.transform.position = new Vector3(
+                Random.Range(Tmp - 20.0f, Tmp),
                 -0.05f,
                 -0.5f
                 );
-            Obj.name = "Stone " + i;
-            Obj.transform.parent = Container.transform;
+            if (i == 3)
+                Obj4.name = "Stone " + i;
+            else
+                Obj4.name = "Cactus " + i;
+            Obj4.transform.parent = Container.transform;
 
             //2~6
             GameObject Obj2 = Instantiate(CloudPrefabA);
@@ -56,15 +85,14 @@ public class GameManager : MonoBehaviour
             Obj3.name = "CloudB " + i;
             Obj3.transform.parent = Container.transform;
 
+
         }
         CameraSpeed = 10.0f;
     }
     private void Update()
     {
-        bool Die;
-        Die = Anim.GetBool("Hit");
 
-        if(!Die)
+        if (!DinoSingleton.GetInstance.Hit)
             mainCamera.transform.position += Vector3.right * CameraSpeed*Time.deltaTime;    
     }
 }
