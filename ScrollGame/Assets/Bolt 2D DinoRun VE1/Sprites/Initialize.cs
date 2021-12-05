@@ -10,6 +10,7 @@ public class Initialize : MonoBehaviour
     private Text ScoreNumber;
     private void Start()
     {
+
         ScoreNumber = GameObject.Find("ScoreNumber").GetComponent<Text>();
     }
     public void Initialized()
@@ -28,4 +29,6 @@ public class Initialize : MonoBehaviour
         Animator Anim = Player.transform.GetComponent<Animator>();
         Anim.SetBool("Hit", false);
     }
+
+
 }
