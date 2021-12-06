@@ -1,0 +1,1559 @@
+Using pre-set license
+Built from '2021.2/staging' branch; Version is '2021.2.3f1 (32358a8527b4) revision 3290506'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 18363.1316; Version 1909; 64bit' Language: 'ko' Physical Memory: 16264 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.2.3f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/SGA/Documents/GitHub/bathroom1/Scroll-Game/PO_Resource
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+51228
+Successfully changed project path to: C:/Users/SGA/Documents/GitHub/bathroom1/Scroll-Game/PO_Resource
+C:/Users/SGA/Documents/GitHub/bathroom1/Scroll-Game/PO_Resource
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 78.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.2.3f1 (32358a8527b4)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.3f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/SGA/Documents/GitHub/bathroom1/Scroll-Game/PO_Resource/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) HD Graphics 630 (ID=0x5912)
+    Vendor:   Intel
+    VRAM:     8132 MB
+    Driver:   27.20.100.8681
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.3f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.3f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56032
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006093 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 78.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.628 seconds
+Domain Reload Profiling:
+	ReloadAssembly (629ms)
+		BeginReloadAssembly (77ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (468ms)
+			LoadAssemblies (73ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (108ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (276ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (79ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (132ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006724 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Documents\GitHub\bathroom1\Scroll-Game\PO_Resource\Library\PackageCache\com.unity.visualscripting@1.7.5\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Documents\GitHub\bathroom1\Scroll-Game\PO_Resource\Library\PackageCache\com.unity.visualscripting@1.7.5\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.133 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1133ms)
+		BeginReloadAssembly (174ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (859ms)
+			LoadAssemblies (77ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (274ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (354ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (90ms)
+				ProcessInitializeOnLoadAttributes (221ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3210 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (111.4 KB). Loaded Objects now: 3666.
+Memory consumption went from 118.8 MB to 118.7 MB.
+Total: 2.872500 ms (FindLiveObjects: 0.257500 ms CreateObjectMapping: 0.187700 ms MarkObjects: 2.326200 ms  DeleteObjects: 0.100400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2289.911563 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79842766b460edbeab6a34051e857a80') in 0.009772 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.490269 seconds.
+  path: Assets/Resources
+  artifactKey: Guid(cb1d2f9b011b03e4f8953d9d88dd2b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources using Guid(cb1d2f9b011b03e4f8953d9d88dd2b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e2d5f2e800a8bf47460da3fca8536be') in 0.008437 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008115 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Documents\GitHub\bathroom1\Scroll-Game\PO_Resource\Library\PackageCache\com.unity.visualscripting@1.7.5\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\SGA\Documents\GitHub\bathroom1\Scroll-Game\PO_Resource\Library\PackageCache\com.unity.visualscripting@1.7.5\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.129 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1130ms)
+		BeginReloadAssembly (168ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (852ms)
+			LoadAssemblies (110ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (277ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (337ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (65ms)
+				ProcessInitializeOnLoadAttributes (222ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3206 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (78.5 KB). Loaded Objects now: 3669.
+Memory consumption went from 118.7 MB to 118.6 MB.
+Total: 3.097900 ms (FindLiveObjects: 0.263500 ms CreateObjectMapping: 0.229800 ms MarkObjects: 2.524400 ms  DeleteObjects: 0.079000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 169.664025 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001
+  artifactKey: Guid(e60f288047fc1b145be17b1b074d2569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001 using Guid(e60f288047fc1b145be17b1b074d2569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a43670552dca5c57c31adda4816ca44') in 0.011621 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.039797 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips
+  artifactKey: Guid(c87c01e4fed3fe146bc46b5fa115478e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips using Guid(c87c01e4fed3fe146bc46b5fa115478e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a88eb8f1358eff5828d9687145d233c') in 0.007222 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.077571 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/curved_train 1.png
+  artifactKey: Guid(593e581e1a72bf24e95535e77041bf37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/curved_train 1.png using Guid(593e581e1a72bf24e95535e77041bf37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b506279fe4bf4b9c3f8e3964d9e6ca18') in 0.117533 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.761534 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles
+  artifactKey: Guid(e9942c07963692441abb4bc11694d499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles using Guid(e9942c07963692441abb4bc11694d499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c7f0080c34f46c694c922b26aae9d66') in 0.008218 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.433512 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/bottomglow_A 1.png
+  artifactKey: Guid(419e7cc7831d839479bb37842d7ce73d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/bottomglow_A 1.png using Guid(419e7cc7831d839479bb37842d7ce73d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b226bea6656f5857390c84bd28f304ee') in 0.082203 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tile_lit_F.png
+  artifactKey: Guid(464a75221c7670b46b3de2a8ad88a725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tile_lit_F.png using Guid(464a75221c7670b46b3de2a8ad88a725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02944e3e4a4c273460326312e56e9c8e') in 0.022680 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/topglow_G.png
+  artifactKey: Guid(4a566a5a1d6886048950860377e8639d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/topglow_G.png using Guid(4a566a5a1d6886048950860377e8639d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '084a9d2c055338633138a9d91076554f') in 0.038351 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tiles_new_world2_b.png
+  artifactKey: Guid(46162a5bb651a404f840a70edb2962fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tiles_new_world2_b.png using Guid(46162a5bb651a404f840a70edb2962fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fb7e8471cbddb4568a9fb468ed7e812') in 0.055294 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tiles_editor_greyscale.png
+  artifactKey: Guid(24742d2ae3b0c8d4eaaf585227b514fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tiles_editor_greyscale.png using Guid(24742d2ae3b0c8d4eaaf585227b514fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '465d21236fd070b011103420726d3366') in 0.088151 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/bottomglow_A2.png
+  artifactKey: Guid(c406029e6556b6e4b8f8794171efeee3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/bottomglow_A2.png using Guid(c406029e6556b6e4b8f8794171efeee3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f2326aa7ed9022114b85e198ac4c1d0') in 0.029255 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tiles.png
+  artifactKey: Guid(3f27635b82c8c4e8a8e2f363756572a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tiles.png using Guid(3f27635b82c8c4e8a8e2f363756572a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47485475b62763e8f992b0faabead38d') in 0.043914 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/menu_crystals6.png
+  artifactKey: Guid(c07d8bd58486e4363a44d066b671e855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/menu_crystals6.png using Guid(c07d8bd58486e4363a44d066b671e855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd822d9acbb1f617a4407f23d6e78e035') in 0.023270 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/bottomglow_E.png
+  artifactKey: Guid(cab46fce58b5c0f448b9665ffa8d062d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/bottomglow_E.png using Guid(cab46fce58b5c0f448b9665ffa8d062d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f919e7f99510ded8affc41a815cf1a16') in 0.024090 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/topglow_F.png
+  artifactKey: Guid(38367932da18b3549afe1deff7e085bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/topglow_F.png using Guid(38367932da18b3549afe1deff7e085bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f154644e93f43b3b2858ecf8b34990bd') in 0.020023 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/menu_crystals5.png
+  artifactKey: Guid(c27dfdfc867174fe8982f0e58a5d519c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/menu_crystals5.png using Guid(c27dfdfc867174fe8982f0e58a5d519c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05fb8bf147b7b2569e874ae9f2282cea') in 0.038621 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/menu_crystals3.png
+  artifactKey: Guid(4581f2a8131e44381aaa8be70376d2a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/menu_crystals3.png using Guid(4581f2a8131e44381aaa8be70376d2a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29ca3b8fb3c937715f2632025b6cf272') in 0.021775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tiles_new_world2_a_old.png
+  artifactKey: Guid(236dcea1683454fe6aef790bcbb3c732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tiles_new_world2_a_old.png using Guid(236dcea1683454fe6aef790bcbb3c732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48cb98220f54d8e415a686f1b95c11ad') in 0.043778 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tiles_editor.png
+  artifactKey: Guid(133ab77dbdd3b724e8e18e8db454e212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tiles_editor.png using Guid(133ab77dbdd3b724e8e18e8db454e212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8200e4aee59ef07fa8886048381a6dbd') in 0.083216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tiles_world2.png
+  artifactKey: Guid(5defe8c75836ef042bb298dc4dd418a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tiles_world2.png using Guid(5defe8c75836ef042bb298dc4dd418a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c798bc92dc623e0108ebc0eb2ee4a6e') in 0.018839 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tiles_editor_neon.png
+  artifactKey: Guid(4360a8473e8e5bb4982b6884856e4454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tiles_editor_neon.png using Guid(4360a8473e8e5bb4982b6884856e4454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f90125d192d5b5446862bdf3ac69dff6') in 0.085204 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/bottomglow_F.png
+  artifactKey: Guid(59d14c6deb007794aa76b7fa6339ae55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/bottomglow_F.png using Guid(59d14c6deb007794aa76b7fa6339ae55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '368e2fb0042e7c85dca98d6e7a459487') in 0.027627 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/bottomglow_G2.png
+  artifactKey: Guid(59812c700176383429d2876601871bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/bottomglow_G2.png using Guid(59812c700176383429d2876601871bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0284eed66d26d82bcdc9f1738a283cee') in 0.027618 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tiles_world1_grid.png
+  artifactKey: Guid(507b3b34a13194c23a4ca80b10aa7e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tiles_world1_grid.png using Guid(507b3b34a13194c23a4ca80b10aa7e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9cfe40fa387877669d7270f7f93a583') in 0.063214 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tile_lit_E.png
+  artifactKey: Guid(5ca658a1474002245b23489a6e28a2e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tile_lit_E.png using Guid(5ca658a1474002245b23489a6e28a2e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e960dc3bcf49ed54fa2b12200571183') in 0.026281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tile_lit_G.png
+  artifactKey: Guid(0949fc436fdeacc4791275d061f4b12a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tile_lit_G.png using Guid(0949fc436fdeacc4791275d061f4b12a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '420a84a4e64b9b52e8d874ab2caefd8e') in 0.022543 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tiles_new_world2_a.png
+  artifactKey: Guid(9a91b4b2d002c4fc88468993e4eb47a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tiles_new_world2_a.png using Guid(9a91b4b2d002c4fc88468993e4eb47a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a58ea35a675697098fc4fd73780bdea8') in 0.059054 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tilesn.png
+  artifactKey: Guid(c6a54af1ffe70492fa2149dd37359286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tilesn.png using Guid(c6a54af1ffe70492fa2149dd37359286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ff931b72d983c399d50ccc902450c57') in 0.060424 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tiles_new_world3.png
+  artifactKey: Guid(0375bf890537844ba81df04304908a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tiles_new_world3.png using Guid(0375bf890537844ba81df04304908a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8f3921af97e95ee627e07ce7f993ac3') in 0.035575 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/bottomglow_A.png
+  artifactKey: Guid(ae7e75b84e5d3604aacf0c06eb7c3637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/bottomglow_A.png using Guid(ae7e75b84e5d3604aacf0c06eb7c3637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09b68ccfc71654e2d947a3dcfee178df') in 0.026898 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/bottomglow_F3.png
+  artifactKey: Guid(9c245f7febb9a1b4c85fb57606e116e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/bottomglow_F3.png using Guid(9c245f7febb9a1b4c85fb57606e116e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e10ad27734b03f965139cc6ed7e0bfbf') in 0.029539 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/topglow_A.png
+  artifactKey: Guid(a71141a2b1f255a4083e6e0b9ed95206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/topglow_A.png using Guid(a71141a2b1f255a4083e6e0b9ed95206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b454f7701f97808b3cd07d7b686914de') in 0.021985 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/bottomglow_F2.png
+  artifactKey: Guid(7354e0f609466b542a9413849f9a8126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/bottomglow_F2.png using Guid(7354e0f609466b542a9413849f9a8126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fd3c29b6cc8fbedc2569c575deb4746') in 0.029112 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/bottomglow_E3.png
+  artifactKey: Guid(717ad1d106faaff4fb24fb524ac0b316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/bottomglow_E3.png using Guid(717ad1d106faaff4fb24fb524ac0b316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1720c6e010af0a788bd5abd52007293f') in 0.022311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/menu_crystals2.png
+  artifactKey: Guid(90597271c26c546c1973784b7ff45cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/menu_crystals2.png using Guid(90597271c26c546c1973784b7ff45cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dcd99add1cf29ca3769666b630b5cd5') in 0.021501 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tiles_new_world1_b.png
+  artifactKey: Guid(a5de3c160b7b24389be2b3425f4bae02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tiles_new_world1_b.png using Guid(a5de3c160b7b24389be2b3425f4bae02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '609f1233b0f13a72261628b67f99f1e9') in 0.057597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/menu_crystals4.png
+  artifactKey: Guid(d8baae45210244ba0bc8576d1a15b23d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/menu_crystals4.png using Guid(d8baae45210244ba0bc8576d1a15b23d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2222e90f6a30de730b6c9915547c0e17') in 0.024423 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/bottomglow_E2.png
+  artifactKey: Guid(9fcc1b18580f50240bb3afd8fa6854f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/bottomglow_E2.png using Guid(9fcc1b18580f50240bb3afd8fa6854f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4f6d0c49602a39aabc9285a6eccd52e') in 0.025596 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/menu_crystals1.png
+  artifactKey: Guid(9e35a85d3f31041f0bc20b2f66d693f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/menu_crystals1.png using Guid(9e35a85d3f31041f0bc20b2f66d693f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cac57204d007802a77ce8b1d4cc0cf9') in 0.023295 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tiles_world3.png
+  artifactKey: Guid(071f18dd1eaf644eeb3f01d8c35d1c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tiles_world3.png using Guid(071f18dd1eaf644eeb3f01d8c35d1c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b485624349b34258bb32b11afbc51d6') in 0.034107 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/bottomglow_A3.png
+  artifactKey: Guid(30f226335a33d81428749a01771d49d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/bottomglow_A3.png using Guid(30f226335a33d81428749a01771d49d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c24d5918f3b39957df3183ece9b34b21') in 0.023524 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/topglow_E.png
+  artifactKey: Guid(2a6001acfec0c2b4d9e3aae10528ff49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/topglow_E.png using Guid(2a6001acfec0c2b4d9e3aae10528ff49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69f0a4c42e4cf6c09617f9f28cd113e9') in 0.026957 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tile_unlit.png
+  artifactKey: Guid(7bd21c9437cc3ad4790fb45c135a1169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tile_unlit.png using Guid(7bd21c9437cc3ad4790fb45c135a1169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24b54d8a81262b1671863c514fd662cb') in 0.025791 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tile_lit_A.png
+  artifactKey: Guid(d492fef0b1486f140b46944544db290b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Tiles/tile_lit_A.png using Guid(d492fef0b1486f140b46944544db290b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a5749f28e2cd7feecb0e735e1de054a') in 0.030631 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 32.968885 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Balls/ballsprites_blue_grid_world2.png
+  artifactKey: Guid(3be71c4dd38704802a91dc46d303ffcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Balls/ballsprites_blue_grid_world2.png using Guid(3be71c4dd38704802a91dc46d303ffcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9240d9badddd568394077fdedba94eca') in 0.049910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Balls/ballsprites_red_grid_world2.png
+  artifactKey: Guid(37d5999e970cd4444baf91bb1ce3d3e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Balls/ballsprites_red_grid_world2.png using Guid(37d5999e970cd4444baf91bb1ce3d3e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8f833ada377ecbd9430e90e054f36e5') in 0.062037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Balls/ballsprites_gray_sheet_grid_smaller.png
+  artifactKey: Guid(5ee686295773a7a44bdba33cf338997b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Balls/ballsprites_gray_sheet_grid_smaller.png using Guid(5ee686295773a7a44bdba33cf338997b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49016acdc8c0428858006ce673e3662c') in 0.026953 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Balls/ballsprites_red_sheet_grid.png
+  artifactKey: Guid(dd34ee634807f49149be3b04918378cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Balls/ballsprites_red_sheet_grid.png using Guid(dd34ee634807f49149be3b04918378cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e436d6fd5c747909a6f59a020a148ef1') in 0.078510 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Balls/ballsprites_gold.png
+  artifactKey: Guid(517c134da786f48579d878776e353e4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Balls/ballsprites_gold.png using Guid(517c134da786f48579d878776e353e4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19fea6c2c61397d30137dc429435714f') in 0.093824 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Balls/ballsprites_blue_sheet_grid.png
+  artifactKey: Guid(f49361739692646ceab8024a135cc42a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Balls/ballsprites_blue_sheet_grid.png using Guid(f49361739692646ceab8024a135cc42a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e080d2f954bf1958cc32e7d22d20d96') in 0.062634 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.441956 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Balls/ballsprites_blue_grid_world2_.anim
+  artifactKey: Guid(3492d978adb474220a19404fb31353e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Balls/ballsprites_blue_grid_world2_.anim using Guid(3492d978adb474220a19404fb31353e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe525b4390e08cc796d1f4062d8b8b70') in 0.010904 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.796055 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Balls/ballsprites_blue_grid_world2_0 (1).controller
+  artifactKey: Guid(08203ebbedc6e40ff89d50689a2fb394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/Balls/ballsprites_blue_grid_world2_0 (1).controller using Guid(08203ebbedc6e40ff89d50689a2fb394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7c012ec22476ce42cbcc86e1938cfe3') in 0.012502 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.534880 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 6
+  artifactKey: Guid(a5c746afb59f0424a8e80c66e773d908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 6 using Guid(a5c746afb59f0424a8e80c66e773d908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12c8589979c31ef0c7cf3c0fd5ee684f') in 0.008125 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.485595 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 6/pulsepainting.png
+  artifactKey: Guid(66174be76975046c2a35917c2db0fee3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 6/pulsepainting.png using Guid(66174be76975046c2a35917c2db0fee3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48ae5d5110214282b4a33f8650a5d542') in 0.186192 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 6/world6_bgclouds.png
+  artifactKey: Guid(6e54391ca51bc42748f355c452614ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 6/world6_bgclouds.png using Guid(6e54391ca51bc42748f355c452614ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '441c5fd701f6b6fc4810ebf07b83ca22') in 0.063730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.637873 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/5x_smoke_A.png
+  artifactKey: Guid(43f11a7266b9ff044aa9cf74d5b13d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/5x_smoke_A.png using Guid(43f11a7266b9ff044aa9cf74d5b13d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '922c4655ac9da8dd98abc26ddfdd93c0') in 0.017334 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/5x_smoke_B.png
+  artifactKey: Guid(8f6b14a2a50d6474eb01ef5e579fd97e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/5x_smoke_B.png using Guid(8f6b14a2a50d6474eb01ef5e579fd97e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70a71ce009d21de30b81161ce714e2b6') in 0.027161 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/5x_train_asset_frame2_kite.png
+  artifactKey: Guid(0a45c9f367ce48347a927f12682e6c79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/5x_train_asset_frame2_kite.png using Guid(0a45c9f367ce48347a927f12682e6c79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '525c51d6118ecfc81648daad2fcd6f62') in 0.033170 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/5x_train_asset_frame1.png
+  artifactKey: Guid(4d34c0a530ad24b97a6b38b717582403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/5x_train_asset_frame1.png using Guid(4d34c0a530ad24b97a6b38b717582403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54e56392dbaf932456bc689322993bdf') in 0.033008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/bg_layer6_1080p.png
+  artifactKey: Guid(e43e5f6c8435048629718c6d779c312d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/bg_layer6_1080p.png using Guid(e43e5f6c8435048629718c6d779c312d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a6df371bb73fca923cb49435cac2884') in 0.050805 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/5x_train_asset_frame1_kite.png
+  artifactKey: Guid(6b953cd711e7b3549ac259b8ba1ab941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/5x_train_asset_frame1_kite.png using Guid(6b953cd711e7b3549ac259b8ba1ab941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05f4ec88be8c8c4dc027f9f86db15edb') in 0.028997 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/bg_layer1_1080p.png
+  artifactKey: Guid(ed9cb9ea99c9649c7bb5a1aa08216c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/bg_layer1_1080p.png using Guid(ed9cb9ea99c9649c7bb5a1aa08216c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '038c8a1d581ad960fec1ebe6c8dfad52') in 0.023567 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/bg_layer5_1080p.png
+  artifactKey: Guid(01d440508ed074b04a4d7846e9616a1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/bg_layer5_1080p.png using Guid(01d440508ed074b04a4d7846e9616a1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbd32c3f04ea0954515daca0a1ef1839') in 0.030821 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/bg_layer7_1080p.png
+  artifactKey: Guid(a1587dad028674dad89a42e0fb16a80d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/bg_layer7_1080p.png using Guid(a1587dad028674dad89a42e0fb16a80d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd36903490768fd9ad13192304903126b') in 0.031526 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/5x_train_asset_frame2.png
+  artifactKey: Guid(e115261df7fbf42c1bff363055386103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/5x_train_asset_frame2.png using Guid(e115261df7fbf42c1bff363055386103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ae9cdd3394754dbee3283d54b324c3e') in 0.032182 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/bg_layer2_1080p.png
+  artifactKey: Guid(9047182a4428b4433a64d17148594009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/bg_layer2_1080p.png using Guid(9047182a4428b4433a64d17148594009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a81085ec9237daeae90b171fb23b77b6') in 0.069110 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/bg_layer8_1080p.png
+  artifactKey: Guid(04eeef25779e0453eac86a927f072893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/bg_layer8_1080p.png using Guid(04eeef25779e0453eac86a927f072893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac53a76df43bdc6a29e450645e6f034a') in 0.072793 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/bg_layer4_1080p.png
+  artifactKey: Guid(cc30cab272c3b4e439827d0a81eeba42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/bg_layer4_1080p.png using Guid(cc30cab272c3b4e439827d0a81eeba42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4bf4b5183bd00c9f1d90ccc2772b5d8') in 0.062315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/bg_layer3_1080p.png
+  artifactKey: Guid(d1182b0e3bb524fc8bc81402eb65465f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/bg_layer3_1080p.png using Guid(d1182b0e3bb524fc8bc81402eb65465f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8f91dc4eebc7c8862aef70f56fb07fd') in 0.120256 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.567342 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/unused
+  artifactKey: Guid(29857d91d7eb64113aa0ccfd830d18ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/unused using Guid(29857d91d7eb64113aa0ccfd830d18ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de45480c1e7b91a7280b3d01a4f3b8fb') in 0.006737 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.087360 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/unused/clocks1_withchain_midres.png
+  artifactKey: Guid(48f9a847b089140b399860ad47542aab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/unused/clocks1_withchain_midres.png using Guid(48f9a847b089140b399860ad47542aab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a4b74c054773ddb151f7bd7a157aed9') in 0.103228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/unused/clocks2_withchains_midres.png
+  artifactKey: Guid(c442fc55d76b54582a5c3fe55cf0dc56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 5/unused/clocks2_withchains_midres.png using Guid(c442fc55d76b54582a5c3fe55cf0dc56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea1b423c6548b22aceb4e3c061bd57a1') in 0.089502 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 111.104359 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/chain_enhance.png
+  artifactKey: Guid(45f5e0bef21f79643b383f578d46278b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/chain_enhance.png using Guid(45f5e0bef21f79643b383f578d46278b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fde6f6a37a5a85de4d57ab8db2751227') in 0.018141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/starfields1.png
+  artifactKey: Guid(ef9744c5689fd7c4bb5f8943f4dddea0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/starfields1.png using Guid(ef9744c5689fd7c4bb5f8943f4dddea0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6620b72d0e06f71f747077360fab78f') in 0.060006 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/world1_statue_enhance_lowres.png
+  artifactKey: Guid(ddd37aaa12dc7d04e8e659527095b884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/world1_statue_enhance_lowres.png using Guid(ddd37aaa12dc7d04e8e659527095b884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae2a56d74f60d8cb9157be5f36f10479') in 0.044472 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/lanterns_1_notched_lowres.png
+  artifactKey: Guid(d555accbae7324bcb935dd5702b1b7ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/lanterns_1_notched_lowres.png using Guid(d555accbae7324bcb935dd5702b1b7ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0239682cb2f4d2ae05274de89b7628ee') in 0.030741 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/chain_enhance_lit.png
+  artifactKey: Guid(909b00f076c301849b35250eb94a8111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/chain_enhance_lit.png using Guid(909b00f076c301849b35250eb94a8111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad60ffbf8a26bff54b26f88ac06b7e94') in 0.026467 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/stars_small.png
+  artifactKey: Guid(f02647151ff889b4f8f3eebffc635864) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/stars_small.png using Guid(f02647151ff889b4f8f3eebffc635864) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6123d735a212eed1185e7b875576f41') in 0.026107 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/light_purple.png
+  artifactKey: Guid(2f2f36e68949b48a3a181ef9d37caed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/light_purple.png using Guid(2f2f36e68949b48a3a181ef9d37caed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf0c59287cfee48644fe67e08b5cfaeb') in 0.045821 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/starfields2.png
+  artifactKey: Guid(4e2d09f040996f44aa4bfb8244af30ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/starfields2.png using Guid(4e2d09f040996f44aa4bfb8244af30ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1187db5e320caff9a69a9460587162e4') in 0.066640 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/world1_newsky_colorclouds.png
+  artifactKey: Guid(89036cfd6743a4d81b2a847713cbaeaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/world1_newsky_colorclouds.png using Guid(89036cfd6743a4d81b2a847713cbaeaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1e0a5fc2faccb63087bb3033b566eaf') in 0.758166 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/light_white.png
+  artifactKey: Guid(39ebff7fd217440f9b91a8930553e5de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/light_white.png using Guid(39ebff7fd217440f9b91a8930553e5de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d2fe3de7d7b8f085bd074b95164b6cf') in 0.026350 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/light_blue.png
+  artifactKey: Guid(623de2f0d71d249dca8f91b3dc838e4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/light_blue.png using Guid(623de2f0d71d249dca8f91b3dc838e4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e68b0c16f769274097a36597e07e5cc3') in 0.026738 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/light_magenta.png
+  artifactKey: Guid(da1555974ed4142ff9257af28c0b35ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/light_magenta.png using Guid(da1555974ed4142ff9257af28c0b35ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acf4812c1c1981de8683f122d64c8480') in 0.042736 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/light_cyan.png
+  artifactKey: Guid(cdf9ac09094fa4bfeaae20c6f78cb516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/light_cyan.png using Guid(cdf9ac09094fa4bfeaae20c6f78cb516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db2571d254ed421b072fc2b215ea5854') in 0.025327 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/world1_newsky.png
+  artifactKey: Guid(75d1dff1c6fdc4848a4dc794284d1758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/world1_newsky.png using Guid(75d1dff1c6fdc4848a4dc794284d1758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeadc6417a48598ebcf0c177e676b46d') in 0.140357 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/light_orange.png
+  artifactKey: Guid(2da4b1ee7fe984d38b2a20cb224daa07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/light_orange.png using Guid(2da4b1ee7fe984d38b2a20cb224daa07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b04ad121f56f9006eb5f0e4fc526ce8b') in 0.032703 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/lanterns_2_notched_lowres.png
+  artifactKey: Guid(1fb18abe1b9e04fa3bd93c4fc95f8f84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/lanterns_2_notched_lowres.png using Guid(1fb18abe1b9e04fa3bd93c4fc95f8f84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f037b7e6ebc9164a768be0f89dee8a6c') in 0.029404 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/light_green.png
+  artifactKey: Guid(2d25baf998036454596ac69bf13f9cc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/light_green.png using Guid(2d25baf998036454596ac69bf13f9cc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8155d46c0f6a3ddc4350408e843501c2') in 0.029508 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/gradient_transparent_sideways.png
+  artifactKey: Guid(a959e654df9967648a08ebad3b12e27c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/gradient_transparent_sideways.png using Guid(a959e654df9967648a08ebad3b12e27c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76f2cf549ac76df9739dedb06d81e292') in 0.023352 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/world1_newsky_colorclouds_alt.png
+  artifactKey: Guid(4d17ca2b6efde4330aff857549367fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/world1_newsky_colorclouds_alt.png using Guid(4d17ca2b6efde4330aff857549367fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8de1d800d88da5ffc52e804937f4d46d') in 0.744585 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/gradient_transparent.png
+  artifactKey: Guid(25745d7b758851e47956ada0e92d40ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/gradient_transparent.png using Guid(25745d7b758851e47956ada0e92d40ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a7109968e80c7f70a37a20e754b993a') in 0.058192 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/light_yellow.png
+  artifactKey: Guid(296696435e5c042f9a283d4058387f60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/light_yellow.png using Guid(296696435e5c042f9a283d4058387f60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '922c85a7199eb1b9407aac7357e8c68f') in 0.028566 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/light_red.png
+  artifactKey: Guid(200c9c2635e9f4fcca49a4297b6e94d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/light_red.png using Guid(200c9c2635e9f4fcca49a4297b6e94d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfa4d74ea05a2cc8b6d0da4fa643af2b') in 0.053085 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.197529 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/dices_world_1
+  artifactKey: Guid(8b5bab6237b6c4dec8425fb81ead766c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/dices_world_1 using Guid(8b5bab6237b6c4dec8425fb81ead766c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '316fd28c29c25b7bad8b168b831dfb25') in 0.007107 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.330759 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/dices_world_1/chain_A_final.png
+  artifactKey: Guid(6dbe48c274c3d4513b8c9698b318fb76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/dices_world_1/chain_A_final.png using Guid(6dbe48c274c3d4513b8c9698b318fb76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44da272b14d31de93ecdc876c75ca3e5') in 0.631507 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/dices_world_1/chain_C_final.png
+  artifactKey: Guid(39ed718bf164a407a986a687cbd102c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/dices_world_1/chain_C_final.png using Guid(39ed718bf164a407a986a687cbd102c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5826991cd0ad0858d1f899e4fc3a622a') in 0.494924 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/dices_world_1/chain_B_final.png
+  artifactKey: Guid(452dfa5baa70d4abdb7aa98f1ce9eb9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/dices_world_1/chain_B_final.png using Guid(452dfa5baa70d4abdb7aa98f1ce9eb9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9623a2977e3f611608c9ab6781671495') in 0.599356 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/dices_world_1/world1_statue_fixed.png
+  artifactKey: Guid(71b93d12b41da481e989f8f7869470f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 1/dices_world_1/world1_statue_fixed.png using Guid(71b93d12b41da481e989f8f7869470f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebea80b7934a06255f7ec08af82a113c') in 1.989960 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.329183 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/Bonus/belltower_white.png
+  artifactKey: Guid(5aac704373c5a004aad9447ca6c190f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/Bonus/belltower_white.png using Guid(5aac704373c5a004aad9447ca6c190f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f67397264d963127f4548c548a5ea7a') in 0.056435 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/Bonus/chain_white_2.png
+  artifactKey: Guid(233c68e4e21e27c4182ff3814ca9ccd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/Bonus/chain_white_2.png using Guid(233c68e4e21e27c4182ff3814ca9ccd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1fb06b4acf05c2f75101fac314dbe56') in 0.078349 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/Bonus/curved_train_white_back.png
+  artifactKey: Guid(f5dd786cf958b8044b89128ea8d14fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/Bonus/curved_train_white_back.png using Guid(f5dd786cf958b8044b89128ea8d14fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '212dbf0b9ba7ada70d2f686efc86a632') in 0.036830 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/Bonus/chain_white_1.png
+  artifactKey: Guid(4ce6f9bc1f7d6b64492341baa85f6f87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/Bonus/chain_white_1.png using Guid(4ce6f9bc1f7d6b64492341baa85f6f87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cd796a8ae61eb3d6c520af07dfb04a6') in 0.094424 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/Bonus/curved_train_white_front.png
+  artifactKey: Guid(9d641946934a6b343b5d1b2f141c30da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/Bonus/curved_train_white_front.png using Guid(9d641946934a6b343b5d1b2f141c30da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5ed79c12f95524325c4e051a2c0d9cd') in 0.029608 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.558728 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/4x_checkerboard_sky.png
+  artifactKey: Guid(d61a37b88d75ca841a3a9b4db51ca224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/4x_checkerboard_sky.png using Guid(d61a37b88d75ca841a3a9b4db51ca224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2b1c90314690e311fa9e3cc765f4c95') in 0.038489 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_sample_darkness.png
+  artifactKey: Guid(cc0d079eee8d746fba34c0394994e7db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_sample_darkness.png using Guid(cc0d079eee8d746fba34c0394994e7db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68407f1b543e4c14d5d23c049667a235') in 0.265623 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_sky.png
+  artifactKey: Guid(934b27c6783f34b958fe393b6e393ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_sky.png using Guid(934b27c6783f34b958fe393b6e393ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4d289a7061549c753bc49eb1ab324b3') in 0.235484 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/faded_square.png
+  artifactKey: Guid(058347c9b841d4c418cd418a6b1c88b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/faded_square.png using Guid(058347c9b841d4c418cd418a6b1c88b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f95d78281ecd3f5dd7e8d7f0a1f1050') in 0.028465 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_dunes_enhance_B.png
+  artifactKey: Guid(b1849cfd0d055184eac4d3c8f2b0a002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_dunes_enhance_B.png using Guid(b1849cfd0d055184eac4d3c8f2b0a002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed27ea7d813590f5c7dcfdb52cd1129f') in 0.059770 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_smallclouds_e.png
+  artifactKey: Guid(dd83b36b4b9e6455390810886685ca9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_smallclouds_e.png using Guid(dd83b36b4b9e6455390810886685ca9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b423d779dc683d757c91041438d6b13') in 0.086312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/beanstalk_enhance_B_blur.png
+  artifactKey: Guid(f193ac3441f19f545a47b038dc64333d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/beanstalk_enhance_B_blur.png using Guid(f193ac3441f19f545a47b038dc64333d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '552fa3cdad0025dc566cea88737397ee') in 0.022009 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/ruins_B_white.png
+  artifactKey: Guid(0383f21bd6eedc14a9fad00a114a8af5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/ruins_B_white.png using Guid(0383f21bd6eedc14a9fad00a114a8af5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de06b691eb8708de4180ee3369f1923c') in 0.058331 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_pigstatue_enhance_lowres.png
+  artifactKey: Guid(567343d69515d7342b846db3e795b46d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_pigstatue_enhance_lowres.png using Guid(567343d69515d7342b846db3e795b46d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14670d56f01c9dfdb1703798f4ae5196') in 0.059172 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/pigstatues5_finished_midres.png
+  artifactKey: Guid(3780c4e8e9e58d049a03c13fcd25823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/pigstatues5_finished_midres.png using Guid(3780c4e8e9e58d049a03c13fcd25823b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '358e85528b088ba1f343fcf7ff0f5899') in 0.028055 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_smallclouds_b.png
+  artifactKey: Guid(84dc0e323392d493ba4973547cc5708f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_smallclouds_b.png using Guid(84dc0e323392d493ba4973547cc5708f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86b985d3eafaa52f046ef30875380f29') in 0.061577 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_clouds_enhance.png
+  artifactKey: Guid(1b1c19036b611b44eb4bbb7c5267f6bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_clouds_enhance.png using Guid(1b1c19036b611b44eb4bbb7c5267f6bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18408fe58ff4f5f9a0cdda6fba556b93') in 0.070301 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_sample_ballandtrack.png
+  artifactKey: Guid(23c3f90a190034668aa1a590277eea2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_sample_ballandtrack.png using Guid(23c3f90a190034668aa1a590277eea2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2e30bb9cc21bcda0aea08cb205dd11a') in 0.287116 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/beanstalk_enhance_leaf2.png
+  artifactKey: Guid(d0833ea1aa58a9b4bb1ad9bd47be7a4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/beanstalk_enhance_leaf2.png using Guid(d0833ea1aa58a9b4bb1ad9bd47be7a4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce3a67bd62b27508eb19389e13e37619') in 0.029729 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_lightning 1.png
+  artifactKey: Guid(c462d47ea0a4f4d4fa5a02ad26f7dc81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_lightning 1.png using Guid(c462d47ea0a4f4d4fa5a02ad26f7dc81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aa566290a0ab6b7fbb471a367aa5428') in 0.030627 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/belltower_enhance.png
+  artifactKey: Guid(6bd25017cf1edae45bb39cacf5cbea19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/belltower_enhance.png using Guid(6bd25017cf1edae45bb39cacf5cbea19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c78fed4c3d95e8d5baa40ad17b658fe') in 0.041047 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_smallclouds_a.png
+  artifactKey: Guid(19c33baea167c4df2b65896e2824a992) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_smallclouds_a.png using Guid(19c33baea167c4df2b65896e2824a992) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed586a4f6145073e97a01b503c1c6e12') in 0.060530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_smallclouds_h.png
+  artifactKey: Guid(8ee7a4161e0764fbc8bb6b258066b200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_smallclouds_h.png using Guid(8ee7a4161e0764fbc8bb6b258066b200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e62898254c7ae1d92f801a905b54c91') in 0.062595 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_back_bg1.png
+  artifactKey: Guid(0247c27e1f97e4747b7d19c589d22a4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_back_bg1.png using Guid(0247c27e1f97e4747b7d19c589d22a4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26be7fc9b1a1925d9afa1a67c18e602c') in 0.036461 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_skysquares_1.png
+  artifactKey: Guid(5387146b7de394e74be5fa65adfaab4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_skysquares_1.png using Guid(5387146b7de394e74be5fa65adfaab4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5e4b91c32207b73304eb632f965f615') in 0.083544 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/ruins_B.png
+  artifactKey: Guid(abd5c7bf7a456410982bc5a64f5e637a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/ruins_B.png using Guid(abd5c7bf7a456410982bc5a64f5e637a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd0ba97ff7b03e7eaccc110b5fbaba8e') in 0.066962 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_ruinsB_blur_lowres.png
+  artifactKey: Guid(08335576f07a242fd82c531ae221d299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_ruinsB_blur_lowres.png using Guid(08335576f07a242fd82c531ae221d299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c50726e01f3d6cecbebaaf282354af26') in 0.036866 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/pebble_C.png
+  artifactKey: Guid(3029084d45848e64696912b5d89faf9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/pebble_C.png using Guid(3029084d45848e64696912b5d89faf9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72b8df891d758d5120f19f7f0be391ec') in 0.058680 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/ruins_D_white_1.png
+  artifactKey: Guid(8c23806d9a2f98b46af05de25fca85c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/ruins_D_white_1.png using Guid(8c23806d9a2f98b46af05de25fca85c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e95f4ef381ea4243afb8bfa09d4182f8') in 0.042723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_ruinsB_blur.png
+  artifactKey: Guid(a27a08a5ec6b94482bf52d39056a797c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_ruinsB_blur.png using Guid(a27a08a5ec6b94482bf52d39056a797c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ee80021b9b5da2339912cd7e063e72e') in 0.063751 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/belltower.png
+  artifactKey: Guid(8d894cae01e044352a396b1a7b9fb2a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/belltower.png using Guid(8d894cae01e044352a396b1a7b9fb2a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56c3220fbcf57de66703452b3e46729b') in 0.272642 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/pigstatues1_finished_midres.png
+  artifactKey: Guid(7d9bf7647b784c6409b1d3dbe12e6769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/pigstatues1_finished_midres.png using Guid(7d9bf7647b784c6409b1d3dbe12e6769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f2143bd293a4b12d0fcbeb399cfbcfe') in 0.072315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/beanstalk_B.png
+  artifactKey: Guid(093aa160d45314946b68c36164713ade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/beanstalk_B.png using Guid(093aa160d45314946b68c36164713ade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b50d6e582a309ce9f6ae42b81d06e61') in 0.768118 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/pebble_A.png
+  artifactKey: Guid(f91d654468011e24daf51c2117ddd99f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/pebble_A.png using Guid(f91d654468011e24daf51c2117ddd99f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c0f3070762bdd058fb5452cb31801e8') in 0.022192 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/beanstalk_A.png
+  artifactKey: Guid(3dbb62588d1b04de7b36b6698ad8303b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/beanstalk_A.png using Guid(3dbb62588d1b04de7b36b6698ad8303b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '776606fe29e4361ecf7317196dfceb27') in 0.289084 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/ruins_A.png
+  artifactKey: Guid(7e8df25b26e7549c3b9faedf92ee556e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/ruins_A.png using Guid(7e8df25b26e7549c3b9faedf92ee556e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79dcbcd373b0f52d92ad9afe1018e4ae') in 0.076428 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_pigstatue_midres.png
+  artifactKey: Guid(d9bca91bac8cc45c3968a156051c4981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_pigstatue_midres.png using Guid(d9bca91bac8cc45c3968a156051c4981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1198bb3665a2ac9bf4d6853e16d1ca32') in 0.123690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/pigstatues2_finished_midres.png
+  artifactKey: Guid(8e351500b64b8dc43ae15e12df29cda3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/pigstatues2_finished_midres.png using Guid(8e351500b64b8dc43ae15e12df29cda3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e1b994735bfee9803839818461a5c62') in 0.070710 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/pixelstalk_A_midres.png
+  artifactKey: Guid(86e288b9cb44c4701a4daa13a1d9b41a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/pixelstalk_A_midres.png using Guid(86e288b9cb44c4701a4daa13a1d9b41a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c800fe3ee0d8d4e8888bf4677e361cb') in 0.066508 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_ruinsD_blur_lowres.png
+  artifactKey: Guid(d0c0657c537e241d19d381c3ba084a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_ruinsD_blur_lowres.png using Guid(d0c0657c537e241d19d381c3ba084a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52297f2d2f1e16bbd8e0d410143f4fce') in 0.035038 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/pigstatue_white_1.png
+  artifactKey: Guid(c5bd54146ad8ba14290d9905a3a768aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/pigstatue_white_1.png using Guid(c5bd54146ad8ba14290d9905a3a768aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa249ed02e1ef5ef528b3819ab764f89') in 0.041089 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_smallclouds_g.png
+  artifactKey: Guid(11fee3e8742d446c19dd4d35d34a04cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_smallclouds_g.png using Guid(11fee3e8742d446c19dd4d35d34a04cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c74287749a8148caa357e7446e315f39') in 0.063016 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_back_bg2.png
+  artifactKey: Guid(140548f8ebc9d48a4bd620d2d006ec0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_back_bg2.png using Guid(140548f8ebc9d48a4bd620d2d006ec0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aee8bb0098115acb43e19de37cdd280a') in 0.030408 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/ruins_A_enhance.png
+  artifactKey: Guid(30d9201ae535456449135ddf14879ca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/ruins_A_enhance.png using Guid(30d9201ae535456449135ddf14879ca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e320d4245a56e938a59746c2fdd13fb') in 0.034992 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/beanstalk_enhance_leaf1.png
+  artifactKey: Guid(4ac54c081d6f7764a805b73247dd3ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/beanstalk_enhance_leaf1.png using Guid(4ac54c081d6f7764a805b73247dd3ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aefb072dd5fbcadf93e8c75291bb9d78') in 0.047357 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_bg.png
+  artifactKey: Guid(e8b3ca94b27ea484c8e635a1feab99a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_bg.png using Guid(e8b3ca94b27ea484c8e635a1feab99a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edc63d1baadbca4d2fdc87b293a58389') in 0.250079 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/pebbles_small_B.png
+  artifactKey: Guid(d0c509ce045ff6847b8da37246fd86b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/pebbles_small_B.png using Guid(d0c509ce045ff6847b8da37246fd86b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52993cc08dbc528ba278ed04c08e52cc') in 0.028419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/pigstatues4_finished_midres.png
+  artifactKey: Guid(eb8339f5f8799ba409996276cd01037a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/pigstatues4_finished_midres.png using Guid(eb8339f5f8799ba409996276cd01037a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a258e1685c51f2b27c8f8f87d6a05b1d') in 0.044299 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_ruinsC_blur_lowres.png
+  artifactKey: Guid(a4fc02fdfb30b45c08f13fdfdb380c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_ruinsC_blur_lowres.png using Guid(a4fc02fdfb30b45c08f13fdfdb380c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87c480406460c3d7b10daa358d079c29') in 0.036426 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/sand_wind.png
+  artifactKey: Guid(bb03509ad7118ae4aaf2a2a64a135327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/sand_wind.png using Guid(bb03509ad7118ae4aaf2a2a64a135327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0054257c7fe02be69dacb896c1f56209') in 0.032975 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_skysquares_2.png
+  artifactKey: Guid(42294dfcef6a340aea9daa77a0dd5b3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_skysquares_2.png using Guid(42294dfcef6a340aea9daa77a0dd5b3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25456a4a420aad0e4aadc147f4847ba9') in 0.051708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_dunes_highres.png
+  artifactKey: Guid(6f7eba11278934c239f6630f98c54b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_dunes_highres.png using Guid(6f7eba11278934c239f6630f98c54b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1ecc2e1466033d0e9ef69fa8ca1cf1b') in 0.343747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/ruins_C_enhance.png
+  artifactKey: Guid(eea22ade2530d6e4995b7c797c41f082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/ruins_C_enhance.png using Guid(eea22ade2530d6e4995b7c797c41f082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9ab7e9268c9b2f20721918f44f410f4') in 0.040385 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/beanstalk_enhance_B.png
+  artifactKey: Guid(e0ba253188dbe964c99d5a5947ba2cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/beanstalk_enhance_B.png using Guid(e0ba253188dbe964c99d5a5947ba2cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f95f0ecdab8b63e1088d260eb7c7f7d') in 0.060762 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/beanstalk_enhance_A.png
+  artifactKey: Guid(b31efbfd0e9820c43a5170acb5d4a656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/beanstalk_enhance_A.png using Guid(b31efbfd0e9820c43a5170acb5d4a656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33fe3fac9ce7c26996a55bd5e3b60f23') in 0.067393 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/ruins_D_white_2.png
+  artifactKey: Guid(ff1fb21f652978a43bce3af56e2295ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/ruins_D_white_2.png using Guid(ff1fb21f652978a43bce3af56e2295ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a35a94352534bd10f57a03e4bbd17c4') in 0.044551 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/ruins_C.png
+  artifactKey: Guid(7ec85f7db1c664ac4aa39d1db0d7e541) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/ruins_C.png using Guid(7ec85f7db1c664ac4aa39d1db0d7e541) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52846abc9bdd98f1510bc1b6d082e094') in 0.070097 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_sample_lightning.png
+  artifactKey: Guid(930b520203817411ea520d3ef80b5055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_sample_lightning.png using Guid(930b520203817411ea520d3ef80b5055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4344a6ae5f737b36645dc2e8ab243b4e') in 0.283194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/fluffy_cloud_bg.png
+  artifactKey: Guid(f9a5e5af7fde8004f99f91f78708b67c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/fluffy_cloud_bg.png using Guid(f9a5e5af7fde8004f99f91f78708b67c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c0ad38cf74fc6af5fbae248c3a19f13') in 0.064972 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_shadow.png
+  artifactKey: Guid(339eb1280cff845fe83e0bb9aeeaef5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_shadow.png using Guid(339eb1280cff845fe83e0bb9aeeaef5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9abccb42893005ade66bb712fbf4ffa3') in 0.273914 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_ruinsA_blur_lowres.png
+  artifactKey: Guid(61ac760c4503d4dd78c2a408e807345c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_ruinsA_blur_lowres.png using Guid(61ac760c4503d4dd78c2a408e807345c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '865237e605b45faa82a1b9238692de7c') in 0.031671 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_smallclouds_d.png
+  artifactKey: Guid(37aedf78cf2894416a507b98b9c31ab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_smallclouds_d.png using Guid(37aedf78cf2894416a507b98b9c31ab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c048983caf6fa5e34887f32393d46966') in 0.059167 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_skycolor.png
+  artifactKey: Guid(bd3cd5d2d7e324b91b442559e1e04a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_skycolor.png using Guid(bd3cd5d2d7e324b91b442559e1e04a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a2d7b67ae3a52947d40e254726a5109') in 0.126200 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/stalagmite_white_B.png
+  artifactKey: Guid(d387b54651c3ec341a35fc9f73f2a0de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/stalagmite_white_B.png using Guid(d387b54651c3ec341a35fc9f73f2a0de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08ab5e802e834a70c683c70dae58671a') in 0.036270 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/pool2.png
+  artifactKey: Guid(8c11f407356144596bbf2dda707898d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/pool2.png using Guid(8c11f407356144596bbf2dda707898d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '959bc2da2d8e56dc643bb7bf95142936') in 0.038471 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_stalagmite2.png
+  artifactKey: Guid(e74deb5c3d68e2c4cafd7091f30ab7ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_stalagmite2.png using Guid(e74deb5c3d68e2c4cafd7091f30ab7ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '650b63f1c2d795259894b28b3451417b') in 0.038218 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_stalagmite1.png
+  artifactKey: Guid(a6feee51a4f52d8478c21d021aaf6ff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_stalagmite1.png using Guid(a6feee51a4f52d8478c21d021aaf6ff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15bb954ff16d80db3c556296ab58c4cd') in 0.063694 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/stalagmite_white_2.png
+  artifactKey: Guid(1951c699bd601fe43ac7618f208b7583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/stalagmite_white_2.png using Guid(1951c699bd601fe43ac7618f208b7583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29d8d7ab15f4bdc8b44fb7edac869f01') in 0.039856 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/pool_1.png
+  artifactKey: Guid(01e326e7499264e1fa935a4e0f302be5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/pool_1.png using Guid(01e326e7499264e1fa935a4e0f302be5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81b90cdb0c230a67a5dab9100f72b98b') in 0.029817 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_stalagmite3.png
+  artifactKey: Guid(7cc420b7ad3e4f447bdd1f0664ed5906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_stalagmite3.png using Guid(7cc420b7ad3e4f447bdd1f0664ed5906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8ecb9b4874749bf82b965ca203fe702') in 0.032304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_bg4_purple.png
+  artifactKey: Guid(28482d5dde2e84116ae5b3013c2575b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_bg4_purple.png using Guid(28482d5dde2e84116ae5b3013c2575b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfebbd36c9d411ac001f90b7fa13ab2f') in 0.060690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_bg3_purple.png
+  artifactKey: Guid(40649fc18a2164f3b82adaf820a4c394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_bg3_purple.png using Guid(40649fc18a2164f3b82adaf820a4c394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f2f984561932389a5ec512ec999260e') in 0.066419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_pool_1_purple.png
+  artifactKey: Guid(7381e69deea8a40cb9c53e5565090152) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_pool_1_purple.png using Guid(7381e69deea8a40cb9c53e5565090152) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a67b4e5c175e6f323f494d1873329e34') in 0.029273 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_bg4.png
+  artifactKey: Guid(3c8520114bfbde346a46fbe8cc826ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_bg4.png using Guid(3c8520114bfbde346a46fbe8cc826ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44f6548befb3194f08733ec906c1a433') in 0.061184 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_pool_2_purple.png
+  artifactKey: Guid(f2e17dcb95d764be7ad9d96831699c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_pool_2_purple.png using Guid(f2e17dcb95d764be7ad9d96831699c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ba1044ee27b8283e1fc72cfc4515209') in 0.036381 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_pool_1.png
+  artifactKey: Guid(a46d8d9c359a24175ab48aeefcb9b140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_pool_1.png using Guid(a46d8d9c359a24175ab48aeefcb9b140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6215256a0e1a73e4c17b2998dc8fe951') in 0.028419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_stalagmite1_purple.png
+  artifactKey: Guid(14b36f44f50a940239d2fb701ea62fcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_stalagmite1_purple.png using Guid(14b36f44f50a940239d2fb701ea62fcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dc9909c54527bbc04e20be7c7115526') in 0.039807 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_clouds_lowres.png
+  artifactKey: Guid(b0567578abae341bba375becc4170e69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_clouds_lowres.png using Guid(b0567578abae341bba375becc4170e69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33b4454d7c1cf14edd5bb53493b6b5bb') in 0.104181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_lightning.png
+  artifactKey: Guid(004f1f07169e64bf992edf590ef49561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_lightning.png using Guid(004f1f07169e64bf992edf590ef49561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '932cc591dddf5dcfe8e39c26550ed9b4') in 0.029947 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_dunes_lowres.png
+  artifactKey: Guid(ab54ac178de6843c8b0764a1d92272cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_dunes_lowres.png using Guid(ab54ac178de6843c8b0764a1d92272cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33eab89097ba9daff51f1e1c4aa39e28') in 0.044410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/pixelstalk_A_highres.png
+  artifactKey: Guid(f031cc4a0f25842c19e6f619dc197841) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/pixelstalk_A_highres.png using Guid(f031cc4a0f25842c19e6f619dc197841) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45f40dc5f714da02110b88e17dfbc2ad') in 0.119646 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/pigstatues3b_finished_midres.png
+  artifactKey: Guid(3b5a2bbfcdbf83147a5ee3628414a9eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/pigstatues3b_finished_midres.png using Guid(3b5a2bbfcdbf83147a5ee3628414a9eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e88a0e688a54b65682c40436ea8b9068') in 0.031298 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/stalagmite_white_1.png
+  artifactKey: Guid(40de4d2adfd50ba46837d44bd9cd8076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/stalagmite_white_1.png using Guid(40de4d2adfd50ba46837d44bd9cd8076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b4163475a178f1bcf7325d542f05c82') in 0.036935 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/ruins_B_enhance.png
+  artifactKey: Guid(632b4eb3771eb3340a2335cb1948ad3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/ruins_B_enhance.png using Guid(632b4eb3771eb3340a2335cb1948ad3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9271efe19389519fea8ae750e963a75') in 0.039445 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_crystals_fully_merged.png
+  artifactKey: Guid(d2604157db1524e7790b1f172fc0503e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_crystals_fully_merged.png using Guid(d2604157db1524e7790b1f172fc0503e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa96dd325c2fc0926068aa333bfaf416') in 0.199776 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_stalagmite2_purple.png
+  artifactKey: Guid(e22f6eb873b294c71a5299c3d0e3d50f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_stalagmite2_purple.png using Guid(e22f6eb873b294c71a5299c3d0e3d50f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49fb8aec7612fec7aaf98654d154542e') in 0.039722 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_pool_2.png
+  artifactKey: Guid(683701fb6f2bc440690431ed3026ac14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_pool_2.png using Guid(683701fb6f2bc440690431ed3026ac14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a266adba31c12b10ccf4329cf12bcfa') in 0.055394 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_stalagmite3_purple.png
+  artifactKey: Guid(9366dc69fcc8942218cb14e3c350dcef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_stalagmite3_purple.png using Guid(9366dc69fcc8942218cb14e3c350dcef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a77160148bbc2273caf179cd51d24bf1') in 0.032038 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/pigstatues3a_finished_midres.png
+  artifactKey: Guid(18336c387e132d34d8b790d665272fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/pigstatues3a_finished_midres.png using Guid(18336c387e132d34d8b790d665272fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd46a13236d45cc43cf1d29744075fb35') in 0.066361 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/ruins_C_white.png
+  artifactKey: Guid(ae7d2e7691d5a914f94d9b122e36ac15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/ruins_C_white.png using Guid(ae7d2e7691d5a914f94d9b122e36ac15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b83ea29936bfc6c70c91e0f8f930d9c3') in 0.075882 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_sample1.png
+  artifactKey: Guid(2b3d3637396204f81b8e0a2fa82a988a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_sample1.png using Guid(2b3d3637396204f81b8e0a2fa82a988a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8135b9b375aa04a6a0da0a3bde4fd63c') in 0.329116 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_bg2_purple.png
+  artifactKey: Guid(4fa337c8dc29b42929e694f751503260) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_bg2_purple.png using Guid(4fa337c8dc29b42929e694f751503260) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '558f639ffbf7fed1a6ffc02d66eb05c7') in 0.076293 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_bg3.png
+  artifactKey: Guid(2cd8a14392c56074983af96e01bb2a84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_bg3.png using Guid(2cd8a14392c56074983af96e01bb2a84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92ecffe3c72e15879e942d40ac7cecce') in 0.090156 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/belltower 1.png
+  artifactKey: Guid(6733d5224fc1945adb4302d5f53dd19f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/belltower 1.png using Guid(6733d5224fc1945adb4302d5f53dd19f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '489430586a21ddbab6ea73267265c4ad') in 0.246674 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/ruins_D_enhance.png
+  artifactKey: Guid(8d6a180f68f74e54ea1129cb3fd0deb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/ruins_D_enhance.png using Guid(8d6a180f68f74e54ea1129cb3fd0deb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09fb20e7355c6e038001da9ba9f4b1cb') in 0.041106 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_sunbeam_A.png
+  artifactKey: Guid(0151f2d4f6c8a4ddf9e3e85ad3ee72da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_sunbeam_A.png using Guid(0151f2d4f6c8a4ddf9e3e85ad3ee72da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e6075c7a5f122838694fd9c1af404ac') in 0.088611 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_dunes_enhance_A.png
+  artifactKey: Guid(216223a00e011ca4aad29954f79c0b08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_dunes_enhance_A.png using Guid(216223a00e011ca4aad29954f79c0b08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8256b0ff15e141642989e5c7ef4483f9') in 0.049323 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_smallclouds_f.png
+  artifactKey: Guid(f5b11b64a9fcf4a9d881497e8c01a7ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_smallclouds_f.png using Guid(f5b11b64a9fcf4a9d881497e8c01a7ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84c9b9428dc2a9e436eb4bda7f4080d0') in 0.061334 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/beanstalk_C.png
+  artifactKey: Guid(d54e0dd96e302421798436add4ba48fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/beanstalk_C.png using Guid(d54e0dd96e302421798436add4ba48fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28accfa5a5140fd331a8ad12e71e7226') in 2.247057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/beanstalk_enhance_C.png
+  artifactKey: Guid(e73c6cbf596acfc468ddb795323bc6b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/beanstalk_enhance_C.png using Guid(e73c6cbf596acfc468ddb795323bc6b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5df7a26d716d867d15463b0e69db9421') in 0.124492 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/pigstatue_white_2.png
+  artifactKey: Guid(fc0020953bb9ba94c80b0afb6d493c5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/pigstatue_white_2.png using Guid(fc0020953bb9ba94c80b0afb6d493c5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '388eb0c7c920f5eb909b7f318dd16aee') in 0.043554 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_ruinsA_blur.png
+  artifactKey: Guid(26a1ce1ec887f46bf99a5d72b0fc7305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_ruinsA_blur.png using Guid(26a1ce1ec887f46bf99a5d72b0fc7305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17234eacb6a6d30fdf6ab8de34623d49') in 0.068146 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/beanstalk_enhance_A_highres.png
+  artifactKey: Guid(d04eb1230bbc0144383d3ca67ff633d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/beanstalk_enhance_A_highres.png using Guid(d04eb1230bbc0144383d3ca67ff633d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5218761538d74d805061442ae145db0c') in 0.095214 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_megalightning_highres.png
+  artifactKey: Guid(a74a09d3c70374fc4882efb8969fd4cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_megalightning_highres.png using Guid(a74a09d3c70374fc4882efb8969fd4cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37977a960b4c7f3d530c3e97178e943d') in 0.068017 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/pebble_C_white.png
+  artifactKey: Guid(82b6592bb58abf04c81442e811a86ce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/pebble_C_white.png using Guid(82b6592bb58abf04c81442e811a86ce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1bb396ede7fd5ebdf041c3bd25b148f') in 0.025737 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/ruins_D.png
+  artifactKey: Guid(977a8e8cf631f43f29cb3af65cd38e85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/ruins_D.png using Guid(977a8e8cf631f43f29cb3af65cd38e85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22c5b4b7618f7f99df402446d3a0c5c9') in 0.064659 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_mockup1_sunset.png
+  artifactKey: Guid(9cc877891aaf94f22afda936b438b3e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_mockup1_sunset.png using Guid(9cc877891aaf94f22afda936b438b3e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a184b7c56fa87230d2c7a36e0f9d4b6') in 0.157041 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_ruinsC_blur.png
+  artifactKey: Guid(22a31bdc171e04e6e9d16debb8d4b5dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_ruinsC_blur.png using Guid(22a31bdc171e04e6e9d16debb8d4b5dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bf6256de75bd075b57646530aec6e63') in 0.061503 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_sunbeam_C.png
+  artifactKey: Guid(d47bff11df8754d7d9c33f1908ed4d47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_sunbeam_C.png using Guid(d47bff11df8754d7d9c33f1908ed4d47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f9b05f861d83edd6d6caf9da60a0874') in 0.077513 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/pixelstalk_A_lowres.png
+  artifactKey: Guid(bb1fd0d1591ab4014b40c94b1cc075f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/pixelstalk_A_lowres.png using Guid(bb1fd0d1591ab4014b40c94b1cc075f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a212aa90f202313583ea69b885cdff38') in 0.041211 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/beanstalk_enhance_C_highres.png
+  artifactKey: Guid(48c6a4e55425457439d645e2594322ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/beanstalk_enhance_C_highres.png using Guid(48c6a4e55425457439d645e2594322ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a2fb32f68b80f89e008e90c18e00611') in 0.103591 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/pebbles_small_A.png
+  artifactKey: Guid(5d3b27e977bf6284ab1da0d04707115e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/pebbles_small_A.png using Guid(5d3b27e977bf6284ab1da0d04707115e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49447d00037163711ecb19c8c3c069a3') in 0.027819 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/pebble_B.png
+  artifactKey: Guid(3803bba49c971704bb662a0598ad7ac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/pebble_B.png using Guid(3803bba49c971704bb662a0598ad7ac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89c640c72b0cd9a05ac075feccef702a') in 0.045909 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/beanstalk_enhance_B_highres.png
+  artifactKey: Guid(84187b9c540cbd5458ba2f56ef69dd79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/beanstalk_enhance_B_highres.png using Guid(84187b9c540cbd5458ba2f56ef69dd79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fbb95dfe5e20f8e9e28022097429e45') in 0.082148 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_ruinsD_blur.png
+  artifactKey: Guid(45e30124c679541a8b859566d7a07ed9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/world4_ruinsD_blur.png using Guid(45e30124c679541a8b859566d7a07ed9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38e796d04db1ad948a9ef02880698a77') in 0.087998 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/pebble_B_white.png
+  artifactKey: Guid(847b343c82449f144812b1bf22e4b876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/pebble_B_white.png using Guid(847b343c82449f144812b1bf22e4b876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e82f8a66924d509164c6bc1606807f9') in 0.022693 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/beanstalk_enhance_A_blur.png
+  artifactKey: Guid(2da8556757a877340beb01a1ae012346) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/beanstalk_enhance_A_blur.png using Guid(2da8556757a877340beb01a1ae012346) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '996c6515ab526ba421427e1019d38641') in 0.027667 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_smallclouds_c.png
+  artifactKey: Guid(aa2bcc5501607426980f0532f4746ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_smallclouds_c.png using Guid(aa2bcc5501607426980f0532f4746ae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80dba9559c780629aa15e3692de7e512') in 0.059814 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_sunbeam_D.png
+  artifactKey: Guid(5bb796096571d45f180ec5f0dd015af2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_sunbeam_D.png using Guid(5bb796096571d45f180ec5f0dd015af2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e83ba0c7efded9c195da4c020aa7f8f') in 0.073550 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_bg2.png
+  artifactKey: Guid(5c4b6f31c79ad3343b9aa2455d9c4c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/3x_assets_bg2.png using Guid(5c4b6f31c79ad3343b9aa2455d9c4c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b631f3131169076fb1eb9b5040a97de') in 0.077969 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_sunbeam_B.png
+  artifactKey: Guid(dad03796e10c246a6ac298b7defb344d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 2/world2_sunbeam_B.png using Guid(dad03796e10c246a6ac298b7defb344d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '585db166e1f1f1ec2570dce457ce6fb4') in 0.082860 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.333023 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/TempTextureConverter.cs
+  artifactKey: Guid(fc0fed666eda744e189a932647c8a8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 3/TempTextureConverter.cs using Guid(fc0fed666eda744e189a932647c8a8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3af3d064a8291aef7a66ad68beae9dc') in 0.029688 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 39.206550 seconds.
+  path: Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/World4_instructions.txt
+  artifactKey: Guid(df2686df177c34d6a87a050850443e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Illegal Game Rips-20211206T001806Z-001/Illegal Game Rips/World Sprites/World 4/World4_instructions.txt using Guid(df2686df177c34d6a87a050850443e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e03557a7d7bb67d9e67b6bc92e19411d') in 0.022651 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 116.073101 seconds.
+  path: Assets/Resources/Font/godoMaum.ttf
+  artifactKey: Guid(5cc06960e753ff443bfcac058557b973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Font/godoMaum.ttf using Guid(5cc06960e753ff443bfcac058557b973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b40b4c8d10c0e7427d35e75adcd8d8f') in 0.055283 seconds 
