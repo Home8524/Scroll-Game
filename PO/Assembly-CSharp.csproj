@@ -53,8 +53,10 @@
     <UnityVersion>2020.3.23f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Resources\World 3\TempTextureConverter.cs" />
     <Compile Include="Assets\Code\PlayerController.cs" />
+    <Compile Include="Assets\Resources\World 3\TempTextureConverter.cs" />
+    <Compile Include="Assets\Code\Singleton.cs" />
+    <Compile Include="Assets\Code\CreateTile.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
