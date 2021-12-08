@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6640266835433439187}
   - component: {fileID: 6640266835433439186}
+  - component: {fileID: 4563672297953496901}
+  - component: {fileID: -7996677755489846152}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -72,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 78a5c4c3dbf898c469285450c94543ab, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -82,3 +84,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4563672297953496901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6640266835433439213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29f17b6bc796f3a46ac9fa640066bf2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!210 &-7996677755489846152
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6640266835433439213}
+  m_Enabled: 1
+  m_SortingLayerID: -252625181
+  m_SortingLayer: 1
+  m_SortingOrder: 1

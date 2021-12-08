@@ -21,4 +21,6 @@ public class Singleton
     public int BallSet = 0;
     public Vector2 PosSave = new Vector2();
     public int TimeNum = 1;
+    public bool Coll = false;
+
 }
