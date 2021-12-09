@@ -15,7 +15,10 @@ public class CameraControll : MonoBehaviour
         if(TileNum!=Tmp)
         {
             TileNum++;
-            transform.position += Vector3.right * 1.2f;
+            transform.position += Vector3.right * 1.2f *
+                -1.0f*Singleton.GetInstance.WayRoute;
+            if (TileNum == 14)
+                transform.Translate(0.0f, 1.0f, 0.0f);
         }
     }
 }

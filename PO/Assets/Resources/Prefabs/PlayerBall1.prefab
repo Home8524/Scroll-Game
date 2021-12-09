@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 5700948108087215904}
   - component: {fileID: 5700948108087215905}
   - component: {fileID: 5062531953482405315}
-  - component: {fileID: 2079288721770331856}
   - component: {fileID: 1245670375291216659}
+  - component: {fileID: 7267377842561278208}
   m_Layer: 6
   m_Name: PlayerBall1
   m_TagString: Untagged
@@ -153,20 +153,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2079288721770331856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5700948108087215931}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fd328312fe56934c8786f41b4565ab6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  radius: 1.3
 --- !u!210 &1245670375291216659
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -175,6 +161,18 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5700948108087215931}
   m_Enabled: 1
-  m_SortingLayerID: -252625181
-  m_SortingLayer: 1
+  m_SortingLayerID: 1913091387
+  m_SortingLayer: 2
   m_SortingOrder: 2
+--- !u!114 &7267377842561278208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5700948108087215931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d3ff35cf96d88744afe11df964fab03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

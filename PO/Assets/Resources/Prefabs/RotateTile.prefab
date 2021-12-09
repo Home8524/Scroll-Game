@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5877228539195633619}
   - component: {fileID: 7919828578199172066}
+  - component: {fileID: -2876654770212492894}
   m_Layer: 0
   m_Name: RotateTile
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82,3 +83,14 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!210 &-2876654770212492894
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6242728348652427414}
+  m_Enabled: 1
+  m_SortingLayerID: 1913091387
+  m_SortingLayer: 2
+  m_SortingOrder: 0

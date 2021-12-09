@@ -22,5 +22,5 @@ public class Singleton
     public Vector2 PosSave = new Vector2();
     public int TimeNum = 1;
     public bool Coll = false;
-
+    public float WayRoute = -1.0f;
 }
