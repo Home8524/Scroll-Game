@@ -84,7 +84,7 @@ public class PlayerController : MonoBehaviour
             //충돌한 transform의 tag가 Tile 이고 현재 회전중인 공과 부딫힌게 맞는지 확인
             if (collision.transform.tag == "Tile" && BallSet == MyName)
                 {
-                    Debug.Log(Name + "성공");
+                    //Debug.Log(Name + "성공");
 
                     //성공시 이전 타일에 빛남
                     GameObject Obj = Instantiate(LightPrefabs);
@@ -118,10 +118,17 @@ public class PlayerController : MonoBehaviour
 
                     //카메라 이동에 맞춰 BackGround 소폭 이동
                     GameObject BackGround = GameObject.Find("BackGround");
-                    BackGround.transform.Translate(0.8f * WayRoute * -1.0f, 0.0f, 0.0f);
+                    
 
-                    if (Singleton.GetInstance.TimeNum == 14)
-                        BackGround.transform.Translate(0.0f, -1.0f, 0.0f);
+                    int TileNum = Singleton.GetInstance.TimeNum;
+                    if (TileNum ==23 ||TileNum == 14 || TileNum > 32 && TileNum < 45
+                    ||TileNum>48&&TileNum<61||TileNum>102&&TileNum<106
+                    ||TileNum>110&&TileNum<114 || TileNum > 118 && TileNum < 122)
+                        BackGround.transform.Translate(0.0f, -0.5f, 0.0f);
+                    else if(TileNum>64&&TileNum<91)
+                        BackGround.transform.Translate(0.4f * WayRoute * -1.0f, 0.0f, 0.0f);
+                    else
+                        BackGround.transform.Translate(1.1f * WayRoute * -1.0f, 0.0f, 0.0f);
 
 
             }
