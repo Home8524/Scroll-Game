@@ -577,10 +577,85 @@ public class CreateTile : MonoBehaviour
             Box.size = Size;
             Box.isTrigger = true;
         }
-    }
-    /*
-     69.14 , -10.7 
-     69.27,  -12.68
-     73.96,-12.66 / 72.98, -13.66
-     */
+        //가로줄 4개
+        for (int i = 121; i < 125; ++i)
+        {
+            GameObject Tmp = GameObject.Find("Tile");
+            GameObject Obj = Instantiate(TilePrefab1);
+            Obj.transform.name = "Tile " + i;
+            Obj.transform.parent = Tmp.transform;
+            Vector2 Pos = new Vector2(69.27f, -12.68f);
+            Pos.x += (i - 121) * 1.2f;
+            Obj.transform.position = Pos;
+            Obj.AddComponent<BoxCollider2D>();
+            BoxCollider2D Box = Obj.GetComponent<BoxCollider2D>();
+            Vector2 Size = new Vector2(1.5f, 2.0f);
+            Box.size = Size;
+            Box.isTrigger = true;
+        }
+        //세로줄 4개
+        for (int i = 125; i < 129; ++i)
+        {
+            if (i == 125)
+            {
+                Gajunchi1_x = 0;
+                Gajunchi1_y = 0;
+                Gajunchi2_x = 0;
+                Gajunchi2_y = 0;
+                Change = 1;
+                Swap = 0;
+            }
+            if (Swap == 2)
+            {
+                Swap = 0;
+                Change = Change * -1;
+                Gajunchi1_y += 0.02f;
+            }
+            //Tmp가 1일땐 우측, -1일땐 좌측
+            GameObject Tmp = GameObject.Find("Tile");
+
+            GameObject Obj = Instantiate(TilePrefab2);
+            Obj.transform.name = "Tile " + i;
+            Obj.transform.parent = Tmp.transform;
+
+            if (Change == 1)
+            {
+                Vector2 Pos = new Vector2(73.96f, -12.66f);
+                Pos.x += Gajunchi1_x;
+                Pos.y += Gajunchi1_y;
+                Obj.transform.position = Pos;
+                Gajunchi1_x += 0.02f;
+                Gajunchi1_y -= 1.0f;
+                if (Swap == 0)
+                    Obj.transform.Rotate(0.0f, 0.0f, -90.0f);
+                else
+                    Obj.transform.Rotate(0.0f, 0.0f, -180.0f);
+            }
+            else
+            {
+                Vector2 Pos = new Vector2(72.98f, -13.66f);
+                Pos.x += Gajunchi2_x;
+                Pos.y += Gajunchi2_y;
+                Obj.transform.position = Pos;
+                if (Swap != 0)
+                {
+                    Obj.transform.Rotate(0.0f, 0.0f, 90.0f);
+                    Gajunchi2_y += 0.04f;
+                }
+
+                Gajunchi2_x += 0.02f;
+                Gajunchi2_y -= 1.0f;
+            }
+
+            ++Swap;
+
+            Obj.AddComponent<BoxCollider2D>();
+            BoxCollider2D Box = Obj.GetComponent<BoxCollider2D>();
+            Vector2 Size = new Vector2(1.5f, 2.0f);
+            Box.size = Size;
+            Box.isTrigger = true;
+        }
+
+}
+
 }
