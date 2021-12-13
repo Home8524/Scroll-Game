@@ -20,20 +20,21 @@ public class PlayerController : MonoBehaviour
 
     GameObject P1;
     GameObject P2;
-
+    GameObject Canvas;
+    GameObject Canvas2;
     private void Awake()
     {
         LightPrefabs = Resources.Load("Prefabs/Light") as GameObject;
+        Canvas = GameObject.Find("UI");
+        Canvas2 = GameObject.Find("Text_Canvas");
     }
     private void Start()
     {
+        Canvas.SetActive(false);
         Vector2 Tmp = new Vector2(7.0f,5.7f);   
         //현재 타일의 위치 저장
         Singleton.GetInstance.PosSave = Tmp;
-        if (transform.name == "PlayerBall1")
-            MyName = 0;
-        else
-            MyName = 1;
+        MyName = 0;
         WayRoute = -1.0f;
         P1 = GameObject.Find("PlayerBall1");
         P2 = GameObject.Find("PlayerBall2");
@@ -65,12 +66,18 @@ public class PlayerController : MonoBehaviour
                 transform.RotateAround(P1.transform.position, Vector3.back, 3.0f);
             }
         }
-        //스페이스바를 눌렀다가 뗀 순간만 PressKey가 true
-        if (Input.GetKeyUp(KeyCode.Space) && Singleton.GetInstance.BallSet == MyName)
+        //스페이스바를 누른 순간만 PressKey가 true
+        if (Input.GetKeyDown(KeyCode.Space) && Singleton.GetInstance.BallSet == MyName)
         {
             PressKey = true;
         }
         else PressKey = false;
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Canvas2.SetActive(false);
+            Canvas.SetActive(true);
+            Time.timeScale = 0;
+        }
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -110,7 +117,6 @@ public class PlayerController : MonoBehaviour
                     //이동 , 카메라 연산을 위해 타일넘버 갱신
                     Singleton.GetInstance.TimeNum++;
                     
-
                     //지나간 Tile의 Collider 파괴해서 재호출 X
                     GameObject BoxCol = GameObject.Find(Name);
                     BoxCollider2D Coll = BoxCol.GetComponent<BoxCollider2D>();
@@ -119,14 +125,22 @@ public class PlayerController : MonoBehaviour
                     //카메라 이동에 맞춰 BackGround 소폭 이동
                     GameObject BackGround = GameObject.Find("BackGround");
                     
-
                     int TileNum = Singleton.GetInstance.TimeNum;
                     if (TileNum ==23 ||TileNum == 14 || TileNum > 32 && TileNum < 45
                     ||TileNum>48&&TileNum<61||TileNum>102&&TileNum<106
-                    ||TileNum>110&&TileNum<114 || TileNum > 118 && TileNum < 122)
+                    ||TileNum>110&&TileNum<114 || TileNum > 118 && TileNum < 122
+                    ||TileNum>126&&TileNum<130)
                         BackGround.transform.Translate(0.0f, -0.5f, 0.0f);
                     else if(TileNum>64&&TileNum<91)
                         BackGround.transform.Translate(0.4f * WayRoute * -1.0f, 0.0f, 0.0f);
+                    else if(TileNum>130&&TileNum<161)
+                        {
+                        int TileCheck = (TileNum - 130) % 8;
+                        if(TileCheck==7)
+                            BackGround.transform.Translate(0.0f, -0.5f, 0.0f);
+                        else
+                            BackGround.transform.Translate(0.4f * WayRoute * -1.0f, 0.0f, 0.0f);
+                        }
                     else
                         BackGround.transform.Translate(1.1f * WayRoute * -1.0f, 0.0f, 0.0f);
 

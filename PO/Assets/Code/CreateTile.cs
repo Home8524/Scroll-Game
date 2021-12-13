@@ -655,7 +655,79 @@ public class CreateTile : MonoBehaviour
             Box.size = Size;
             Box.isTrigger = true;
         }
+        //마지막 구간
+        for(int i=129; i<160; ++i)
+        {
+            if(i==129)
+            { 
+                    Gajunchi1_x = 0;
+                    Gajunchi1_y = 0;
+            }
+            int TileCheck = i - 129;
+            TileCheck = TileCheck % 8;
 
+            GameObject Tmp = GameObject.Find("Tile");
+            GameObject Obj;
+            if (TileCheck==0||TileCheck==3||i==159)
+            {
+                 Obj = Instantiate(TilePrefab1);
+            }
+            else
+            {
+                Obj = Instantiate(TilePrefab2);
+            }
+            Obj.transform.name = "Tile " + i;
+            Obj.transform.parent = Tmp.transform;
+            Vector2 Pos = new Vector2(73.0f, -14.66f);
+            switch(TileCheck)
+            {
+                case 0:
+                    Gajunchi1_x += 1.1f;
+                    Gajunchi1_y += 0.02f;
+                    break;
+                case 1:
+                    Gajunchi1_x += 1.1f;
+                    Obj.transform.Rotate(0.0f, 0.0f, 180.0f);
+                    break;
+                case 2:
+                    Gajunchi1_x -= 0.02f;
+                    Gajunchi1_y += 1.0f;
+                    break;
+                case 3:
+                    Gajunchi1_x += 1.1f;
+                    break;
+                case 4:
+                    Gajunchi1_x += 1.08f;
+                    Gajunchi1_y += 0.02f;
+                    Obj.transform.Rotate(0.0f, 0.0f, -90.0f);
+                    break;
+                case 5:
+                    Gajunchi1_x += 0.02f;
+                    Gajunchi1_y -= 1.0f;
+                    Obj.transform.Rotate(0.0f, 0.0f, 180.0f);
+                    break;
+                case 6:
+                    Gajunchi1_x -= 1.0f;
+                    break;
+                default:
+                    Gajunchi1_x += 0.02f;
+                    Gajunchi1_y -= 1.0f;
+                    Obj.transform.Rotate(0.0f, 0.0f, 90.0f);
+                    break;
+            }
+            if (i == 159)
+                Gajunchi1_x -= 0.1f;
+            Pos.x += Gajunchi1_x;
+            Pos.y += Gajunchi1_y;
+            Obj.transform.position = Pos;
+
+
+            Obj.AddComponent<BoxCollider2D>();
+            BoxCollider2D Box = Obj.GetComponent<BoxCollider2D>();
+            Vector2 Size = new Vector2(1.5f, 2.0f);
+            Box.size = Size;
+            Box.isTrigger = true;
+        }
 }
 
 }
