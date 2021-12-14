@@ -4,17 +4,12 @@ using UnityEngine;
 
 public class StartButton : MonoBehaviour
 {
-    GameObject Canvas;
-    GameObject Canvas2;
-    private void Start()
-    {
-        Canvas = GameObject.Find("Text_Canvas");
-        Canvas2 = GameObject.Find("UI");
-    }
+   
     public void Active()
     {
-        Canvas.SetActive(true);
-        Canvas2.SetActive(false);
+        Singleton.GetInstance.Canvas1.SetActive(false);
+        Singleton.GetInstance.Canvas3.SetActive(false);
+        Singleton.GetInstance.Canvas2.SetActive(true);
         Time.timeScale = 1;
     }
 

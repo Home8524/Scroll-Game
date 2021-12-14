@@ -5,20 +5,14 @@ using UnityEngine;
 public class CameraControll : MonoBehaviour
 {
     private int TileNum;
-    GameObject BackGround;
+    private Vector3 SavePos;
     private void Start()
     {
-        BackGround = GameObject.Find("BackGround");
         TileNum = 1;
+       // Invoke("Bounce", 0.1f);
     }
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            BackGround.transform.localScale = new Vector3(3.0f,3.0f,1.0f)*1.03f;
-            Invoke("Reset", 0.1f);
-        }
-
         int Tmp = Singleton.GetInstance.TimeNum;
         if(TileNum!=Tmp)
         {
@@ -44,8 +38,20 @@ public class CameraControll : MonoBehaviour
                 -1.0f * Singleton.GetInstance.WayRoute;
         }
     }
+    private void Bounce()
+    {
+        SavePos = transform.position;
+        Vector3 Cont;
+        Cont = SavePos;
+        Cont.z += 1.0f;
+        transform.position = Cont;
+        Invoke("Reset", 0.3f);
+    }
     private void Reset()
     {
-        BackGround.transform.localScale = new Vector3(3.0f, 3.0f, 1.0f) * 1.0f;
+        SavePos.x = transform.position.x;
+        SavePos.y = transform.position.y;
+        transform.position = SavePos;
+        Invoke("Bounce", 0.3f);
     }
 }

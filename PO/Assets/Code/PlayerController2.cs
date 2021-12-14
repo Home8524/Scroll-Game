@@ -19,6 +19,7 @@ public class PlayerController2 : MonoBehaviour
 
     GameObject P1;
     GameObject P2;
+    private TrailRenderer Trail;
     private void Awake()
     {
         LightPrefabs = Resources.Load("Prefabs/Light") as GameObject;
@@ -32,6 +33,9 @@ public class PlayerController2 : MonoBehaviour
         WayRoute = -1.0f;
         P1 = GameObject.Find("PlayerBall1");
         P2 = GameObject.Find("PlayerBall2");
+        Trail = transform.GetComponent<TrailRenderer>();
+        Trail.sortingLayerName = "2";
+        Trail.sortingOrder = 0;
     }
 
     private void FixedUpdate()

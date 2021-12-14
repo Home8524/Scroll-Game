@@ -23,4 +23,7 @@ public class Singleton
     public int TimeNum = 1;
     public bool Coll = false;
     public float WayRoute = -1.0f;
+    public GameObject Canvas1 = GameObject.Find("UI");
+    public GameObject Canvas2 = GameObject.Find("Text_Canvas");
+    public GameObject Canvas3 = GameObject.Find("Blur");
 }
