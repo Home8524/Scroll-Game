@@ -9,10 +9,11 @@ public class CameraControll : MonoBehaviour
     private void Start()
     {
         TileNum = 1;
-       // Invoke("Bounce", 0.1f);
     }
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+            Bounce();
         int Tmp = Singleton.GetInstance.TimeNum;
         if(TileNum!=Tmp)
         {
@@ -43,15 +44,14 @@ public class CameraControll : MonoBehaviour
         SavePos = transform.position;
         Vector3 Cont;
         Cont = SavePos;
-        Cont.z += 1.0f;
+        Cont.z += 0.3f;
         transform.position = Cont;
-        Invoke("Reset", 0.3f);
+        Invoke("Reset", 0.1f);
     }
     private void Reset()
     {
         SavePos.x = transform.position.x;
         SavePos.y = transform.position.y;
         transform.position = SavePos;
-        Invoke("Bounce", 0.3f);
     }
 }

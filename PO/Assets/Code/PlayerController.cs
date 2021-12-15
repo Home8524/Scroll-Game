@@ -20,16 +20,23 @@ public class PlayerController : MonoBehaviour
 
     GameObject P1;
     GameObject P2;
-
     private TrailRenderer Trail;
+
+    public GameObject Canvas1;
+    public GameObject Canvas2;
+    public GameObject Canvas3;
     private void Awake()
     {
         LightPrefabs = Resources.Load("Prefabs/Light") as GameObject;
     }
     private void Start()
     {
-        Singleton.GetInstance.Canvas1.SetActive(false);
-        Singleton.GetInstance.Canvas3.SetActive(false);
+        //리로드시 타임스케일 0->1로 변경하여 재시작
+        Time.timeScale = 1;
+
+        //캔버스 비활성화
+        Canvas1.SetActive(false);
+        Canvas3.SetActive(false);
         Vector2 Tmp = new Vector2(7.0f,5.7f);   
         //현재 타일의 위치 저장
         Singleton.GetInstance.PosSave = Tmp;
@@ -40,7 +47,6 @@ public class PlayerController : MonoBehaviour
         Trail = transform.GetComponent<TrailRenderer>();
         Trail.sortingLayerName = "2";
         Trail.sortingOrder = 0;
-        //Trail.widthCurve
     }
     
     private void FixedUpdate()
@@ -77,9 +83,9 @@ public class PlayerController : MonoBehaviour
         else PressKey = false;
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Singleton.GetInstance.Canvas2.SetActive(false);
-            Singleton.GetInstance.Canvas3.SetActive(true);
-            Singleton.GetInstance.Canvas1.SetActive(true);
+           Canvas2.SetActive(false);
+           Canvas3.SetActive(true);
+           Canvas1.SetActive(true);
             Time.timeScale = 0;
         }
     }

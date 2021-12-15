@@ -728,6 +728,9 @@ public class CreateTile : MonoBehaviour
             Box.size = Size;
             Box.isTrigger = true;
         }
+        
+        
+         
 }
 
 }

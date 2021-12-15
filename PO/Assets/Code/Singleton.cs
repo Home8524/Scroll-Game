@@ -19,11 +19,8 @@ public class Singleton
 
     // 0 : Ball1 , 1 : Ball2
     public int BallSet = 0;
-    public Vector2 PosSave = new Vector2();
+    public Vector2 PosSave = new Vector2(0.0f,0.0f);
     public int TimeNum = 1;
     public bool Coll = false;
     public float WayRoute = -1.0f;
-    public GameObject Canvas1 = GameObject.Find("UI");
-    public GameObject Canvas2 = GameObject.Find("Text_Canvas");
-    public GameObject Canvas3 = GameObject.Find("Blur");
 }
