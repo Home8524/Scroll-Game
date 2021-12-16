@@ -20,7 +20,7 @@ public class StartButton : MonoBehaviour
     {
         Singleton.GetInstance.BallSet = 0;
         Singleton.GetInstance.PosSave = new Vector2(0.0f, 0.0f);
-        Singleton.GetInstance.TimeNum = 1;
+        Singleton.GetInstance.TimeNum = 0;
         Singleton.GetInstance.Coll = false;
         Singleton.GetInstance.WayRoute = -1.0f;
 

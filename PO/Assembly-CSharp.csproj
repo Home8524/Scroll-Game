@@ -61,6 +61,7 @@
     <Compile Include="Assets\Code\CreateTile.cs" />
     <Compile Include="Assets\Code\PlayerController2.cs" />
     <Compile Include="Assets\Resources\World 3\TempTextureConverter.cs" />
+    <Compile Include="Assets\Code\TextInvoke.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\Effect\NewImageEffectShader.shader" />

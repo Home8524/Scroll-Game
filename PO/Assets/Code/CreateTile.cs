@@ -21,7 +21,19 @@ public class CreateTile : MonoBehaviour
     {
         //Time Create
         //윗줄 12개
-        for(int i=0; i<12; ++i)
+        Vector2 Size = new Vector2(1.5f, 1.2f);
+        Vector2 Size2 = new Vector2(1.2f, 1.2f);
+        {
+            GameObject Tmp = GameObject.Find("Tile");
+
+            GameObject Obj = Instantiate(TilePrefab1);
+            Obj.transform.name = "Root Tile";
+            Obj.transform.parent = Tmp.transform;
+
+            Vector2 Pos = new Vector2(5.8f,5.7f);
+            Obj.transform.position = Pos;
+        }
+        for (int i=0; i<12; ++i)
         {
             GameObject Tmp = GameObject.Find("Tile");
 
@@ -34,15 +46,12 @@ public class CreateTile : MonoBehaviour
             Pos.x = Obj.transform.position.x + 1.2f * i;
             Obj.transform.position = Pos;
 
-            if(i!=0)
-            {
-                Obj.AddComponent<BoxCollider2D>();
-                BoxCollider2D Box = Obj.GetComponent<BoxCollider2D>();
-                Vector2 Size = new Vector2(1.5f, 2.0f);
-                Box.size = Size;
-                Box.isTrigger = true;
+            Obj.AddComponent<BoxCollider2D>();
+            BoxCollider2D Box = Obj.GetComponent<BoxCollider2D>();
+            Box.size = Size;
+            Box.isTrigger = true;
 
-            }    
+                
         }
         //방향 전환용 2개
         for(int i=12; i<14; ++i)
@@ -64,8 +73,7 @@ public class CreateTile : MonoBehaviour
 
             Obj.AddComponent<BoxCollider2D>();
             BoxCollider2D Box = Obj.GetComponent<BoxCollider2D>();
-            Vector2 Size = new Vector2(1.5f, 2.0f);
-            Box.size = Size;
+            Box.size = Size2;
             Box.isTrigger = true;
         }
         //두번재 줄 7개
@@ -82,7 +90,6 @@ public class CreateTile : MonoBehaviour
             Obj.transform.position = Pos;
             Obj.AddComponent<BoxCollider2D>();
             BoxCollider2D Box = Obj.GetComponent<BoxCollider2D>();
-            Vector2 Size = new Vector2(1.5f, 2.0f);
             Box.size = Size;
             Box.isTrigger = true;
 
@@ -103,8 +110,7 @@ public class CreateTile : MonoBehaviour
                 Obj.transform.Rotate(0.0f, 0.0f, 90.0f);
             Obj.AddComponent<BoxCollider2D>();
             BoxCollider2D Box = Obj.GetComponent<BoxCollider2D>();
-            Vector2 Size = new Vector2(1.5f, 2.0f);
-            Box.size = Size;
+            Box.size = Size2;
             Box.isTrigger = true;
         }
         //세번째 줄 9개
@@ -120,7 +126,6 @@ public class CreateTile : MonoBehaviour
             Obj.transform.position = Pos;
             Obj.AddComponent<BoxCollider2D>();
             BoxCollider2D Box = Obj.GetComponent<BoxCollider2D>();
-            Vector2 Size = new Vector2(1.5f, 2.0f);
             Box.size = Size;
             Box.isTrigger = true;
         }
@@ -173,8 +178,7 @@ public class CreateTile : MonoBehaviour
 
             Obj.AddComponent<BoxCollider2D>();
             BoxCollider2D Box = Obj.GetComponent<BoxCollider2D>();
-            Vector2 Size = new Vector2(1.5f, 2.0f);
-            Box.size = Size;
+            Box.size = Size2;
             Box.isTrigger = true;
         }
         //가로줄 4개
@@ -189,7 +193,6 @@ public class CreateTile : MonoBehaviour
             Obj.transform.position = Pos;
             Obj.AddComponent<BoxCollider2D>();
             BoxCollider2D Box = Obj.GetComponent<BoxCollider2D>();
-            Vector2 Size = new Vector2(1.5f, 2.0f);
             Box.size = Size;
             Box.isTrigger = true;
         }
@@ -251,8 +254,7 @@ public class CreateTile : MonoBehaviour
 
             Obj.AddComponent<BoxCollider2D>();
             BoxCollider2D Box = Obj.GetComponent<BoxCollider2D>();
-            Vector2 Size = new Vector2(1.5f, 2.0f);
-            Box.size = Size;
+            Box.size = Size2;
             Box.isTrigger = true;
         }
         //가로줄 4개
@@ -267,7 +269,6 @@ public class CreateTile : MonoBehaviour
             Obj.transform.position = Pos;
             Obj.AddComponent<BoxCollider2D>();
             BoxCollider2D Box = Obj.GetComponent<BoxCollider2D>();
-            Vector2 Size = new Vector2(1.5f, 2.0f);
             Box.size = Size;
             Box.isTrigger = true;
         }
@@ -339,8 +340,7 @@ public class CreateTile : MonoBehaviour
 
             Obj.AddComponent<BoxCollider2D>();
             BoxCollider2D Box = Obj.GetComponent<BoxCollider2D>();
-            Vector2 Size = new Vector2(1.5f, 2.0f);
-            Box.size = Size;
+            Box.size = Size2;
             Box.isTrigger = true;
         }
         //가로줄 11개
@@ -355,7 +355,6 @@ public class CreateTile : MonoBehaviour
             Obj.transform.position = Pos;
             Obj.AddComponent<BoxCollider2D>();
             BoxCollider2D Box = Obj.GetComponent<BoxCollider2D>();
-            Vector2 Size = new Vector2(1.5f, 2.0f);
             Box.size = Size;
             Box.isTrigger = true;
         }
@@ -417,8 +416,7 @@ public class CreateTile : MonoBehaviour
 
             Obj.AddComponent<BoxCollider2D>();
             BoxCollider2D Box = Obj.GetComponent<BoxCollider2D>();
-            Vector2 Size = new Vector2(1.5f, 2.0f);
-            Box.size = Size;
+            Box.size = Size2;
             Box.isTrigger = true;
         }
         //가로줄4개
@@ -433,7 +431,6 @@ public class CreateTile : MonoBehaviour
             Obj.transform.position = Pos;
             Obj.AddComponent<BoxCollider2D>();
             BoxCollider2D Box = Obj.GetComponent<BoxCollider2D>();
-            Vector2 Size = new Vector2(1.5f, 2.0f);
             Box.size = Size;
             Box.isTrigger = true;
         }
@@ -495,8 +492,7 @@ public class CreateTile : MonoBehaviour
 
             Obj.AddComponent<BoxCollider2D>();
             BoxCollider2D Box = Obj.GetComponent<BoxCollider2D>();
-            Vector2 Size = new Vector2(1.5f, 2.0f);
-            Box.size = Size;
+            Box.size = Size2;
             Box.isTrigger = true;
         }
         //가로줄4개
@@ -511,7 +507,6 @@ public class CreateTile : MonoBehaviour
             Obj.transform.position = Pos;
             Obj.AddComponent<BoxCollider2D>();
             BoxCollider2D Box = Obj.GetComponent<BoxCollider2D>();
-            Vector2 Size = new Vector2(1.5f, 2.0f);
             Box.size = Size;
             Box.isTrigger = true;
         }
@@ -573,8 +568,7 @@ public class CreateTile : MonoBehaviour
 
             Obj.AddComponent<BoxCollider2D>();
             BoxCollider2D Box = Obj.GetComponent<BoxCollider2D>();
-            Vector2 Size = new Vector2(1.5f, 2.0f);
-            Box.size = Size;
+            Box.size = Size2;
             Box.isTrigger = true;
         }
         //가로줄 4개
@@ -589,7 +583,6 @@ public class CreateTile : MonoBehaviour
             Obj.transform.position = Pos;
             Obj.AddComponent<BoxCollider2D>();
             BoxCollider2D Box = Obj.GetComponent<BoxCollider2D>();
-            Vector2 Size = new Vector2(1.5f, 2.0f);
             Box.size = Size;
             Box.isTrigger = true;
         }
@@ -651,8 +644,7 @@ public class CreateTile : MonoBehaviour
 
             Obj.AddComponent<BoxCollider2D>();
             BoxCollider2D Box = Obj.GetComponent<BoxCollider2D>();
-            Vector2 Size = new Vector2(1.5f, 2.0f);
-            Box.size = Size;
+            Box.size = Size2;
             Box.isTrigger = true;
         }
         //마지막 구간
@@ -671,10 +663,18 @@ public class CreateTile : MonoBehaviour
             if (TileCheck==0||TileCheck==3||i==159)
             {
                  Obj = Instantiate(TilePrefab1);
+                Obj.AddComponent<BoxCollider2D>();
+                BoxCollider2D Box = Obj.GetComponent<BoxCollider2D>();
+                Box.size = Size;
+                Box.isTrigger = true;
             }
             else
             {
                 Obj = Instantiate(TilePrefab2);
+                Obj.AddComponent<BoxCollider2D>();
+                BoxCollider2D Box = Obj.GetComponent<BoxCollider2D>();
+                Box.size = Size2;
+                Box.isTrigger = true;
             }
             Obj.transform.name = "Tile " + i;
             Obj.transform.parent = Tmp.transform;
@@ -720,17 +720,7 @@ public class CreateTile : MonoBehaviour
             Pos.x += Gajunchi1_x;
             Pos.y += Gajunchi1_y;
             Obj.transform.position = Pos;
-
-
-            Obj.AddComponent<BoxCollider2D>();
-            BoxCollider2D Box = Obj.GetComponent<BoxCollider2D>();
-            Vector2 Size = new Vector2(1.5f, 2.0f);
-            Box.size = Size;
-            Box.isTrigger = true;
-        }
-        
-        
-         
+        }    
 }
 
 }

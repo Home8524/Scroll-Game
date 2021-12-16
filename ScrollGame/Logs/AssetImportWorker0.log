@@ -15,11 +15,11 @@ C:/Users/SGA/Documents/GitHub/bathroom1/Scroll-Game/ScrollGame
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50527
+52776
 Successfully changed project path to: C:/Users/SGA/Documents/GitHub/bathroom1/Scroll-Game/ScrollGame
 C:/Users/SGA/Documents/GitHub/bathroom1/Scroll-Game/ScrollGame
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 146.14 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 56.55 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.23f1 (c5d91304a876)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/Resources/UnitySubsystems
@@ -35,89 +35,89 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56860
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56400
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.027949 seconds.
+Registered in 0.001764 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 260.43 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 56.47 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  4.442 seconds
+- Completed reload, in  0.854 seconds
 Domain Reload Profiling:
-	ReloadAssembly (4443ms)
-		BeginReloadAssembly (163ms)
+	ReloadAssembly (854ms)
+		BeginReloadAssembly (73ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (1862ms)
-			LoadAssemblies (155ms)
+		EndReloadAssembly (697ms)
+			LoadAssemblies (69ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (631ms)
+			SetupTypeCache (175ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (122ms)
-			SetupLoadedEditorAssemblies (688ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (301ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (261ms)
-				BeforeProcessingInitializeOnLoad (70ms)
-				ProcessInitializeOnLoadAttributes (260ms)
-				ProcessInitializeOnLoadMethodAttributes (84ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (57ms)
+				BeforeProcessingInitializeOnLoad (114ms)
+				ProcessInitializeOnLoadAttributes (89ms)
+				ProcessInitializeOnLoadMethodAttributes (37ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.016025 seconds.
+Registered in 0.009689 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in 10.392 seconds
+- Completed reload, in  1.152 seconds
 Domain Reload Profiling:
-	ReloadAssembly (10393ms)
-		BeginReloadAssembly (521ms)
+	ReloadAssembly (1153ms)
+		BeginReloadAssembly (170ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (19ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (68ms)
-		EndReloadAssembly (9666ms)
-			LoadAssemblies (277ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (912ms)
+			LoadAssemblies (106ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (3069ms)
+			SetupTypeCache (315ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (747ms)
-			SetupLoadedEditorAssemblies (4934ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (340ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (16ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (268ms)
-				ProcessInitializeOnLoadAttributes (4493ms)
-				ProcessInitializeOnLoadMethodAttributes (125ms)
-				AfterProcessingInitializeOnLoad (30ms)
-				EditorAssembliesLoaded (1ms)
+				BeforeProcessingInitializeOnLoad (88ms)
+				ProcessInitializeOnLoadAttributes (229ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (26ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.18 seconds
-Refreshing native plugins compatible for Editor in 0.79 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1603 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 91.8 MB.
-System memory in use after: 91.9 MB.
+System memory in use before: 91.9 MB.
+System memory in use after: 92.0 MB.
 
 Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2058.
-Total: 11.899800 ms (FindLiveObjects: 0.257200 ms CreateObjectMapping: 0.950100 ms MarkObjects: 10.226200 ms  DeleteObjects: 0.464400 ms)
+Total: 2.664900 ms (FindLiveObjects: 0.161000 ms CreateObjectMapping: 0.059300 ms MarkObjects: 2.361400 ms  DeleteObjects: 0.081900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,142 +131,17 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Bolt 2D DinoRun VE1/Sprites/Player.png
-  artifactKey: Guid(51c81e11cf1b83741a6d4debdf26562c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bolt 2D DinoRun VE1/Sprites/Player.png using Guid(51c81e11cf1b83741a6d4debdf26562c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0410aa55d10460605328bf7990eb20db') in 0.644652 seconds 
-  Import took 0.655736 seconds .
+  path: Assets/Step14(UI)/New Render Texture.renderTexture
+  artifactKey: Guid(93a1d65bb7281104599a6b5a319861d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Step14(UI)/New Render Texture.renderTexture using Guid(93a1d65bb7281104599a6b5a319861d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd5466d5d9ac58b03a342961a985fdb9') in 0.123149 seconds 
+  Import took 0.125683 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000487 seconds.
-  path: Assets/Bolt 2D DinoRun VE1/Sprites/UI Over.png
-  artifactKey: Guid(b73265accab188e409461260602e7e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bolt 2D DinoRun VE1/Sprites/UI Over.png using Guid(b73265accab188e409461260602e7e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14f64b6aef993579fd41e430136f5c16') in 0.095504 seconds 
-  Import took 0.103551 seconds .
+  Time since last request: 0.000197 seconds.
+  path: Assets/Step14(UI)/MySkill.cs
+  artifactKey: Guid(5abd1d8677fe54740be8eb0cdf645fda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Step14(UI)/MySkill.cs using Guid(5abd1d8677fe54740be8eb0cdf645fda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85f71088f499944df4b2ec77e2b2b716') in 0.012641 seconds 
+  Import took 0.015056 seconds .
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000263 seconds.
-  path: Assets/Bolt 2D DinoRun VE1/Sprites/Ground.png
-  artifactKey: Guid(55c38370a8cd6314a8626c513e426605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bolt 2D DinoRun VE1/Sprites/Ground.png using Guid(55c38370a8cd6314a8626c513e426605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbe6e1f104276cefef4ccc5e58fe73f0') in 0.130174 seconds 
-  Import took 0.144485 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000223 seconds.
-  path: Assets/Bolt 2D DinoRun VE1/Sprites/UI Btn Down.png
-  artifactKey: Guid(9b4b10262b3633647896ced3dbbc81ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bolt 2D DinoRun VE1/Sprites/UI Btn Down.png using Guid(9b4b10262b3633647896ced3dbbc81ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44396a096950021afc6c17fc4eb4ef83') in 0.195858 seconds 
-  Import took 0.205017 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.006345 seconds.
-  path: Assets/Bolt 2D DinoRun VE1/Sprites/UI Btn On.png
-  artifactKey: Guid(3649a01a49d94c947820dd1c88eb3975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bolt 2D DinoRun VE1/Sprites/UI Btn On.png using Guid(3649a01a49d94c947820dd1c88eb3975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb66424cc78034d78c8635a26a8f5d66') in 0.087120 seconds 
-  Import took 0.097724 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000590 seconds.
-  path: Assets/Bolt 2D DinoRun VE1/Sprites/Cactus C.png
-  artifactKey: Guid(509cb56e68eb2404b902437d87eaab5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bolt 2D DinoRun VE1/Sprites/Cactus C.png using Guid(509cb56e68eb2404b902437d87eaab5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e8b68827627a0bcafa948f76682f1c5') in 0.126979 seconds 
-  Import took 0.141512 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000222 seconds.
-  path: Assets/Bolt 2D DinoRun VE1/Sprites/Initialize.cs
-  artifactKey: Guid(b59c4e8bee0d6224cb3943cc163bf468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bolt 2D DinoRun VE1/Sprites/Initialize.cs using Guid(b59c4e8bee0d6224cb3943cc163bf468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a743bc939cc3e47c4ea7248e8d62b88') in 0.061281 seconds 
-  Import took 0.080418 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001200 seconds.
-  path: Assets/Bolt 2D DinoRun VE1/Sprites/Back A.png
-  artifactKey: Guid(73c3f17bbee267148a2f224712eecba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bolt 2D DinoRun VE1/Sprites/Back A.png using Guid(73c3f17bbee267148a2f224712eecba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '571f6556a9b1ebb734a5704583cd8ea8') in 0.097885 seconds 
-  Import took 0.101425 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000381 seconds.
-  path: Assets/Bolt 2D DinoRun VE1/Sprites/Cloud A.png
-  artifactKey: Guid(bd79f3830e84cf543972a859dc0807e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bolt 2D DinoRun VE1/Sprites/Cloud A.png using Guid(bd79f3830e84cf543972a859dc0807e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc898507f15540d5e831d1545fbdd87f') in 0.057185 seconds 
-  Import took 0.061655 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000428 seconds.
-  path: Assets/Bolt 2D DinoRun VE1/Sprites/CameraTest.cs
-  artifactKey: Guid(751d006cea97c21498804bb8509b7bb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bolt 2D DinoRun VE1/Sprites/CameraTest.cs using Guid(751d006cea97c21498804bb8509b7bb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '324d65412c8a362f84ae570caf9fa1c1') in 0.025547 seconds 
-  Import took 0.030492 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000074 seconds.
-  path: Assets/Bolt 2D DinoRun VE1/Sprites/Cactus A.png
-  artifactKey: Guid(d5dceacb4ad9c71439838f9d84ddf1ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bolt 2D DinoRun VE1/Sprites/Cactus A.png using Guid(d5dceacb4ad9c71439838f9d84ddf1ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9d3c4046f93ed56418fa1857712ba80') in 0.084810 seconds 
-  Import took 0.097931 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000664 seconds.
-  path: Assets/Bolt 2D DinoRun VE1/Sprites/Sky.png
-  artifactKey: Guid(686af9210bf8e3042a0ce5aae4d44e44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bolt 2D DinoRun VE1/Sprites/Sky.png using Guid(686af9210bf8e3042a0ce5aae4d44e44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd50b0a6e80032a2431bf11da81ff9a75') in 0.126363 seconds 
-  Import took 0.135089 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000779 seconds.
-  path: Assets/Bolt 2D DinoRun VE1/Sprites/Cloud B.png
-  artifactKey: Guid(f4a1ed8c5bcdb834889d9301f7ee1ab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bolt 2D DinoRun VE1/Sprites/Cloud B.png using Guid(f4a1ed8c5bcdb834889d9301f7ee1ab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae230ab0f0f4f3ae7ef7e5f9b0910064') in 0.108257 seconds 
-  Import took 0.124775 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000725 seconds.
-  path: Assets/Bolt 2D DinoRun VE1/Sprites/Back B.png
-  artifactKey: Guid(56ea801d18819dd4eb62926f1c7c4a15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bolt 2D DinoRun VE1/Sprites/Back B.png using Guid(56ea801d18819dd4eb62926f1c7c4a15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fea3da9f348a1e966dd0d130e5dacbc2') in 0.077413 seconds 
-  Import took 0.089024 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000577 seconds.
-  path: Assets/Bolt 2D DinoRun VE1/Sprites/Cactus B.png
-  artifactKey: Guid(f49c007801b3fe846803154bfa86dc81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bolt 2D DinoRun VE1/Sprites/Cactus B.png using Guid(f49c007801b3fe846803154bfa86dc81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85a2897d77a47787a3b312acb8b57235') in 0.072436 seconds 
-  Import took 0.081404 seconds .
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 15.38 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 62.6 MB.
-System memory in use after: 62.7 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2083.
-Total: 7.343000 ms (FindLiveObjects: 0.393700 ms CreateObjectMapping: 0.172700 ms MarkObjects: 6.533800 ms  DeleteObjects: 0.053700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

@@ -14,8 +14,14 @@ public class PlayerController2 : MonoBehaviour
     //통과한 타일에 빛남겨주는 이펙트
     private GameObject LightPrefabs;
 
+    //텍스트 프리펩
+    private GameObject TextPrefabs;
+
     //방향 전환시 회전값에 곱해줄 값
     private float WayRoute;
+
+    //판정선
+    private GameObject RouteLine;
 
     GameObject P1;
     GameObject P2;
@@ -23,10 +29,12 @@ public class PlayerController2 : MonoBehaviour
     private void Awake()
     {
         LightPrefabs = Resources.Load("Prefabs/Light") as GameObject;
+        TextPrefabs = Resources.Load("Prefabs/Great") as GameObject;
     }
     private void Start()
     {
-        Vector2 Tmp = new Vector2(7.0f, 5.7f);
+        RouteLine = GameObject.Find("RedRoute");
+        Vector2 Tmp = new Vector2(5.8f, 5.7f);
         //현재 타일의 위치 저장
         Singleton.GetInstance.PosSave = Tmp;
             MyName = 1;
@@ -55,14 +63,8 @@ public class PlayerController2 : MonoBehaviour
         if (BallSet == MyName)
         {
             PosSave = Singleton.GetInstance.PosSave;
-            if (transform.name == "PlayerBall1")
-            {
-                transform.RotateAround(P2.transform.position, Vector3.back, 3.0f);
-            }
-            else
-            {
-                transform.RotateAround(P1.transform.position, Vector3.back, 3.0f);
-            }
+            transform.RotateAround(P1.transform.position, Vector3.back, 5.0f);
+            
         }
         //스페이스바를 누른 순간만 PressKey가 true
         if (Input.GetKeyDown(KeyCode.Space) && Singleton.GetInstance.BallSet == MyName)
@@ -90,6 +92,16 @@ public class PlayerController2 : MonoBehaviour
                 Obj.transform.position = Singleton.GetInstance.PosSave;
                 GameObject LightBox = GameObject.Find("LightBox");
                 Obj.transform.parent = LightBox.transform;
+
+                //성공시 텍스트 띄움
+                GameObject TextObj = Instantiate(TextPrefabs);
+                Vector2 Pos = Singleton.GetInstance.PosSave;
+                Pos.x -= 0.5f;
+                Pos.y += 1.3f;
+                GameObject TextBox = new GameObject("TextBox");
+                TextObj.transform.name = "Text " + Singleton.GetInstance.TimeNum;
+                TextObj.transform.parent = TextBox.transform;
+                TextObj.transform.position = Pos;
 
                 //성공시 타일에 지금 회전중이던 공 붙임
                 transform.position = collision.transform.position;

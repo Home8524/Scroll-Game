@@ -8,7 +8,7 @@ public class CameraControll : MonoBehaviour
     private Vector3 SavePos;
     private void Start()
     {
-        TileNum = 1;
+        TileNum = 0;
     }
     private void Update()
     {
@@ -24,7 +24,7 @@ public class CameraControll : MonoBehaviour
                 || TileNum > 126 && TileNum < 130)
                 transform.Translate(0.0f, -0.5f, 0.0f);
             else if (TileNum > 64 && TileNum < 91)
-                transform.position += Vector3.right * 0.5f *
+                transform.position += Vector3.right * 0.4f *
                 -1.0f * Singleton.GetInstance.WayRoute;
             else if (TileNum > 130 && TileNum < 161)
             {
@@ -32,7 +32,7 @@ public class CameraControll : MonoBehaviour
                 if (TileCheck == 7)
                     transform.Translate(0.0f, -0.5f, 0.0f);
                 else
-                    transform.Translate(0.4f * Singleton.GetInstance.WayRoute * -0.9f, 0.0f, 0.0f);
+                    transform.Translate(0.4f * Singleton.GetInstance.WayRoute * -1.0f, 0.0f, 0.0f);
             }
             else
                 transform.position += Vector3.right * 1.2f *

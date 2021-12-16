@@ -20,7 +20,7 @@ public class Singleton
     // 0 : Ball1 , 1 : Ball2
     public int BallSet = 0;
     public Vector2 PosSave = new Vector2(0.0f,0.0f);
-    public int TimeNum = 1;
+    public int TimeNum = 0;
     public bool Coll = false;
     public float WayRoute = -1.0f;
 }
