@@ -23,24 +23,36 @@ public class PlayerController : MonoBehaviour
 
     //판정선
     private GameObject RouteLine;
+    private float Scale;
 
-    GameObject P1;
-    GameObject P2;
+    //Flash
+    private GameObject Flash;
+    private bool FlashBool;
+
+
+    //회전용 변수
+    private GameObject P2;
     private TrailRenderer Trail;
 
     public GameObject Canvas1;
     public GameObject Canvas2;
     public GameObject Canvas3;
     [SerializeField] private Text CanvansText;
+
+    GameObject BackGround;
     private float Timer;
+
     private void Awake()
     {
         LightPrefabs = Resources.Load("Prefabs/Light") as GameObject;
         TextPrefabs = Resources.Load("Prefabs/Great") as GameObject;
     }
     private void Start()
-    {
+    {  
         RouteLine = GameObject.Find("BlueRoute");
+        BackGround = GameObject.Find("BackGround");
+        Flash = GameObject.Find("Flash");
+        FlashBool = false;
         Timer = 0;
         //리로드시 타임스케일 0->1로 변경하여 재시작
         Time.timeScale = 1;
@@ -53,11 +65,11 @@ public class PlayerController : MonoBehaviour
         Singleton.GetInstance.PosSave = Tmp;
         MyName = 0;
         WayRoute = -1.0f;
-        P1 = GameObject.Find("PlayerBall1");
         P2 = GameObject.Find("PlayerBall2");
         Trail = transform.GetComponent<TrailRenderer>();
         Trail.sortingLayerName = "2";
         Trail.sortingOrder = 0;
+        Scale = 0.0f;
     }
     
     private void FixedUpdate()
@@ -78,12 +90,15 @@ public class PlayerController : MonoBehaviour
         {
             PosSave = Singleton.GetInstance.PosSave;
             transform.RotateAround(P2.transform.position, Vector3.back, 5.0f);
-            RouteLine.transform.localScale = new Vector3(0.0f,0.0f,0.0f);
+            RouteLine.transform.localScale = new Vector3(0.0f,0.0f,1.0f);
+            Scale = 0.0f;
         }
         //아닐시 판정선 확대
         else
         {
-            //blue
+            if (Scale < 0.5f)
+                Scale += Time.deltaTime * 1.0f;
+            RouteLine.transform.localScale = new Vector3(Scale, Scale, 1.0f);
         }
         //스페이스바를 누른 순간만 PressKey가 true
         if (Input.GetKeyDown(KeyCode.Space) && Singleton.GetInstance.BallSet == MyName)
@@ -114,17 +129,61 @@ public class PlayerController : MonoBehaviour
         else if (Timer >= 0.25f)
             CanvansText.text = "3";
 
+        //Flash Action
+        if(FlashBool)
+        {
+            Image Tmp = Flash.GetComponent<Image>();
+            Color FlashColor = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+            Tmp.color = FlashColor;
+            FlashBool = false;
+        }
+        else
+        {
+            Image Tmp = Flash.GetComponent<Image>();
+            if(Tmp.color.a>0)
+            {
+                Color FlashColor = Tmp.color;
+                FlashColor.a -= Time.deltaTime * 3.0f;
+                Tmp.color = FlashColor;
+            }
+        }
+
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
         string Name = "Tile "+Singleton.GetInstance.TimeNum;
-       //충돌시 충돌한 타일명이 지금 충돌해야할 타일인지 확인 , 스페이스바 입력여부 확인
-       if (PressKey&&collision.transform.name==Name)
+        
+        //충돌시 충돌한 타일명이 지금 충돌해야할 타일인지 확인 , 스페이스바 입력여부 확인
+        if (PressKey&&collision.transform.name==Name)
        {
             int BallSet = Singleton.GetInstance.BallSet;
             //충돌한 transform의 tag가 Tile 이고 현재 회전중인 공과 부딫힌게 맞는지 확인
             if (collision.transform.tag == "Tile" && BallSet == MyName)
             {
+                if (Name == "Tile 32")
+                {
+                    Color Tmp = new Color(153.0f/255.0f,83.0f/255.0f,1.0f);
+                    SpriteRenderer ColorChange = BackGround.GetComponent<SpriteRenderer>();
+                    GameObject StopObject1 = GameObject.Find("StopObject1");
+                    StopObject1.GetComponent<SpriteRenderer>().color = Tmp;
+                    ColorChange.color = Tmp;
+                    FlashBool = true;
+                }
+                if (Name == "Tile 96")
+                {
+                    Color Tmp = new Color(1.0f, 1.0f, 1.0f);
+                    SpriteRenderer ColorChange = BackGround.GetComponent<SpriteRenderer>();
+                    ColorChange.color = Tmp;
+                    FlashBool = true;
+                    GameObject.Find("StopObject2").GetComponent<SpriteRenderer>()
+                        .color = Tmp;
+                    GameObject.Find("StopObject3").GetComponent<SpriteRenderer>()
+                        .color = Tmp;
+                    GameObject.Find("StopObject2").AddComponent<ObjectRun>();
+                    GameObject.Find("StopObject3").AddComponent<ObjectRun>();
+                    Singleton.GetInstance.SlowObjectGo = true;
+                }
+                
                 //성공시 이전 타일에 빛남
                 GameObject Obj = Instantiate(LightPrefabs);
                 Obj.transform.position = Singleton.GetInstance.PosSave;
@@ -136,7 +195,7 @@ public class PlayerController : MonoBehaviour
                 Vector2 Pos = Singleton.GetInstance.PosSave;
                 Pos.x -= 0.5f;
                 Pos.y += 1.3f;
-                GameObject TextBox =new GameObject("TextBox");
+                GameObject TextBox = GameObject.Find("TextBox");
                 TextObj.transform.name = "Text "+Singleton.GetInstance.TimeNum;
                 TextObj.transform.parent = TextBox.transform;
                 TextObj.transform.position = Pos;
@@ -165,7 +224,6 @@ public class PlayerController : MonoBehaviour
                 Destroy(Coll);
 
                 //카메라 이동에 맞춰 BackGround 소폭 이동
-                GameObject BackGround = GameObject.Find("BackGround");
 
                 int TileNum = Singleton.GetInstance.TimeNum;
                 if (TileNum == 23 || TileNum == 14 || TileNum > 32 && TileNum < 45

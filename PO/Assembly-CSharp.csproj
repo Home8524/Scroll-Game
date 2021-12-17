@@ -58,10 +58,11 @@
     <Compile Include="Assets\Code\PlayerController.cs" />
     <Compile Include="Assets\Code\Singleton.cs" />
     <Compile Include="Assets\Code\StartButton.cs" />
+    <Compile Include="Assets\Code\TextInvoke.cs" />
     <Compile Include="Assets\Code\CreateTile.cs" />
     <Compile Include="Assets\Code\PlayerController2.cs" />
     <Compile Include="Assets\Resources\World 3\TempTextureConverter.cs" />
-    <Compile Include="Assets\Code\TextInvoke.cs" />
+    <Compile Include="Assets\Code\ObjectRun.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\Effect\NewImageEffectShader.shader" />

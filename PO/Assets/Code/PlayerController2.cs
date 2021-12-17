@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class PlayerController2 : MonoBehaviour
 {
     //현재 안착한 Tile 위치
@@ -22,9 +22,13 @@ public class PlayerController2 : MonoBehaviour
 
     //판정선
     private GameObject RouteLine;
+    private float Scale;
+
+    //Flash
+    private GameObject Flash;
+    private bool FlashBool;
 
     GameObject P1;
-    GameObject P2;
     private TrailRenderer Trail;
     private void Awake()
     {
@@ -34,16 +38,19 @@ public class PlayerController2 : MonoBehaviour
     private void Start()
     {
         RouteLine = GameObject.Find("RedRoute");
+        Flash = GameObject.Find("Flash");
+        FlashBool = false;
+
         Vector2 Tmp = new Vector2(5.8f, 5.7f);
         //현재 타일의 위치 저장
         Singleton.GetInstance.PosSave = Tmp;
             MyName = 1;
         WayRoute = -1.0f;
         P1 = GameObject.Find("PlayerBall1");
-        P2 = GameObject.Find("PlayerBall2");
         Trail = transform.GetComponent<TrailRenderer>();
         Trail.sortingLayerName = "2";
         Trail.sortingOrder = 0;
+        Scale = 0.0f;
     }
 
     private void FixedUpdate()
@@ -64,7 +71,14 @@ public class PlayerController2 : MonoBehaviour
         {
             PosSave = Singleton.GetInstance.PosSave;
             transform.RotateAround(P1.transform.position, Vector3.back, 5.0f);
-            
+            RouteLine.transform.localScale = new Vector3(0.0f, 0.0f, 1.0f);
+            Scale = 0.0f;
+        }
+        else
+        {
+            if (Scale < 0.5f)
+                Scale += Time.deltaTime * 1.0f;
+            RouteLine.transform.localScale = new Vector3(Scale, Scale, 1.0f);
         }
         //스페이스바를 누른 순간만 PressKey가 true
         if (Input.GetKeyDown(KeyCode.Space) && Singleton.GetInstance.BallSet == MyName)
@@ -72,6 +86,26 @@ public class PlayerController2 : MonoBehaviour
             PressKey = true;
         }
         else PressKey = false;
+
+        //Flash Action
+        if (FlashBool)
+        {
+            Image Tmp = Flash.GetComponent<Image>();
+            Color FlashColor = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+            Tmp.color = FlashColor;
+            FlashBool = false;
+        }
+        else
+        {
+            Image Tmp = Flash.GetComponent<Image>();
+            if (Tmp.color.a > 0)
+            {
+                Color FlashColor = Tmp.color;
+                FlashColor.a -= Time.deltaTime * 3.0f;
+                Tmp.color = FlashColor;
+            }
+        }
+
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -93,12 +127,20 @@ public class PlayerController2 : MonoBehaviour
                 GameObject LightBox = GameObject.Find("LightBox");
                 Obj.transform.parent = LightBox.transform;
 
+                if (Name == "Tile 159")
+                {
+                    Color ResetColor = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+                    GameObject Tmp = GameObject.Find("EndBG");
+                    Tmp.GetComponent<SpriteRenderer>().color = ResetColor;
+                    FlashBool = true;
+                }
+
                 //성공시 텍스트 띄움
                 GameObject TextObj = Instantiate(TextPrefabs);
                 Vector2 Pos = Singleton.GetInstance.PosSave;
                 Pos.x -= 0.5f;
                 Pos.y += 1.3f;
-                GameObject TextBox = new GameObject("TextBox");
+                GameObject TextBox = GameObject.Find("TextBox");
                 TextObj.transform.name = "Text " + Singleton.GetInstance.TimeNum;
                 TextObj.transform.parent = TextBox.transform;
                 TextObj.transform.position = Pos;

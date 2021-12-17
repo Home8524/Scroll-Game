@@ -23,7 +23,7 @@ public class StartButton : MonoBehaviour
         Singleton.GetInstance.TimeNum = 0;
         Singleton.GetInstance.Coll = false;
         Singleton.GetInstance.WayRoute = -1.0f;
-
+        Singleton.GetInstance.SlowObjectGo = false;
         SceneManager.LoadScene("Fire&Ice");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
