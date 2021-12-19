@@ -24,4 +24,7 @@ public class Singleton
     public bool Coll = false;
     public float WayRoute = -1.0f;
     public bool SlowObjectGo = false;
+    public bool StartActive = true;
+    public bool Resume = false;
+    public float Timer = 0.0f;
 }

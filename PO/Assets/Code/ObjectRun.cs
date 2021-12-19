@@ -20,17 +20,21 @@ public class ObjectRun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameObject.layer != 7 || Singleton.GetInstance.SlowObjectGo)
-        {
-            transform.Translate(Speed * Time.deltaTime * -1.0f, 0.0f, 0.0f);
-            if (transform.position.x < -100.0f)
-                Destroy(gameObject);
+        if (Singleton.GetInstance.StartActive)
+        { 
+           if (gameObject.layer != 7 || Singleton.GetInstance.SlowObjectGo)
+           {
+               transform.Translate(Speed * Time.deltaTime * -1.0f, 0.0f, 0.0f);
+               if (transform.position.x < -100.0f)
+                   Destroy(gameObject);
+           }
+           if(gameObject.layer!=7&&Singleton.GetInstance.TimeNum==33)
+           {
+               Color Tmp = new Color(153.0f / 255.0f, 83.0f / 255.0f, 1.0f);
+               transform.GetComponent<SpriteRenderer>().color = Tmp;
+           }
         }
 
-        if(gameObject.layer!=7&&Singleton.GetInstance.TimeNum==33)
-        {
-            Color Tmp = new Color(153.0f / 255.0f, 83.0f / 255.0f, 1.0f);
-            transform.GetComponent<SpriteRenderer>().color = Tmp;
-        }
+
     }
 }
