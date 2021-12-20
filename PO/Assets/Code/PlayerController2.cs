@@ -14,9 +14,6 @@ public class PlayerController2 : MonoBehaviour
     //통과한 타일에 빛남겨주는 이펙트
     private GameObject LightPrefabs;
 
-    //텍스트 프리펩
-    private GameObject TextPrefabs;
-
     //방향 전환시 회전값에 곱해줄 값
     private float WayRoute;
 
@@ -33,7 +30,6 @@ public class PlayerController2 : MonoBehaviour
     private void Awake()
     {
         LightPrefabs = Resources.Load("Prefabs/Light") as GameObject;
-        TextPrefabs = Resources.Load("Prefabs/Great") as GameObject;
     }
     private void Start()
     {
@@ -139,16 +135,6 @@ public class PlayerController2 : MonoBehaviour
                         Tmp.GetComponent<SpriteRenderer>().color = ResetColor;
                         FlashBool = true;
                     }
-
-                    //성공시 텍스트 띄움
-                    GameObject TextObj = Instantiate(TextPrefabs);
-                    Vector2 Pos = Singleton.GetInstance.PosSave;
-                    Pos.x -= 0.5f;
-                    Pos.y += 1.3f;
-                    GameObject TextBox = GameObject.Find("TextBox");
-                    TextObj.transform.name = "Text " + Singleton.GetInstance.TimeNum;
-                    TextObj.transform.parent = TextBox.transform;
-                    TextObj.transform.position = Pos;
 
                     //성공시 타일에 지금 회전중이던 공 붙임
                     transform.position = collision.transform.position;

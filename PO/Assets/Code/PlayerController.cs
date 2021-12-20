@@ -15,8 +15,6 @@ public class PlayerController : MonoBehaviour
     //통과한 타일에 빛남겨주는 이펙트
     private GameObject LightPrefabs;
 
-    //텍스트 프리펩
-    private GameObject TextPrefabs;
 
     //방향 전환시 회전값에 곱해줄 값
     private float WayRoute;
@@ -42,10 +40,20 @@ public class PlayerController : MonoBehaviour
     GameObject BackGround;
     private float Timer;
 
+    private GameObject TextPrefabs1;
+    private GameObject TextPrefabs2;
+    private GameObject TextPrefabs3;
+
+    //텍스트 박스 띄우기용
+    private GameObject TextObj;
+
+    private int BallSet;
     private void Awake()
     {
         LightPrefabs = Resources.Load("Prefabs/Light") as GameObject;
-        TextPrefabs = Resources.Load("Prefabs/Great") as GameObject;
+        TextPrefabs1 = Resources.Load("Prefabs/Great") as GameObject;
+        TextPrefabs2 = Resources.Load("Prefabs/Fast") as GameObject;
+        TextPrefabs3 = Resources.Load("Prefabs/Wrong") as GameObject;
     }
     private void Start()
     {  
@@ -105,7 +113,7 @@ public class PlayerController : MonoBehaviour
                 WayRoute = -1.0f;
 
             //작업을 수행할 볼넘버 받아옴
-            int BallSet = Singleton.GetInstance.BallSet;
+            BallSet = Singleton.GetInstance.BallSet;
 
             //현재 회전해야할 공이 맞는지 확인하고 맞을시 회전
             if (BallSet == MyName)
@@ -217,13 +225,20 @@ public class PlayerController : MonoBehaviour
                     GameObject LightBox = GameObject.Find("LightBox");
                     Obj.transform.parent = LightBox.transform;
 
+                    GameObject Obj1 = GameObject.Find("Tile " + Singleton.GetInstance.TimeNum);
+                    Debug.Log(Vector3.Distance(transform.position, Obj1.transform.position));
+                    if (Vector3.Distance(transform.position, Obj1.transform.position) < 0.5f)
+                        TextObj = Instantiate(TextPrefabs1);
+                    else if (Vector3.Distance(transform.position, Obj1.transform.position) < 1.0f)
+                        TextObj = Instantiate(TextPrefabs2);
+
+
                     //성공시 텍스트 띄움
-                    GameObject TextObj = Instantiate(TextPrefabs);
                     Vector2 Pos = Singleton.GetInstance.PosSave;
                     Pos.x -= 0.5f;
                     Pos.y += 1.3f;
                     GameObject TextBox = GameObject.Find("TextBox");
-                    TextObj.transform.name = "Text "+Singleton.GetInstance.TimeNum;
+                    TextObj.transform.name = "Text " + Singleton.GetInstance.TimeNum;
                     TextObj.transform.parent = TextBox.transform;
                     TextObj.transform.position = Pos;
 

@@ -1,0 +1,363 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.23f1 (c5d91304a876) revision 12966163'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 18363.1316; Version 1909; 64bit' Language: 'ko' Physical Memory: 16264 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.23f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/SGA/Documents/GitHub/bathroom1/Scroll-Game/ScrollGame
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+51227
+Successfully changed project path to: C:/Users/SGA/Documents/GitHub/bathroom1/Scroll-Game/ScrollGame
+C:/Users/SGA/Documents/GitHub/bathroom1/Scroll-Game/ScrollGame
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 48.06 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.23f1 (c5d91304a876)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/SGA/Documents/GitHub/bathroom1/Scroll-Game/ScrollGame/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) HD Graphics 630 (ID=0x5912)
+    Vendor:   
+    VRAM:     8132 MB
+    Driver:   27.20.100.8681
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56320
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001712 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 45.11 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.581 seconds
+Domain Reload Profiling:
+	ReloadAssembly (581ms)
+		BeginReloadAssembly (54ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (454ms)
+			LoadAssemblies (51ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (152ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (169ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (45ms)
+				BeforeProcessingInitializeOnLoad (16ms)
+				ProcessInitializeOnLoadAttributes (77ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004998 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.782 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1783ms)
+		BeginReloadAssembly (139ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (1582ms)
+			LoadAssemblies (83ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1053ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (301ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (200ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.45 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1603 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.9 MB.
+System memory in use after: 92.0 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2058.
+Total: 2.697100 ms (FindLiveObjects: 0.148600 ms CreateObjectMapping: 0.052600 ms MarkObjects: 2.385700 ms  DeleteObjects: 0.109300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Bolt 2D DinoRun VE1/Readme.asset
+  artifactKey: Guid(2d66d2b3541c91a4c806ebb732376ce4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bolt 2D DinoRun VE1/Readme.asset using Guid(2d66d2b3541c91a4c806ebb732376ce4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3555455bf5f2f1b78796efa0b2c6f791') in 0.042862 seconds 
+  Import took 0.045750 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Bolt 2D DinoRun VE1/App Icon.png
+  artifactKey: Guid(16a4acc20b9be4541ae863b483cd3ae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bolt 2D DinoRun VE1/App Icon.png using Guid(16a4acc20b9be4541ae863b483cd3ae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af7f411d4c6d3ca38cfdc5b831ddbce0') in 0.105722 seconds 
+  Import took 0.108475 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.390183 seconds.
+  path: Assets/Bolt 2D DinoRun VE1/Sprites/Back A.png
+  artifactKey: Guid(73c3f17bbee267148a2f224712eecba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bolt 2D DinoRun VE1/Sprites/Back A.png using Guid(73c3f17bbee267148a2f224712eecba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '571f6556a9b1ebb734a5704583cd8ea8') in 0.023377 seconds 
+  Import took 0.026207 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Bolt 2D DinoRun VE1/Sprites/Player.png
+  artifactKey: Guid(51c81e11cf1b83741a6d4debdf26562c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bolt 2D DinoRun VE1/Sprites/Player.png using Guid(51c81e11cf1b83741a6d4debdf26562c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0410aa55d10460605328bf7990eb20db') in 0.039529 seconds 
+  Import took 0.042199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Bolt 2D DinoRun VE1/Sprites/UI Over.png
+  artifactKey: Guid(b73265accab188e409461260602e7e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bolt 2D DinoRun VE1/Sprites/UI Over.png using Guid(b73265accab188e409461260602e7e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14f64b6aef993579fd41e430136f5c16') in 0.038528 seconds 
+  Import took 0.041262 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Bolt 2D DinoRun VE1/Sprites/Ground.png
+  artifactKey: Guid(55c38370a8cd6314a8626c513e426605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bolt 2D DinoRun VE1/Sprites/Ground.png using Guid(55c38370a8cd6314a8626c513e426605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbe6e1f104276cefef4ccc5e58fe73f0') in 0.037126 seconds 
+  Import took 0.040071 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Bolt 2D DinoRun VE1/Sprites/UI Btn Down.png
+  artifactKey: Guid(9b4b10262b3633647896ced3dbbc81ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bolt 2D DinoRun VE1/Sprites/UI Btn Down.png using Guid(9b4b10262b3633647896ced3dbbc81ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44396a096950021afc6c17fc4eb4ef83') in 0.019272 seconds 
+  Import took 0.022170 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Bolt 2D DinoRun VE1/Sprites/UI Btn On.png
+  artifactKey: Guid(3649a01a49d94c947820dd1c88eb3975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bolt 2D DinoRun VE1/Sprites/UI Btn On.png using Guid(3649a01a49d94c947820dd1c88eb3975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb66424cc78034d78c8635a26a8f5d66') in 0.023214 seconds 
+  Import took 0.025714 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Bolt 2D DinoRun VE1/Sprites/Cactus C.png
+  artifactKey: Guid(509cb56e68eb2404b902437d87eaab5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bolt 2D DinoRun VE1/Sprites/Cactus C.png using Guid(509cb56e68eb2404b902437d87eaab5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e8b68827627a0bcafa948f76682f1c5') in 0.023112 seconds 
+  Import took 0.025968 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/Bolt 2D DinoRun VE1/Sprites/Cloud A.png
+  artifactKey: Guid(bd79f3830e84cf543972a859dc0807e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bolt 2D DinoRun VE1/Sprites/Cloud A.png using Guid(bd79f3830e84cf543972a859dc0807e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc898507f15540d5e831d1545fbdd87f') in 0.021701 seconds 
+  Import took 0.024318 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000371 seconds.
+  path: Assets/Bolt 2D DinoRun VE1/Sprites/Cactus A.png
+  artifactKey: Guid(d5dceacb4ad9c71439838f9d84ddf1ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bolt 2D DinoRun VE1/Sprites/Cactus A.png using Guid(d5dceacb4ad9c71439838f9d84ddf1ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9d3c4046f93ed56418fa1857712ba80') in 0.018535 seconds 
+  Import took 0.021255 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Bolt 2D DinoRun VE1/Sprites/Sky.png
+  artifactKey: Guid(686af9210bf8e3042a0ce5aae4d44e44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bolt 2D DinoRun VE1/Sprites/Sky.png using Guid(686af9210bf8e3042a0ce5aae4d44e44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd50b0a6e80032a2431bf11da81ff9a75') in 0.020757 seconds 
+  Import took 0.023210 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Bolt 2D DinoRun VE1/Sprites/Cloud B.png
+  artifactKey: Guid(f4a1ed8c5bcdb834889d9301f7ee1ab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bolt 2D DinoRun VE1/Sprites/Cloud B.png using Guid(f4a1ed8c5bcdb834889d9301f7ee1ab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae230ab0f0f4f3ae7ef7e5f9b0910064') in 0.021312 seconds 
+  Import took 0.024105 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/Bolt 2D DinoRun VE1/Sprites/Back B.png
+  artifactKey: Guid(56ea801d18819dd4eb62926f1c7c4a15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bolt 2D DinoRun VE1/Sprites/Back B.png using Guid(56ea801d18819dd4eb62926f1c7c4a15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fea3da9f348a1e966dd0d130e5dacbc2') in 0.020624 seconds 
+  Import took 0.023213 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Bolt 2D DinoRun VE1/Sprites/Cactus B.png
+  artifactKey: Guid(f49c007801b3fe846803154bfa86dc81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bolt 2D DinoRun VE1/Sprites/Cactus B.png using Guid(f49c007801b3fe846803154bfa86dc81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85a2897d77a47787a3b312acb8b57235') in 0.032540 seconds 
+  Import took 0.035169 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.745315 seconds.
+  path: Assets/Bolt 2D DinoRun VE1/Sprites/BackController.cs
+  artifactKey: Guid(88bb90fa8703ff14ab1569dc03e2b6c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bolt 2D DinoRun VE1/Sprites/BackController.cs using Guid(88bb90fa8703ff14ab1569dc03e2b6c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b6cd77cf4507ef69a61e08fc535a441') in 0.013351 seconds 
+  Import took 0.016010 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.004817 seconds.
+  path: Assets/Bolt 2D DinoRun VE1/Sprites/CameraTest.cs
+  artifactKey: Guid(751d006cea97c21498804bb8509b7bb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bolt 2D DinoRun VE1/Sprites/CameraTest.cs using Guid(751d006cea97c21498804bb8509b7bb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '324d65412c8a362f84ae570caf9fa1c1') in 0.009007 seconds 
+  Import took 0.011709 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.139099 seconds.
+  path: Assets/Bolt 2D DinoRun VE1/Sprites/DinoSingleton.cs
+  artifactKey: Guid(f18dc6ca3246b3f4f98808f16357c7dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bolt 2D DinoRun VE1/Sprites/DinoSingleton.cs using Guid(f18dc6ca3246b3f4f98808f16357c7dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1236f85406d99a7bef2d40c271379ad') in 0.010889 seconds 
+  Import took 0.013755 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.379408 seconds.
+  path: Assets/Bolt 2D DinoRun VE1/Sprites/Initialize.cs
+  artifactKey: Guid(b59c4e8bee0d6224cb3943cc163bf468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bolt 2D DinoRun VE1/Sprites/Initialize.cs using Guid(b59c4e8bee0d6224cb3943cc163bf468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a743bc939cc3e47c4ea7248e8d62b88') in 0.022115 seconds 
+  Import took 0.033881 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.024838 seconds.
+  path: Assets/Step14(UI)/New Render Texture.renderTexture
+  artifactKey: Guid(93a1d65bb7281104599a6b5a319861d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Step14(UI)/New Render Texture.renderTexture using Guid(93a1d65bb7281104599a6b5a319861d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd5466d5d9ac58b03a342961a985fdb9') in 0.048640 seconds 
+  Import took 0.052419 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.990533 seconds.
+  path: Assets/Step14(UI)/CanvasActive.cs
+  artifactKey: Guid(2f1506a5a0c983343b3393e6c882b432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Step14(UI)/CanvasActive.cs using Guid(2f1506a5a0c983343b3393e6c882b432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9877023ccf7a3ee0f17ab63564eea05d') in 0.011123 seconds 
+  Import took 0.014478 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.489745 seconds.
+  path: Assets/Step14(UI)/MySkill.cs
+  artifactKey: Guid(5abd1d8677fe54740be8eb0cdf645fda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Step14(UI)/MySkill.cs using Guid(5abd1d8677fe54740be8eb0cdf645fda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85f71088f499944df4b2ec77e2b2b716') in 0.008491 seconds 
+  Import took 0.011541 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.700157 seconds.
+  path: Assets/Step14(UI)/SoundManager.cs
+  artifactKey: Guid(5f8d3fb7c3c4556459c4682068aff00a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Step14(UI)/SoundManager.cs using Guid(5f8d3fb7c3c4556459c4682068aff00a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9527411e97e74ac71e8cc1371934c6ea') in 0.008769 seconds 
+  Import took 0.011884 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.299610 seconds.
+  path: Assets/Step14(UI)/AudioPlayer.cs
+  artifactKey: Guid(1512f39c844d1b347949f8506f5b3ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Step14(UI)/AudioPlayer.cs using Guid(1512f39c844d1b347949f8506f5b3ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64d1fda9b2d63d06a31cb3b36758a945') in 0.008462 seconds 
+  Import took 0.011170 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.805699 seconds.
+  path: Assets/Step14(UI)/BContoller.cs
+  artifactKey: Guid(eba61f1110c978b4ca8de0a0e773fcdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Step14(UI)/BContoller.cs using Guid(eba61f1110c978b4ca8de0a0e773fcdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92966d427848574eed39f7286453b1a9') in 0.007891 seconds 
+  Import took 0.010797 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.702915 seconds.
+  path: Assets/Tests/Body.mat
+  artifactKey: Guid(db734de84cf2adf47ac1f48ac4d9a511) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tests/Body.mat using Guid(db734de84cf2adf47ac1f48ac4d9a511) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a110aa854cda51123f198b83536a1ae') in 0.086275 seconds 
+  Import took 0.089805 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Tests/New Material.mat
+  artifactKey: Guid(80dc41bfc1eb66d429da22fe8e9f76cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tests/New Material.mat using Guid(80dc41bfc1eb66d429da22fe8e9f76cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '758f6589c01394f801d71a8ca4f2ef42') in 0.025903 seconds 
+  Import took 0.028744 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.261983 seconds.
+  path: Assets/Step12/CreateCube.cs
+  artifactKey: Guid(b6254f3c3fa9a1b45a514235f8a9094b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Step12/CreateCube.cs using Guid(b6254f3c3fa9a1b45a514235f8a9094b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fa2e369c83f394873bbff1d3f41f5f5') in 0.010804 seconds 
+  Import took 0.013802 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.250671 seconds.
+  path: Assets/Step12/MyCoroutine.cs
+  artifactKey: Guid(3505cdeeecdbb4144901eb8e65ee547e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Step12/MyCoroutine.cs using Guid(3505cdeeecdbb4144901eb8e65ee547e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b05438be4b82bb764250461c9cdf3c39') in 0.873057 seconds 
+  Import took 0.877085 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

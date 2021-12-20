@@ -10,6 +10,8 @@ public class StartButton : MonoBehaviour
     public GameObject Canvas3;
     public Text CanvansText;
 
+    //Active에 할당된 캔버스와 volumeset에 할당된 캔버스가
+    //각각 다름
     public void Active()
     {
         Canvas1.SetActive(false);
@@ -35,4 +37,9 @@ public class StartButton : MonoBehaviour
         Singleton.GetInstance.Resume = false;
     }
 
+    public void VolumeSet()
+    {
+        Canvas2.SetActive(true);
+        Canvas1.SetActive(false);
+    }
 }
