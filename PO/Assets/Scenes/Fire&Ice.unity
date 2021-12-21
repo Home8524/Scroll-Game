@@ -5963,6 +5963,10 @@ PrefabInstance:
       value: PlayerBall1
       objectReference: {fileID: 0}
     - target: {fileID: 994451998383958579, guid: 160941445d1b48642bbeff18a1fb1194, type: 3}
+      propertyPath: AudioS
+      value: 
+      objectReference: {fileID: 963194230}
+    - target: {fileID: 994451998383958579, guid: 160941445d1b48642bbeff18a1fb1194, type: 3}
       propertyPath: Canvas1
       value: 
       objectReference: {fileID: 1530996828}

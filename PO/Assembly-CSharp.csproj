@@ -53,6 +53,7 @@
     <UnityVersion>2020.3.23f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Code\VolumeControll.cs" />
     <Compile Include="Assets\Code\LightInvoke.cs" />
     <Compile Include="Assets\Code\ObjectRun.cs" />
     <Compile Include="Assets\Code\CameraControll.cs" />
@@ -63,7 +64,6 @@
     <Compile Include="Assets\Code\CreateTile.cs" />
     <Compile Include="Assets\Code\PlayerController2.cs" />
     <Compile Include="Assets\Resources\World 3\TempTextureConverter.cs" />
-    <Compile Include="Assets\Code\VolumeControll.cs" />
     <Compile Include="Assets\Code\TextPush.cs" />
   </ItemGroup>
   <ItemGroup>

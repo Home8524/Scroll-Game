@@ -27,9 +27,22 @@ public class PlayerController2 : MonoBehaviour
 
     GameObject P1;
     private TrailRenderer Trail;
+
+    private GameObject TextPrefabs1;
+    private GameObject TextPrefabs2;
+    private GameObject TextPrefabs3;
+
+    //텍스트 박스 띄우기용
+    private GameObject TextObj;
+
+    private int BallSet;
+    private float Speed;
     private void Awake()
     {
         LightPrefabs = Resources.Load("Prefabs/Light") as GameObject;
+        TextPrefabs1 = Resources.Load("Prefabs/Great") as GameObject;
+        TextPrefabs2 = Resources.Load("Prefabs/Fast") as GameObject;
+        TextPrefabs3 = Resources.Load("Prefabs/Wrong") as GameObject;
     }
     private void Start()
     {
@@ -47,8 +60,31 @@ public class PlayerController2 : MonoBehaviour
         Trail.sortingLayerName = "2";
         Trail.sortingOrder = 0;
         Scale = 0.0f;
+        Speed = 5.5f;
     }
+    private void Update()
+    {
+        //스페이스바를 누른 순간만 PressKey가 true
+        if (Input.GetKeyDown(KeyCode.Space) && Singleton.GetInstance.BallSet == MyName)
+        {
+            PressKey = true;
+        }
+        else PressKey = false;
 
+        GameObject Obj1 = GameObject.Find("Tile " + Singleton.GetInstance.TimeNum);
+        if (PressKey && MyName == BallSet && Vector3.Distance(transform.position, Obj1.transform.position) > 1.5f)
+        {
+            TextObj = Instantiate(TextPrefabs3);
+            //성공시 텍스트 띄움
+            Vector2 Pos = Singleton.GetInstance.PosSave;
+            Pos.x -= 0.5f;
+            Pos.y += 1.3f;
+            GameObject TextBox = GameObject.Find("TextBox");
+            TextObj.transform.name = "Text " + Singleton.GetInstance.TimeNum;
+            TextObj.transform.parent = TextBox.transform;
+            TextObj.transform.position = Pos;
+        }
+    }
     private void FixedUpdate()
     {
         if (Singleton.GetInstance.StartActive)
@@ -62,13 +98,13 @@ public class PlayerController2 : MonoBehaviour
                 WayRoute = -1.0f;
 
             //작업을 수행할 볼넘버 받아옴
-            int BallSet = Singleton.GetInstance.BallSet;
+            BallSet = Singleton.GetInstance.BallSet;
 
             //현재 회전해야할 공이 맞는지 확인하고 맞을시 회전
             if (BallSet == MyName)
             {
                 PosSave = Singleton.GetInstance.PosSave;
-                transform.RotateAround(P1.transform.position, Vector3.back, 5.0f);
+                transform.RotateAround(P1.transform.position, Vector3.back, Speed);
                 RouteLine.transform.localScale = new Vector3(0.0f, 0.0f, 1.0f);
                 Scale = 0.0f;
             }
@@ -78,12 +114,6 @@ public class PlayerController2 : MonoBehaviour
                     Scale += Time.deltaTime * 1.0f;
                 RouteLine.transform.localScale = new Vector3(Scale, Scale, 1.0f);
             }
-            //스페이스바를 누른 순간만 PressKey가 true
-            if (Input.GetKeyDown(KeyCode.Space) && Singleton.GetInstance.BallSet == MyName)
-            {
-                PressKey = true;
-            }
-            else PressKey = false;
 
             //Flash Action
             if (FlashBool)
@@ -107,7 +137,7 @@ public class PlayerController2 : MonoBehaviour
 
     }
     private void OnTriggerStay2D(Collider2D collision)
-    {
+    {   
         if (Singleton.GetInstance.StartActive)
         {
             string Name = "Tile " + Singleton.GetInstance.TimeNum;
@@ -135,6 +165,21 @@ public class PlayerController2 : MonoBehaviour
                         Tmp.GetComponent<SpriteRenderer>().color = ResetColor;
                         FlashBool = true;
                     }
+                    GameObject Obj1 = GameObject.Find("Tile " + Singleton.GetInstance.TimeNum);
+                    if (Vector3.Distance(transform.position, Obj1.transform.position) < 0.5f)
+                        TextObj = Instantiate(TextPrefabs1);
+                    else if (Vector3.Distance(transform.position, Obj1.transform.position) < 1.0f)
+                        TextObj = Instantiate(TextPrefabs2);
+
+
+                    //성공시 텍스트 띄움
+                    Vector2 Pos = Singleton.GetInstance.PosSave;
+                    Pos.x -= 0.5f;
+                    Pos.y += 1.3f;
+                    GameObject TextBox = GameObject.Find("TextBox");
+                    TextObj.transform.name = "Text " + Singleton.GetInstance.TimeNum;
+                    TextObj.transform.parent = TextBox.transform;
+                    TextObj.transform.position = Pos;
 
                     //성공시 타일에 지금 회전중이던 공 붙임
                     transform.position = collision.transform.position;
