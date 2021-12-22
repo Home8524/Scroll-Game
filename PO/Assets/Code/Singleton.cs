@@ -27,4 +27,5 @@ public class Singleton
     public bool StartActive = true;
     public bool Resume = false;
     public float Timer = 0.0f;
+    public bool Die = false;
 }

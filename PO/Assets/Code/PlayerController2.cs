@@ -31,18 +31,25 @@ public class PlayerController2 : MonoBehaviour
     private GameObject TextPrefabs1;
     private GameObject TextPrefabs2;
     private GameObject TextPrefabs3;
+    private GameObject Boom;
 
     //텍스트 박스 띄우기용
     private GameObject TextObj;
 
     private int BallSet;
     private float Speed;
+    private int Die;
+
+    //Audio Controll
+    public AudioSource AudioS;
+    public Text DieText;
     private void Awake()
     {
         LightPrefabs = Resources.Load("Prefabs/Light") as GameObject;
         TextPrefabs1 = Resources.Load("Prefabs/Great") as GameObject;
         TextPrefabs2 = Resources.Load("Prefabs/Fast") as GameObject;
         TextPrefabs3 = Resources.Load("Prefabs/Wrong") as GameObject;
+        Boom = Resources.Load("Prefabs/SparkRed") as GameObject;
     }
     private void Start()
     {
@@ -83,12 +90,39 @@ public class PlayerController2 : MonoBehaviour
             TextObj.transform.name = "Text " + Singleton.GetInstance.TimeNum;
             TextObj.transform.parent = TextBox.transform;
             TextObj.transform.position = Pos;
+            Die = 1;
+            AudioS.Stop();
+        }
+
+        if (Die == 2)
+        {
+            GameObject Obj = Instantiate(Boom);
+            Obj.transform.position = transform.position;
+            P1.gameObject.SetActive(false);
+            transform.gameObject.SetActive(false);
+            //진행도
+            float Tmp = (float)Singleton.GetInstance.TimeNum / 160.0f * 100.0f;
+            DieText.gameObject.SetActive(true);
+            DieText.text = string.Format("{0:0.#}", Tmp) + "%";
+            Singleton.GetInstance.Die = true;
         }
     }
     private void FixedUpdate()
     {
+        if(Singleton.GetInstance.TimeNum==160)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, P1.transform.position, 0.01f);
+        }
         if (Singleton.GetInstance.StartActive)
         {
+            //사망시
+            if (Die == 1)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, P1.transform.position, 0.01f);
+                if (transform.position == P1.transform.position)
+                    Die = 2;
+            }
+
             //카메라도 같이 움직이게 해주려고 값 받음
             Singleton.GetInstance.WayRoute = WayRoute;
 
@@ -164,6 +198,8 @@ public class PlayerController2 : MonoBehaviour
                         GameObject Tmp = GameObject.Find("EndBG");
                         Tmp.GetComponent<SpriteRenderer>().color = ResetColor;
                         FlashBool = true;
+                        DieText.gameObject.SetActive(true);
+                        DieText.text = "축하합니다!";
                     }
                     GameObject Obj1 = GameObject.Find("Tile " + Singleton.GetInstance.TimeNum);
                     if (Vector3.Distance(transform.position, Obj1.transform.position) < 0.5f)

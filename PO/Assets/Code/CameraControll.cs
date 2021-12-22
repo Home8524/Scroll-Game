@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class CameraControll : MonoBehaviour
 {
     private int TileNum;
@@ -38,6 +38,8 @@ public class CameraControll : MonoBehaviour
                 transform.position += Vector3.right * 1.2f *
                 -1.0f * Singleton.GetInstance.WayRoute;
         }
+        if (Singleton.GetInstance.Die&&Input.GetKeyDown(KeyCode.Space))
+            Restart();
     }
     private void Bounce()
     {
@@ -53,5 +55,20 @@ public class CameraControll : MonoBehaviour
         SavePos.x = transform.position.x;
         SavePos.y = transform.position.y;
         transform.position = SavePos;
+    }
+    private void Restart()
+    {
+        Singleton.GetInstance.BallSet = 0;
+        Singleton.GetInstance.PosSave = new Vector2(0.0f, 0.0f);
+        Singleton.GetInstance.TimeNum = 0;
+        Singleton.GetInstance.Coll = false;
+        Singleton.GetInstance.WayRoute = -1.0f;
+        Singleton.GetInstance.SlowObjectGo = false;
+        Singleton.GetInstance.StartActive = true;
+        Singleton.GetInstance.Timer = 0.0f;
+        Singleton.GetInstance.Resume = false;
+        Singleton.GetInstance.Die = false;
+        SceneManager.LoadScene("Fire&Ice");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

@@ -37,14 +37,14 @@ public class PlayerController : MonoBehaviour
     public GameObject Canvas2;
     public GameObject Canvas3;
     [SerializeField] private Text CanvansText;
-
+    public Text DieText;
     GameObject BackGround;
     private float Timer;
 
     private GameObject TextPrefabs1;
     private GameObject TextPrefabs2;
     private GameObject TextPrefabs3;
-
+    private GameObject Boom;
     //텍스트 박스 띄우기용
     private GameObject TextObj;
 
@@ -55,12 +55,17 @@ public class PlayerController : MonoBehaviour
 
     //Ball Speed
     private float Speed;
+
+    //Die
+    private int Die;
+
     private void Awake()
     {
         LightPrefabs = Resources.Load("Prefabs/Light") as GameObject;
         TextPrefabs1 = Resources.Load("Prefabs/Great") as GameObject;
         TextPrefabs2 = Resources.Load("Prefabs/Fast") as GameObject;
         TextPrefabs3 = Resources.Load("Prefabs/Wrong") as GameObject;
+        Boom = Resources.Load("Prefabs/SparkBlue") as GameObject;
     }
     private void Start()
     {  
@@ -80,12 +85,16 @@ public class PlayerController : MonoBehaviour
         Singleton.GetInstance.PosSave = Tmp;
         MyName = 0;
         WayRoute = -1.0f;
+        
+        //잔상
         P2 = GameObject.Find("PlayerBall2");
         Trail = transform.GetComponent<TrailRenderer>();
         Trail.sortingLayerName = "2";
         Trail.sortingOrder = 0;
+
         Scale = 0.0f;
         Speed = 5.5f;
+        Die = 0;
     }
     private void Update()
     {
@@ -118,8 +127,21 @@ public class PlayerController : MonoBehaviour
             TextObj.transform.name = "Text " + Singleton.GetInstance.TimeNum;
             TextObj.transform.parent = TextBox.transform;
             TextObj.transform.position = Pos;
+            Die = 1;
+            AudioS.Stop();
         }
-
+        if (Die == 2)
+        {
+            GameObject Obj = Instantiate(Boom);
+            Obj.transform.position = transform.position;
+            P2.gameObject.SetActive(false);
+            transform.gameObject.SetActive(false);
+            //진행도
+            float Tmp = (float)Singleton.GetInstance.TimeNum / 160.0f*100.0f;
+            DieText.gameObject.SetActive(true);
+            DieText.text = string.Format("{0:0.#}", Tmp)+"%";
+            Singleton.GetInstance.Die = true;
+        }
     }
     private void FixedUpdate()
     {   
@@ -146,6 +168,14 @@ public class PlayerController : MonoBehaviour
         }
         if (Singleton.GetInstance.StartActive)
         {
+            //사망시
+            if (Die == 1)
+            {
+                transform.position = Vector3.MoveTowards(transform.position,P2.transform.position,0.01f);
+                if (transform.position == P2.transform.position)
+                    Die = 2;
+            }
+            
             //카메라도 같이 움직이게 해주려고 값 받음
             Singleton.GetInstance.WayRoute = WayRoute;
 

@@ -65,6 +65,7 @@
     <Compile Include="Assets\Code\PlayerController2.cs" />
     <Compile Include="Assets\Resources\World 3\TempTextureConverter.cs" />
     <Compile Include="Assets\Code\TextPush.cs" />
+    <Compile Include="Assets\Code\BoomInvoke.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\Effect\NewImageEffectShader.shader" />
