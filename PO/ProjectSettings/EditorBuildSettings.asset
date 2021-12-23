@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fire&Ice.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: 3ad17f443c447434abb01f3c03b732fc
+  - enabled: 1
+    path: Assets/Scenes/World.unity
+    guid: 4067fbaa3a181aa4c8d9902ddd94beca
   m_configObjects: {}

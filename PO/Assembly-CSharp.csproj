@@ -60,12 +60,16 @@
     <Compile Include="Assets\Code\PlayerController.cs" />
     <Compile Include="Assets\Code\Singleton.cs" />
     <Compile Include="Assets\Code\StartButton.cs" />
+    <Compile Include="Assets\Code\BoomInvoke.cs" />
     <Compile Include="Assets\Code\TextInvoke.cs" />
     <Compile Include="Assets\Code\CreateTile.cs" />
     <Compile Include="Assets\Code\PlayerController2.cs" />
     <Compile Include="Assets\Resources\World 3\TempTextureConverter.cs" />
     <Compile Include="Assets\Code\TextPush.cs" />
-    <Compile Include="Assets\Code\BoomInvoke.cs" />
+    <Compile Include="Assets\Resources\Main\BallMove.cs" />
+    <Compile Include="Assets\Resources\World\PC1.cs" />
+    <Compile Include="Assets\Resources\World\PC2.cs" />
+    <Compile Include="Assets\Resources\World\BoxInvoke.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\Effect\NewImageEffectShader.shader" />
