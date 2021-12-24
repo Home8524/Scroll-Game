@@ -14,6 +14,8 @@ public class BallMove : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
+            Singleton.GetInstance.P1Pos = new Vector2(6.6f, 4.7f);
+            Singleton.GetInstance.P2Pos = new Vector2(5.8f, 5.7f);
             SceneManager.LoadScene("World");
         }
     }

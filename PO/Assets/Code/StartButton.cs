@@ -11,18 +11,6 @@ public class StartButton : MonoBehaviour
     public Text CanvansText;
     //Active에 할당된 캔버스와 volumeset에 할당된 캔버스가
     //각각 다름
-    private void Start()
-    {
-        Singleton.GetInstance.BallSet = 0;
-        Singleton.GetInstance.PosSave = new Vector2(0.0f, 0.0f);
-        Singleton.GetInstance.TimeNum = 0;
-        Singleton.GetInstance.Coll = false;
-        Singleton.GetInstance.WayRoute = -1.0f;
-        Singleton.GetInstance.SlowObjectGo = false;
-        Singleton.GetInstance.StartActive = true;
-        Singleton.GetInstance.Timer = 0.0f;
-        Singleton.GetInstance.Resume = false;
-    }
     public void Active()
     {
         Canvas1.SetActive(false);
@@ -52,5 +40,9 @@ public class StartButton : MonoBehaviour
     {
         Canvas2.SetActive(true);
         Canvas1.SetActive(false);
+    }
+    public void Back()
+    {
+        SceneManager.LoadScene("World");
     }
 }

@@ -115,20 +115,23 @@ public class PlayerController : MonoBehaviour
             Singleton.GetInstance.StartActive = false;
             AudioS.Pause();
         }
-        GameObject Obj1 = GameObject.Find("Tile " + Singleton.GetInstance.TimeNum);
-        if (PressKey && MyName == BallSet && Vector3.Distance(transform.position, Obj1.transform.position) > 1.5f)
+        if(Singleton.GetInstance.TimeNum!=160)
         {
-            TextObj = Instantiate(TextPrefabs3);
-            //성공시 텍스트 띄움
-            Vector2 Pos = Singleton.GetInstance.PosSave;
-            Pos.x -= 0.5f;
-            Pos.y += 1.3f;
-            GameObject TextBox = GameObject.Find("TextBox");
-            TextObj.transform.name = "Text " + Singleton.GetInstance.TimeNum;
-            TextObj.transform.parent = TextBox.transform;
-            TextObj.transform.position = Pos;
-            Die = 1;
-            AudioS.Stop();
+            GameObject Obj1 = GameObject.Find("Tile " + Singleton.GetInstance.TimeNum);
+            if (PressKey && MyName == BallSet && Vector3.Distance(transform.position, Obj1.transform.position) > 1.5f)
+            {
+                TextObj = Instantiate(TextPrefabs3);
+                //성공시 텍스트 띄움
+                Vector2 Pos = Singleton.GetInstance.PosSave;
+                Pos.x -= 0.5f;
+                Pos.y += 1.3f;
+                GameObject TextBox = GameObject.Find("TextBox");
+                TextObj.transform.name = "Text " + Singleton.GetInstance.TimeNum;
+                TextObj.transform.parent = TextBox.transform;
+                TextObj.transform.position = Pos;
+                Die = 1;
+                AudioS.Stop();
+            }
         }
         if (Die == 2)
         {

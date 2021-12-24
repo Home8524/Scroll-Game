@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class PlayerController2 : MonoBehaviour
 {
     //현재 안착한 Tile 위치
@@ -71,13 +72,16 @@ public class PlayerController2 : MonoBehaviour
     }
     private void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Space)&&Singleton.GetInstance.TimeNum==160)
+        {
+            SceneManager.LoadScene("World");
+        }
         //스페이스바를 누른 순간만 PressKey가 true
         if (Input.GetKeyDown(KeyCode.Space) && Singleton.GetInstance.BallSet == MyName)
         {
             PressKey = true;
         }
         else PressKey = false;
-
         GameObject Obj1 = GameObject.Find("Tile " + Singleton.GetInstance.TimeNum);
         if (PressKey && MyName == BallSet && Vector3.Distance(transform.position, Obj1.transform.position) > 1.5f)
         {
