@@ -59,6 +59,8 @@ public class PlayerController : MonoBehaviour
     //Die
     private int Die;
 
+    private bool coll = false;
+    GameObject Test = null;
     private void Awake()
     {
         LightPrefabs = Resources.Load("Prefabs/Light") as GameObject;
@@ -93,17 +95,17 @@ public class PlayerController : MonoBehaviour
         Trail.sortingOrder = 0;
 
         Scale = 0.0f;
-        Speed = 5.5f;
+        Speed = 5.0f;
         Die = 0;
     }
     private void Update()
     {
+        GameObject Obj1 = GameObject.Find("Tile " + Singleton.GetInstance.TimeNum);
         //스페이스바를 누른 순간만 PressKey가 true
-        if (Input.GetKeyDown(KeyCode.Space) && Singleton.GetInstance.BallSet == MyName)
+        if (Input.GetKeyDown(KeyCode.Space) && Singleton.GetInstance.BallSet == MyName&&coll)
         {
-            PressKey = true;
+            Boxcoll(Test);
         }
-        else PressKey = false;
 
         //UI
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -117,21 +119,20 @@ public class PlayerController : MonoBehaviour
         }
         if(Singleton.GetInstance.TimeNum!=160)
         {
-            GameObject Obj1 = GameObject.Find("Tile " + Singleton.GetInstance.TimeNum);
-            if (PressKey && MyName == BallSet && Vector3.Distance(transform.position, Obj1.transform.position) > 1.5f)
-            {
-                TextObj = Instantiate(TextPrefabs3);
-                //성공시 텍스트 띄움
-                Vector2 Pos = Singleton.GetInstance.PosSave;
-                Pos.x -= 0.5f;
-                Pos.y += 1.3f;
-                GameObject TextBox = GameObject.Find("TextBox");
-                TextObj.transform.name = "Text " + Singleton.GetInstance.TimeNum;
-                TextObj.transform.parent = TextBox.transform;
-                TextObj.transform.position = Pos;
-                Die = 1;
-                AudioS.Stop();
-            }
+           if (Input.GetKeyDown(KeyCode.Space) && MyName == BallSet && Vector3.Distance(transform.position, Obj1.transform.position) > 1.0f)
+           {
+               TextObj = Instantiate(TextPrefabs3);
+               //성공시 텍스트 띄움
+               Vector2 Pos = Singleton.GetInstance.PosSave;
+               Pos.x -= 0.5f;
+               Pos.y += 1.3f;
+               GameObject TextBox = GameObject.Find("TextBox");
+               TextObj.transform.name = "Text " + Singleton.GetInstance.TimeNum;
+               TextObj.transform.parent = TextBox.transform;
+               TextObj.transform.position = Pos;
+               Die = 1;
+               AudioS.Stop();
+           }
         }
         if (Die == 2)
         {
@@ -246,105 +247,111 @@ public class PlayerController : MonoBehaviour
         if (Singleton.GetInstance.StartActive)
         {
             string Name = "Tile "+Singleton.GetInstance.TimeNum;
-           
             //충돌시 충돌한 타일명이 지금 충돌해야할 타일인지 확인 , 스페이스바 입력여부 확인
-            if (PressKey&&collision.transform.name==Name)
+            if (collision.transform.name==Name&&MyName==Singleton.GetInstance.BallSet)
             {
-                int BallSet = Singleton.GetInstance.BallSet;
-                //충돌한 transform의 tag가 Tile 이고 현재 회전중인 공과 부딫힌게 맞는지 확인
-                if (collision.transform.tag == "Tile" && BallSet == MyName)
-                {
-                    if (Name == "Tile 32")
-                    {
-                        Color Tmp = new Color(153.0f/255.0f,83.0f/255.0f,1.0f);
-                        SpriteRenderer ColorChange = BackGround.GetComponent<SpriteRenderer>();
-                        GameObject StopObject1 = GameObject.Find("StopObject1");
-                        StopObject1.GetComponent<SpriteRenderer>().color = Tmp;
-                        ColorChange.color = Tmp;
-                        FlashBool = true;
-                    }
-                    if (Name == "Tile 96")
-                    {
-                        Color Tmp = new Color(1.0f, 1.0f, 1.0f);
-                        SpriteRenderer ColorChange = BackGround.GetComponent<SpriteRenderer>();
-                        ColorChange.color = Tmp;
-                        FlashBool = true;
-                        GameObject.Find("StopObject2").GetComponent<SpriteRenderer>()
-                            .color = Tmp;
-                        GameObject.Find("StopObject3").GetComponent<SpriteRenderer>()
-                            .color = Tmp;
-                        GameObject.Find("StopObject2").AddComponent<ObjectRun>();
-                        GameObject.Find("StopObject3").AddComponent<ObjectRun>();
-                        Singleton.GetInstance.SlowObjectGo = true;
-                    }
-                
-                    //성공시 이전 타일에 빛남
-                    GameObject Obj = Instantiate(LightPrefabs);
-                    Obj.transform.position = Singleton.GetInstance.PosSave;
-                    GameObject LightBox = GameObject.Find("LightBox");
-                    Obj.transform.parent = LightBox.transform;
-
-                    GameObject Obj1 = GameObject.Find("Tile " + Singleton.GetInstance.TimeNum);
-                    if (Vector3.Distance(transform.position, Obj1.transform.position) < 0.5f)
-                        TextObj = Instantiate(TextPrefabs1);
-                    else if (Vector3.Distance(transform.position, Obj1.transform.position) < 1.0f)
-                        TextObj = Instantiate(TextPrefabs2);
-
-
-                    //성공시 텍스트 띄움
-                    Vector2 Pos = Singleton.GetInstance.PosSave;
-                    Pos.x -= 0.5f;
-                    Pos.y += 1.3f;
-                    GameObject TextBox = GameObject.Find("TextBox");
-                    TextObj.transform.name = "Text " + Singleton.GetInstance.TimeNum;
-                    TextObj.transform.parent = TextBox.transform;
-                    TextObj.transform.position = Pos;
-
-                    //성공시 타일에 지금 회전중이던 공 붙임
-                    transform.position = collision.transform.position;
-                    Vector2 SavePosition;
-                    SavePosition.x = transform.position.x;
-                    SavePosition.y = transform.position.y;
-
-                    //현재 도달중인 타일 위치 갱신
-                    Singleton.GetInstance.PosSave = SavePosition;
-
-                    //Player1 ~ Plaeyr2 Switch
-                    if (Singleton.GetInstance.BallSet == 0)
-                        Singleton.GetInstance.BallSet = 1;
-                    else
-                        Singleton.GetInstance.BallSet = 0;
-
-                    //이동 , 카메라 연산을 위해 타일넘버 갱신
-                    Singleton.GetInstance.TimeNum++;
-
-                    //지나간 Tile의 Collider 파괴해서 재호출 X
-                   //GameObject BoxCol = GameObject.Find(Name);
-                   //BoxCollider2D Coll = BoxCol.GetComponent<BoxCollider2D>();
-                   //Destroy(Coll);
-
-                    //카메라 이동에 맞춰 BackGround 소폭 이동
-
-                    int TileNum = Singleton.GetInstance.TimeNum;
-                    if (TileNum == 23 || TileNum == 14 || TileNum > 32 && TileNum < 45
-                    || TileNum > 48 && TileNum < 61 || TileNum > 102 && TileNum < 106
-                    || TileNum > 110 && TileNum < 114 || TileNum > 118 && TileNum < 122
-                    || TileNum > 126 && TileNum < 130)
-                        BackGround.transform.Translate(0.0f, -0.5f, 0.0f);
-                    else if (TileNum > 64 && TileNum < 91)
-                        BackGround.transform.Translate(0.4f * WayRoute * -1.0f, 0.0f, 0.0f);
-                    else if (TileNum > 130 && TileNum < 161)
-                    {
-                        int TileCheck = (TileNum - 130) % 8;
-                        if (TileCheck == 7)
-                            BackGround.transform.Translate(0.0f, -0.5f, 0.0f);
-                        else
-                            BackGround.transform.Translate(0.8f * WayRoute * -1.0f, 0.0f, 0.0f);
-                    }
-                    else
-                        BackGround.transform.Translate(1.1f * WayRoute * -1.0f, 0.0f, 0.0f);
-                }
+                coll = true;
+                Test = collision.gameObject;
             }    
         }
     }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        coll = false;
+    }
+    void Boxcoll(GameObject collision)
+    {
+        int BallSet = Singleton.GetInstance.BallSet;
+        string Name = "Tile " + Singleton.GetInstance.TimeNum;
+        //충돌한 transform의 tag가 Tile 이고 현재 회전중인 공과 부딫힌게 맞는지 확인
+        if (collision.transform.tag == "Tile" && BallSet == MyName)
+        {
+            if (Name == "Tile 32")
+            {
+                Color Tmp = new Color(153.0f / 255.0f, 83.0f / 255.0f, 1.0f);
+                SpriteRenderer ColorChange = BackGround.GetComponent<SpriteRenderer>();
+                GameObject StopObject1 = GameObject.Find("StopObject1");
+                StopObject1.GetComponent<SpriteRenderer>().color = Tmp;
+                ColorChange.color = Tmp;
+                FlashBool = true;
+            }
+            if (Name == "Tile 96")
+            {
+                Color Tmp = new Color(1.0f, 1.0f, 1.0f);
+                SpriteRenderer ColorChange = BackGround.GetComponent<SpriteRenderer>();
+                ColorChange.color = Tmp;
+                FlashBool = true;
+                GameObject.Find("StopObject2").GetComponent<SpriteRenderer>()
+                    .color = Tmp;
+                GameObject.Find("StopObject3").GetComponent<SpriteRenderer>()
+                    .color = Tmp;
+                GameObject.Find("StopObject2").AddComponent<ObjectRun>();
+                GameObject.Find("StopObject3").AddComponent<ObjectRun>();
+                Singleton.GetInstance.SlowObjectGo = true;
+            }
+
+            //성공시 이전 타일에 빛남
+            GameObject Obj = Instantiate(LightPrefabs);
+            Obj.transform.position = Singleton.GetInstance.PosSave;
+            GameObject LightBox = GameObject.Find("LightBox");
+            Obj.transform.parent = LightBox.transform;
+
+            GameObject Obj1 = GameObject.Find("Tile " + Singleton.GetInstance.TimeNum);
+            if (Vector3.Distance(transform.position, Obj1.transform.position) < 0.5f)
+                TextObj = Instantiate(TextPrefabs1);
+            else if (Vector3.Distance(transform.position, Obj1.transform.position) < 1.0f)
+                TextObj = Instantiate(TextPrefabs2);
+
+            BoxCollider2D collider = collision.transform.GetComponent<BoxCollider2D>();
+            Destroy(collider);
+
+            //성공시 텍스트 띄움
+            Vector2 Pos = Singleton.GetInstance.PosSave;
+            Pos.x -= 0.5f;
+            Pos.y += 1.3f;
+            GameObject TextBox = GameObject.Find("TextBox");
+            TextObj.transform.name = "Text " + Singleton.GetInstance.TimeNum;
+            TextObj.transform.parent = TextBox.transform;
+            TextObj.transform.position = Pos;
+
+            //성공시 타일에 지금 회전중이던 공 붙임
+            transform.position = collision.transform.position;
+            Vector2 SavePosition;
+            SavePosition.x = transform.position.x;
+            SavePosition.y = transform.position.y;
+
+            //현재 도달중인 타일 위치 갱신
+            Singleton.GetInstance.PosSave = SavePosition;
+
+            //Player1 ~ Plaeyr2 Switch
+            if (Singleton.GetInstance.BallSet == 0)
+                Singleton.GetInstance.BallSet = 1;
+            else
+                Singleton.GetInstance.BallSet = 0;
+
+            //이동 , 카메라 연산을 위해 타일넘버 갱신
+            Singleton.GetInstance.TimeNum++;
+            //카메라 이동에 맞춰 BackGround 소폭 이동
+
+            int TileNum = Singleton.GetInstance.TimeNum;
+            if (TileNum == 23 || TileNum == 14 || TileNum > 32 && TileNum < 45
+            || TileNum > 48 && TileNum < 61 || TileNum > 102 && TileNum < 106
+            || TileNum > 110 && TileNum < 114 || TileNum > 118 && TileNum < 122
+            || TileNum > 126 && TileNum < 130)
+                BackGround.transform.Translate(0.0f, -0.5f, 0.0f);
+            else if (TileNum > 64 && TileNum < 91)
+                BackGround.transform.Translate(0.4f * WayRoute * -1.0f, 0.0f, 0.0f);
+            else if (TileNum > 130 && TileNum < 161)
+            {
+                int TileCheck = (TileNum - 130) % 8;
+                if (TileCheck == 7)
+                    BackGround.transform.Translate(0.0f, -0.5f, 0.0f);
+                else
+                    BackGround.transform.Translate(0.8f * WayRoute * -1.0f, 0.0f, 0.0f);
+            }
+            else
+                BackGround.transform.Translate(1.1f * WayRoute * -1.0f, 0.0f, 0.0f);
+        }
+    }
 }
+

@@ -21,7 +21,7 @@ public class CreateTile : MonoBehaviour
     {
         //Time Create
         //¿≠¡Ÿ 12∞≥
-        Vector2 Size = new Vector2(1.3f, 1.2f);
+        Vector2 Size = new Vector2(1.3f, 1.2f); //1.3,1.2
         Vector2 Size2 = new Vector2(1.2f, 1.0f);
         {
             GameObject Tmp = GameObject.Find("Tile");
