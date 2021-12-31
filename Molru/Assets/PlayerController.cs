@@ -14,6 +14,15 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
+        var Hor = Input.GetAxisRaw("Horizontal");
+        var Ver = Input.GetAxisRaw("Vertical");
+
+        transform.Translate(
+            Hor * 5.0f * Time.deltaTime,
+            0,
+            Ver * 5.0f * Time.deltaTime);
+
+
         if(Input.GetMouseButtonDown(1))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -24,7 +33,7 @@ public class PlayerController : MonoBehaviour
             {
                 if(Hit.transform.tag == "Ground")
                 {
-                    Agent.Move(Hit.point);
+                    Agent.SetDestination(Hit.point);
                 }
             }
         }
