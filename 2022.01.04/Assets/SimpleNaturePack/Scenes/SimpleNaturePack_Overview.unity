@@ -516,8 +516,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 569484692}
-  SmoothTime: 0
   Offset: {x: 0, y: 0, z: 0}
+  MaxPoint: {x: 0, y: 0, z: 0}
+  MinPoint: {x: 0, y: 0, z: 0}
+  Distance: 0
 --- !u!81 &468633243
 AudioListener:
   m_ObjectHideFlags: 0
@@ -597,7 +599,7 @@ GameObject:
   - component: {fileID: 569484693}
   - component: {fileID: 569484697}
   - component: {fileID: 569484698}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
