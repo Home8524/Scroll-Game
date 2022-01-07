@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1480
     height: 861
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Hierarchy
   m_RootView: {fileID: 7}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 781, y: 492}
   m_MaxSize: {x: 16006, y: 14042}
   vertical: 0
-  controlID: 173
+  controlID: 104
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_MinSize: {x: 505, y: 492}
   m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
-  controlID: 127
+  controlID: 105
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -551,22 +551,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/FightingMotionsVolume1/FBX
+    - Assets/unity-chan!/Unity-chan! Model/Art/Models
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/FightingMotionsVolume1/FBX
+  - Assets/unity-chan!/Unity-chan! Model/Art/Models
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\SGA\Documents\GitHub\bathroom1\Scroll-Game\3Dgajua
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 14}
-    m_SelectedIDs: 6e430000
-    m_LastClickedID: 17262
-    m_ExpandedIDs: 0000000066430000684300006a4300006c4300006e430000704300007243000000ca9a3b
+    scrollPos: {x: 0, y: 106}
+    m_SelectedIDs: 90430000
+    m_LastClickedID: 17296
+    m_ExpandedIDs: 000000001a4200001c4200001e42000020420000224200002442000026420000a042000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -594,7 +594,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000066430000684300006a4300006c4300006e4300007043000072430000
+    m_ExpandedIDs: 000000001a4200001c4200001e42000020420000224200002442000026420000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -622,7 +622,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000a43f0000a03f00003e400000c84900004a400000c64d00002e4e0000563e00002c490000523e000000000000ae400000984b00008ab70000e053ffff
+    m_ExpandedInstanceIDs: c6230000a43f0000a03f00003e400000c84900004a400000c64d00002e4e0000563e00002c490000523e000000000000ae400000984b00008ab70000e053ffffba3d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -717,9 +717,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 48420000
-      m_LastClickedID: 0
-      m_ExpandedIDs: fcf9ffff
+      m_SelectedIDs: b23d0000
+      m_LastClickedID: 15794
+      m_ExpandedIDs: 4cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -831,7 +831,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.16011715, y: 0.0020698237, z: -0.00033574316, w: -0.9870956}
     speed: 2
-    m_Value: {x: -0.16011718, y: 0.0020698241, z: -0.0003357432, w: -0.9870958}
+    m_Value: {x: -0.16011715, y: 0.0020698237, z: -0.00033574316, w: -0.9870956}
   m_Size:
     m_Target: 246.16718
     speed: 2
